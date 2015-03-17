@@ -1,6 +1,5 @@
 <!-- portfolio section -->
 <?php $wl_theme_options = weblizar_get_options(); ?>
-<div class="enigma_project_section">
 
 <div class="container" style="background-image:url(<?php echo esc_url($wl_theme_options['hall_of_fame_image_1']); ?>)">
 		<div class="row" style="padding-top:130px">
@@ -62,5 +61,4 @@
 </div>
 
 
-</div>
 <!-- /portfolio section -->
