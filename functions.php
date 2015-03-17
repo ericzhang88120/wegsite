@@ -18,8 +18,10 @@
 	$ImageUrl = WL_TEMPLATE_DIR_URI ."/images/slide1.jpg";
 	$ImageUrl2 = WL_TEMPLATE_DIR_URI ."/images/slide2.jpg";
 	$ImageUrl3 = WL_TEMPLATE_DIR_URI ."/images/3.png";
-	$ImageUrl4 = WL_TEMPLATE_DIR_URI ."/images/portfolio1.png";
-	$ImageUrl5 = WL_TEMPLATE_DIR_URI ."/images/portfolio2.png";
+	$ImageUrl4 = WL_TEMPLATE_DIR_URI ."/images/HallOfFame/image1.jpg";
+	$ImageUrl4Shade = WL_TEMPLATE_DIR_URI ."/images/HallOfFame/image3.png";
+	$ImageUrl5 = WL_TEMPLATE_DIR_URI ."/images/HallOfFame/image2.jpg";
+	$ImageUrl5Shade = WL_TEMPLATE_DIR_URI ."/images/HallOfFame/image4.png";
 	$ImageUrl6 = WL_TEMPLATE_DIR_URI ."/images/portfolio3.png";
 	$ImageUrl7 = WL_TEMPLATE_DIR_URI ."/images/portfolio4.png";
 	$ImageUrl8 = WL_TEMPLATE_DIR_URI ."/images/portfolio5.png";
@@ -32,6 +34,12 @@
 	$star_image_2 = WL_TEMPLATE_DIR_URI ."/images/pic2.jpg";
 	$star_image_3 = WL_TEMPLATE_DIR_URI ."/images/pic3.jpg";
 	$star_image_4 = WL_TEMPLATE_DIR_URI ."/images/pic4.jpg";
+	
+	$hall_of_fame_image_1 = WL_TEMPLATE_DIR_URI ."/images/HallOfFame/background.jpg";
+	$get_in_touch_image_1 = WL_TEMPLATE_DIR_URI ."/images/GetInTouch/background.jpg";
+	$get_in_touch_image_2 = WL_TEMPLATE_DIR_URI ."/images/GetInTouch/submit.png";
+	$sponsor_image_1 = WL_TEMPLATE_DIR_URI ."/images/Sponsor/background.png";
+	
 	$wl_theme_options=array(
 			//Logo and Fevicon header			
 			'upload_image_logo'=>$logo_image,
@@ -99,10 +107,12 @@
 			'port_heading' => __('Recent Works', 'weblizar' ),
 			'port_1_img'=> $ImageUrl4,
 			'port_1_title'=>__('Bonorum', 'weblizar' ),
-			'port_1_link'=>'#',
+			'port_1_link'=>'www.baidu.com',
+			'port_1_img_shade'=> $ImageUrl4Shade,
 			'port_2_img'=> $ImageUrl5,			
 			'port_2_title'=>__('Content', 'weblizar' ),
-			'port_2_link'=>'#',
+			'port_2_link'=>'www.baidu.com',
+			'port_2_img_shade'=> $ImageUrl5Shade,
 			'port_3_img'=> $ImageUrl6,
 			'port_3_title'=>__('dictionary', 'weblizar' ),
 			'port_3_link'=>'#',
@@ -114,7 +124,15 @@
 			'pic_image_1'=>$star_image_1,
 			'pic_image_2'=>$star_image_2,
 			'pic_image_3'=>$star_image_3,
-			'pic_image_4'=>$star_image_4
+			'pic_image_4'=>$star_image_4,
+			
+			#hall of fame
+			'hall_of_fame_image_1'=>$hall_of_fame_image_1,
+			
+			#get in touch
+			'get_in_touch_image_1'=>$get_in_touch_image_1,
+			'get_in_touch_image_2'=>$get_in_touch_image_2,
+			'sponsor_image_1'=>$sponsor_image_1
 			
 		);
 		return apply_filters( 'enigma_options', $wl_theme_options );
