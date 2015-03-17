@@ -525,8 +525,8 @@ line-height: 26px;
 	text-decoration: none;
 	margin-right:5px;
 	border-radius:100%;
-	width:60px;
-	height:60px;
+	width:200px;
+	height:200px;
 	transition: all 0.3s ease 0s;
 }
 .enigma_home_portfolio_showcase .enigma_home_portfolio_showcase_icons a i{
@@ -2418,6 +2418,7 @@ padding-top: 20px;
 .fa-arrow-left:before{content: "\f060" ;}
 .fa-arrow-right:before{content: "\f061" ;}
 
+
 .star{
 	background: url(images/star_background.jpg);
 	background-repeat: no-repeat;
@@ -2429,4 +2430,54 @@ padding-top: 20px;
 .star_desc{
 	color: #ffffff;
 	text-indent:20px
+
+
+
+
+
+figure.effect-lily img {
+	max-width: none;
+	opacity: 0.7;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: translate3d(20px,20px, 0);
+	transform: translate3d(20px,20px,0);
+}
+
+
+figure.effect-lily  div {
+	position: absolute;
+	top: 0px;
+	left: 15px;
+}
+
+figure.effect-lily a {
+	-webkit-transform: translate3d(20px,0,0);
+	transform: translate3d(20px,0,0);
+}
+
+figure.effect-lily a {
+	color: rgba(255,255,255,0.8);
+	opacity: 0;
+	-webkit-transition: opacity 0.2s, -webkit-transform 0.35s;
+	transition: opacity 0.2s, transform 0.35s;
+}
+
+figure.effect-lily:hover img,
+figure.effect-lily:hover a {
+	opacity: 1;
+}
+
+figure.effect-lily:hover img,
+figure.effect-lily:hover a {
+	-webkit-transform: translate3d(20px,0,0);
+	transform: translate3d(20px,0,0);
+}
+
+figure.effect-lily:hover a {
+	-webkit-transition-delay: 0.05s;
+	transition-delay: 0.05s;
+	-webkit-transition-duration: 0.35s;
+	transition-duration: 0.35s;
+
 }
