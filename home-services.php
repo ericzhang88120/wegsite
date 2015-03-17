@@ -35,9 +35,9 @@
 		<div class="row">
 			<div class="col-lg-3 col-md-3 col-sm-6 pull-left scrollimation fade-left d1">
 				<div class="img-wrapper-star starpic">
-					<figure class="effect-apollo">
+					<figure class="effect-apollo figurestar">
 						<img  src="<?php echo $wl_theme_options['pic_image_1']; ?>">
-						<figcaption>
+						<figcaption class="figurestar2">
 							<a href="#">View more</a>
 						</figcaption>
 					</figure>
@@ -45,29 +45,29 @@
 			</div>
 			<div class="col-lg-3 col-md-3 col-sm-6 pull-left scrollimation fade-left d1 ">
 				<div class="img-wrapper-star starpic">
-					<figure class="effect-apollo">
+					<figure class="effect-apollo figurestar">
 						<img  src="<?php echo $wl_theme_options['pic_image_2']; ?>">
-						<figcaption>
+						<figcaption class="figurestar2">
 							<a href="#">View more</a>
 						</figcaption>
 					</figure>
 				</div>
 			</div>
 			<div class="col-lg-3 col-md-3 col-sm-6 pull-left scrollimation fade-left d1">
-				<div class="img-wrapper-star starpic">
+				<div class="img-wrapper-star starpic figurestar">
 					<figure class="effect-apollo">
 						<img  src="<?php echo $wl_theme_options['pic_image_3']; ?>">
-						<figcaption>
+						<figcaption class="figurestar2">
 							<a href="#">View more</a>
 						</figcaption>
 					</figure>
 				</div>
 			</div>
 			<div class="col-lg-3 col-md-3 col-sm-6 pull-left scrollimation fade-left d1">
-				<div class="img-wrapper-star starpic">
+				<div class="img-wrapper-star starpic figurestar">
 					<figure class="effect-apollo">
 						<img  src="<?php echo $wl_theme_options['pic_image_4']; ?>">
-						<figcaption>
+						<figcaption class="figurestar2">
 							<a href="#">View more</a>
 						</figcaption>
 					</figure>
