@@ -2432,7 +2432,7 @@ padding-top: 20px;
 
 
 /* Common style */
-figure {
+.figurestar {
 	position: relative;
 	float: left;
 	overflow: hidden;
@@ -2454,7 +2454,7 @@ figure img {
 	opacity: 0.8;
 }
 
-figure figcaption {
+.figurestar2 {
 	padding: 2em;
 	color: #fff;
 	text-transform: uppercase;
