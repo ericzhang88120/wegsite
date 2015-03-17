@@ -1,5 +1,6 @@
 <!-- service section -->
 <?php $wl_theme_options = weblizar_get_options(); ?>
+<!--
 <div class="enigma_service">
 <?php if($wl_theme_options['home_service_heading'] !='') { ?>
 <div class="container">
@@ -28,11 +29,38 @@
 		</div>
 	</div>
 </div>	 
-<div class="container">
-	<div class="row">
-		<div class="col-md-12">
-			<div class="thestars"></div>
+-->
+<div class="stars">
+	<div class="container star">
+		<div class="row">
+			<div class="col-lg-3 col-md-3 col-sm-6 pull-left scrollimation fade-left d1">
+				<div class="img-wrapper-star">
+						<a href="#" class="animated flipInX"><img class="starpic" src="<?php echo $wl_theme_options['pic_image_1']; ?>"></a>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-3 col-sm-6 pull-left scrollimation fade-left d1 ">
+				<div class="img-wrapper-star">
+					<a href="#" class="animated flipInX"><img class="starpic" src="<?php echo $wl_theme_options['pic_image_2']; ?>"></a>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-3 col-sm-6 pull-left scrollimation fade-left d1">
+				<div class="img-wrapper-star">
+					<a href="#" class="animated flipInX"><img class="starpic" src="<?php echo $wl_theme_options['pic_image_3']; ?>"></a>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-3 col-sm-6 pull-left scrollimation fade-left d1">
+				<div class="img-wrapper-star">
+					<a href="#" class="animated flipInX"><img class="starpic" src="<?php echo $wl_theme_options['pic_image_4']; ?>"></a>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-8 col-md-8 col-sm-20">
+				<?php echo ($wl_theme_options['star_desc']); ?>
+			</div>
+
 		</div>
 	</div>
 </div>
+
 <!-- /Service section -->

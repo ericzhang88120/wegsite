@@ -114,7 +114,8 @@
 			'pic_image_1'=>$star_image_1,
 			'pic_image_2'=>$star_image_2,
 			'pic_image_3'=>$star_image_3,
-			'pic_image_4'=>$star_image_4
+			'pic_image_4'=>$star_image_4,
+			'star_desc'=>__('NULL', 'weblizar' )
 			
 		);
 		return apply_filters( 'enigma_options', $wl_theme_options );

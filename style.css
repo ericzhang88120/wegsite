@@ -18,6 +18,7 @@ Text Domain: weblizar
     margin-left: 0px;
     margin-right: 0px;
 } 
+@import url("hover.css"); 
 /* Header Section css-------------------------------------------------------------- */ 
 body {
    /* padding:0 30px;*/
@@ -458,6 +459,10 @@ line-height: 26px;
 }
 .img-wrapper{
 	margin-bottom:50px;
+	overflow:hidden;
+}
+.img-wrapper-star{
+	margin-bottom:20px;
 	overflow:hidden;
 }
 .enigma_home_portfolio_showcase {
@@ -2412,3 +2417,16 @@ padding-top: 20px;
 .navigation_en{padding-bottom:5%;}
 .fa-arrow-left:before{content: "\f060" ;}
 .fa-arrow-right:before{content: "\f061" ;}
+
+.star{
+	background: url(images/star_background.jpg);
+	background-repeat: no-repeat;
+}
+.starpic{
+	padding-top: 138px;
+	display: inline-block;
+}
+.star_desc{
+	color: #ffffff;
+	text-indent:20px
+}

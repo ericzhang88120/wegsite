@@ -572,7 +572,24 @@ $site ="http://www.weblizar.com" ;?>
 			</div>
 		</div>
 		</div>
-		</div>	
+		</div>				
+
+		<div class="section">
+			<div class="panel-group" id="accordion95">
+			<div class="panel panel-default">
+			<div id="collapse95" class="panel-collapse collapse in">
+			<div class="panel-body">
+			<hr>			
+			<h3><?php _e('Star Description','weblizar'); ?></h3>
+			<?php $settings = array( "media_buttons" => false,"quicktags" => false, "tinymce" => array( "plugins" => "wordpress" ) ); ?>
+		<?php $content = $wl_theme_options["star_desc"]!="" ? esc_attr($wl_theme_options["star_desc"]) : "" ; ?>                     
+		<?php $editor_id = "star_desc"; ?>
+		<?php wp_editor( $content, $editor_id,$settings ); ?>
+			</div>
+			</div>
+			</div>
+			</div>
+		</div>
 		<div id="button_section">
 			<input type="hidden" value="1" id="weblizar_settings_save_home-star" name="weblizar_settings_save_home-star" />			
 			<input class="button" type="button" name="reset" value="Restore Defaults" onclick="weblizar_option_data_reset('home-star');">
