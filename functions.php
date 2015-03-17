@@ -127,7 +127,7 @@
 			'pic_image_4'=>$star_image_4,
 
 
-			'star_desc'=>__('NULL', 'weblizar' )
+			'star_desc'=>__('NULL', 'weblizar' ),
 			
 			#hall of fame
 			'hall_of_fame_image_1'=>$hall_of_fame_image_1,
