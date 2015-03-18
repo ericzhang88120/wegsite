@@ -34,11 +34,15 @@
 	$star_image_2 = WL_TEMPLATE_DIR_URI ."/images/pic2.jpg";
 	$star_image_3 = WL_TEMPLATE_DIR_URI ."/images/pic3.jpg";
 	$star_image_4 = WL_TEMPLATE_DIR_URI ."/images/pic4.jpg";
+
+	$event_image_1 = WL_TEMPLATE_DIR_URI."/images/event1.jpg";
+	$event_image_2 = WL_TEMPLATE_DIR_URI."/images/event2.jpg";
 	
 	$hall_of_fame_image_1 = WL_TEMPLATE_DIR_URI ."/images/HallOfFame/background.jpg";
 	$get_in_touch_image_1 = WL_TEMPLATE_DIR_URI ."/images/GetInTouch/background.jpg";
 	$get_in_touch_image_2 = WL_TEMPLATE_DIR_URI ."/images/GetInTouch/submit.png";
 	$sponsor_image_1 = WL_TEMPLATE_DIR_URI ."/images/Sponsor/background.png";
+
 	
 	$wl_theme_options=array(
 			//Logo and Fevicon header			
@@ -128,6 +132,10 @@
 
 
 			'star_desc'=>__('NULL', 'weblizar' ),
+
+			#events
+			'event_image_1'=>$event_image_1,
+			'event_image_2'=>$event_image_2,
 			
 			#hall of fame
 			'hall_of_fame_image_1'=>$hall_of_fame_image_1,

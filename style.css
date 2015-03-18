@@ -2413,8 +2413,23 @@ padding-top: 20px;
 	padding-top: 128px;
 }
 
+.event{
+	background: url(images/event_background.jpg);
+	background-repeat: no-repeat;	
+}
+.eventpos{
+	padding-top: 130px;
+}
+.eventdes{
+	overflow: scroll;
+	color: #ffffff;
 
-
+	height:500px;
+}
+.eventdes p{
+	text-indent:20px;
+	font-family: 'Isocpeur';	
+}
 /* Common style */
 .figurestar {
 	position: relative;

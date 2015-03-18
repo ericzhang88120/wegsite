@@ -1,35 +1,5 @@
 <!-- service section -->
 <?php $wl_theme_options = weblizar_get_options(); ?>
-<!--
-<div class="enigma_service">
-<?php if($wl_theme_options['home_service_heading'] !='') { ?>
-<div class="container">
-	<div class="row">
-		<div class="col-sm-12">
-			<div class="enigma_heading_title">
-				<h3><?php echo esc_attr($wl_theme_options['home_service_heading']); ?></h3>		
-			</div>
-		</div>
-	</div>
-</div>	
-<?php } ?>
-<div class="container">
-		<div class="row isotope" id="isotope-service-container">		
-			<?php for($i=1; $i<4; $i++ ) { ?>
-			<div class=" col-md-4 service">
-				<div class="enigma_service_area appear-animation bounceIn appear-animation-visible">
-					<?php if($wl_theme_options['service_'.$i.'_icons'] !='') { ?><div class="enigma_service_iocn pull-left"><i class="<?php echo esc_attr($wl_theme_options['service_'.$i.'_icons']); ?>"></i></div><?php } ?> 
-					<div class="enigma_service_detail media-body">
-						<?php if($wl_theme_options['service_'.$i.'_title'] !='') { ?><h3><a href="<?php echo esc_url($wl_theme_options['service_'.$i.'_link']); ?>"><?php echo esc_attr($wl_theme_options['service_'.$i.'_title']); ?></a></h3><?php } ?>
-						<?php if($wl_theme_options['service_'.$i.'_text'] !='') { ?><p><?php echo apply_filters('the_content', $wl_theme_options['service_'.$i.'_text'], true); ?></p><?php } ?>
-					</div>
-				</div>
-			</div>
-			<?php } ?>	
-		</div>
-	</div>
-</div>	 
--->
 <div class="stars">
 	<div class="container star">
 		<div class="row">
@@ -83,4 +53,20 @@
 	</div>
 </div>
 
-<!-- /Service section -->
+<!--event section-->
+<div class="events">
+	<div class="container event">
+		<div class="row eventpos">
+			<div class="col-lg-8 col-md-8 col-sm-18">
+			<?php get_template_part('home','slideshow-event'); ?>
+			</div>
+			<div class="col-lg-4 col-md-4 col-sm-8 eventdes">
+				<p>The Kia World Extreme Games is the most prestigious multi-event, action sports competition worldwide, and will be staged in Shanghai, China for the ninth time since 2007.</p>
+				<p>After having been successfully held in Shanghai for eight years, Kia World Extreme Games was regarded as Shanghai’s annual top 12 international events in 2014, together with F1 Chinese Grand Prix and Shanghai Rolex Masters etc.</p>
+				<p>Nearly 200 best action sport athletes from almost 30 countries and regions will compete in BMX freestyle, skateboarding, speed climbing and International freestyle Motocross (FMX) competition at 2 venues: Oriental Pearl Radio &amp; TV Tower (Vert Finals) and KIC Jiangwan Sports Centre (other Competitions)</p>
+				<p>Action sport big names, including Vince Byron, Trey Wood, Jimmy Wilkins and Filipe Gustavo etc. are confirmed to come and compete. Also, BMX legend Mat Hoffman will appear on-site as event ambassador and head judge for BMX category.</p>
+				<p>Considered the pinnacle of global action sports competition, the Kia World Extreme Games in Shanghai will be televised live across Asia, and delayed broadcast worldwide. Kia Motors is the Title Sponsor of the event.</p>
+			</div>
+		</div>
+	</div>
+</div>
