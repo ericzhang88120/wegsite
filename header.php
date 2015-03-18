@@ -102,8 +102,17 @@ endif;
 					<div class="owner-nav">
 						<nav class="nav">
 						  <ul class="nav__menu">
-						    <li class="nav__menu-item"><b>Home</b></li>
-						    <li class="nav__menu-item"><b>THE ACTION &amp; THE STARS</b>
+						    <li class="nav__menu-item"><b>HOME</b></li>
+						    <li class="nav__menu-item"><b>THE ACTION</b>
+						      <ul class="nav__submenu">
+						        <li class="nav__submenu-item"> <b>VERT AT ORIENTAL PERL</b></li>
+						        <li class="nav__submenu-item"> <b>STREET COURSE AT KIC</b></li>
+						        <li class="nav__submenu-item"> <b>CLIMBING WALL</b></li>
+						        <li class="nav__submenu-item"> <b>MINI MEGA</b></li>
+								<li class="nav__submenu-item"> <b>MOTO CROSS</b></li>
+						      </ul>
+						    </li>
+							<li class="nav__menu-item"><b>THE STARS</b>
 						      <ul class="nav__submenu">
 						        <li class="nav__submenu-item"> <b>SKATEBOARD</b></li>
 						        <li class="nav__submenu-item"> <b>BMX</b></li>
@@ -111,15 +120,29 @@ endif;
 						        <li class="nav__submenu-item"> <b>OTHERS</b></li>
 						      </ul>
 						    </li>
-						    <li class="nav__menu-item"><b>About</b>
+						    <li class="nav__menu-item"><b>ABOUT THE EVENT</b>
 						      <ul class="nav__submenu">
-						        <li class="nav__submenu-item"> <b>Our Company</b></li>
-						        <li class="nav__submenu-item"> <b>Our Team</b></li>
-						        <li class="nav__submenu-item"> <b>Our Reach</b></li>
+						        <li class="nav__submenu-item"> <b>EVENT INFO</b></li>
+						        <li class="nav__submenu-item"> <b>COMPETITION SCHEDULE</b></li>
+						        <li class="nav__submenu-item"> <b>BROADCAST SCHEDULE</b></li>
+								<li class="nav__submenu-item"> <b>TICKETING</b></li>
+								<li class="nav__submenu-item"> <b>SPONSORS &amp; PARTNERS</b></li>
 						      </ul>
 						    </li>
-						    <li class="nav__menu-item"><b>Blog</b></li>
-						    <li class="nav__menu-item"><b>Contact</b></li>
+						    <li class="nav__menu-item"><b>WHAT'S UP</b>
+							  <ul class="nav__submenu">
+						        <li class="nav__submenu-item"> <b>PRE-EVENTS</b></li>
+						        <li class="nav__submenu-item"> <b>MEDIA RELEASE</b></li>
+						        <li class="nav__submenu-item"> <b>RESULT</b></li>
+						      </ul>
+							</li>
+						    <li class="nav__menu-item"><b>HALL OF FAME</b>
+							  <ul class="nav__submenu">
+						        <li class="nav__submenu-item"> <b>PHOTOS</b></li>
+						        <li class="nav__submenu-item"> <b>VIDEOS</b></li>
+						      </ul>
+							</li>
+							<li class="nav__menu-item"><b>GET IN TOUCH</b></li>
 						  </ul>
 						</nav>
 					</div>
