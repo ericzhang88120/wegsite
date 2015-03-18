@@ -7,7 +7,6 @@ if ($wl_theme_options['_frontpage']=="on" && is_front_page())
 	if($wl_theme_options['portfolio_home'] != "off") {
 	get_template_part('home','portfolio'); 
 	}
-	get_template_part('home','blog');
 	get_footer();
 }
  else 

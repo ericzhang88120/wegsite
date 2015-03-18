@@ -101,16 +101,15 @@ line-height: 26px;
 	-webkit-box-shadow: 0 2px 2px 0 rgba(0,0,0,0.6);
 	box-shadow: 0 2px 2px 0 rgba(0,0,0,0.6);
 	display: inline-block;
-	height: 35px;
+	height: 56px;
 	margin-right: 5px;
-	width: 35px;
+	width: 58px;
 	text-align: center;
 	-webkit-transition: background .5s ease-in-out; 
 	-moz-transition: background .5s ease-in-out;
 	-o-transition: background .5s ease-in-out;
 	-ms-transition: background .5s ease-in-out;
 	transition: background .5s ease-in-out; 
-	border: 2px solid #ffffff;
 	cursor:pointer;
 }
 .social i  {
@@ -119,12 +118,8 @@ line-height: 26px;
 }
 /* facebook */
 .social li.facebook{
-	background-size: 100% 200%;
-	background-image: linear-gradient(to bottom, transparent 50%, #4C66A4 50%);
-}
-.social li.facebook:hover{
-	background-position: 0 -100%;
-	background-color:#4C66A4;
+	background-size: 100% 100%;
+	background-image:url(./images/facebook.png);
 }
 /* dribble */
 .social li.dribbble{
@@ -137,30 +132,22 @@ line-height: 26px;
  }
 /* dribble */
 .social li.twitter{
-	background-size: 100% 200%;
-	background-image: linear-gradient(to bottom, transparent 50%, #f60 50%);
-}
-.social li.twitter:hover{
-	background-position: 0 -100%;
-	background-color:#f60;
+	background-size: 100% 100%;
+	background-image: url(./images/Twitter.png);
 }
 /* linkedin */
 .social li.linkedin{
-	background-size: 100% 200%;
-	background-image: linear-gradient(to bottom, transparent 50%, #069 50%);
-}
-.social li.linkedin:hover{
-	background-position: 0 -100%;
-	background-color:#069;
+	background-size: 100% 100%;
+	background-image: url(./images/instagram.png);
 }
 /* youtube */
 .social li.youtube{
-	background-size: 100% 200%;
-	background-image: linear-gradient(to bottom, transparent 50%, #C92228 50%);
+	background-size: 100% 100%;
+	background-image: url(./images/weixin.png);
 }
-.social li.youtube:hover{
-	background-position: 0 -100%;
-	background-color:#C92228;
+.social li.webo{
+	background-size: 100% 100%;
+	background-image: url(./images/webo.png);
 }
 
 .enigma_heading_title {
@@ -461,7 +448,7 @@ line-height: 26px;
 	overflow:hidden;
 }
 .img-wrapper-star{
-	margin-bottom:20px;
+	margin-bottom:10px;
 	overflow:hidden;
 }
 .enigma_home_portfolio_showcase {
@@ -2097,7 +2084,7 @@ margin-bottom: 20px;
     color: #ffffff;
 }
 .enigma_footer_copyright_info{
-	float:left;
+	float:center;
 }
 .enigma_footer_social_div{
 	float:right;
@@ -2423,12 +2410,9 @@ padding-top: 20px;
 	background-repeat: no-repeat;
 }
 .starpic{
-	padding-top: 138px;
+	padding-top: 128px;
 }
-.star_desc{
-	color: #ffffff;
-	text-indent:20px
-}
+
 
 
 /* Common style */
@@ -2614,4 +2598,19 @@ figure.effect-lily:hover a {
 	-webkit-transition-duration: 0.35s;
 	transition-duration: 0.35s;
 
+}
+ @font-face {    
+	font-family: 'Isocpeur';    
+	src: url('./fonts/isocpeur.eot'); /* IE9 Compat Modes */        
+	src: url('./fonts/isocpeur.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */             
+	url('./fonts/isocpeur.woff') format('woff'), /* Modern Browsers */             
+	url('./fonts/isocpeur.ttf')  format('truetype'), /* Safari, Android, iOS */             
+	url('./fonts/isocpeur.svg#isocpeur') format('svg'); /* Legacy iOS */       
+	font-weight: normal;    
+	font-style: normal;  
+}
+.star_desc{
+	color: #ffffff;
+	text-indent:20px;
+	font-family: 'Isocpeur'   
 }
