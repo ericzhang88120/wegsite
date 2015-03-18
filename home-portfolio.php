@@ -29,25 +29,36 @@
 </div>
 
 <div class="container" style="background-image:url(<?php echo esc_url($wl_theme_options['get_in_touch_image_1']); ?>)">
-		<div class="row" style="padding-top:130px">
-			<div id="enigma_portfolio_section" class="enima_photo_gallery">
-				
-					<div class="col-lg-2 col-md-2 col-sm-2 pull-left scrollimation fade-right d1"> 
-						<div>
-							<input style="opacity: 0.8; width:400px;height:50px;display:block"/>
-						</div>
-						<br>
-						<input style="opacity: 0.8; width:400px;height:50px;display:block"/>
-						<br>
-						<input style="opacity: 0.8; width:500px;height:150px;display:block"/>
-						<br>
-						<button style="width:100px;height:50px;display:block;background-image:url(<?php echo esc_url($wl_theme_options['get_in_touch_image_2']); ?>)" />
-						<br>
-	
-					</div>
+	<div class="row" style="padding-top:130px">
+		<div id="enigma_portfolio_section" class="enima_photo_gallery">	
+			<div class="col-lg-6 col-md-6 col-sm-6 pull-left scrollimation fade-right d1"> 
+				<br>
+				<br>
+				<br>
+				<div style="text-align:right">
+					<font size="4px" color="#FFFFFF">DETAILS OF THE MEDIA</font>
+				</div>
 			</div>
+			<div class="col-lg-6 col-md-6 col-sm-6 pull-left scrollimation fade-right d1">
+				<br>
+				<br>
+				<br>
+				<div>
+					<textarea rows="2" cols="50" style="opacity: 0.8"></textarea>
+				</div>
+			</div>
+				
 		</div>
-						
+	</div>
+	<textarea rows="2" cols="50" style="opacity: 0.8"></textarea>
+	<br>
+	<textarea rows="2" cols="50" style="opacity: 0.8"></textarea>
+	<br>
+	<textarea rows="5" cols="60" style="opacity: 0.8"></textarea>
+	<br>
+	<button style="width:100px;height:50px;display:block;background-image:url(<?php echo esc_url($wl_theme_options['get_in_touch_image_2']); ?>)" />
+	<br>
+		
 </div>
 
 <div class="container" style="opacity:0.8;background-image:url(<?php echo esc_url($wl_theme_options['sponsor_image_1']); ?>)">
