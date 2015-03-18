@@ -461,7 +461,7 @@ line-height: 26px;
 	overflow:hidden;
 }
 .img-wrapper-star{
-	margin-bottom:20px;
+	margin-bottom:10px;
 	overflow:hidden;
 }
 .enigma_home_portfolio_showcase {
@@ -2423,12 +2423,9 @@ padding-top: 20px;
 	background-repeat: no-repeat;
 }
 .starpic{
-	padding-top: 138px;
+	padding-top: 128px;
 }
-.star_desc{
-	color: #ffffff;
-	text-indent:20px
-}
+
 
 
 /* Common style */
@@ -2614,4 +2611,19 @@ figure.effect-lily:hover a {
 	-webkit-transition-duration: 0.35s;
 	transition-duration: 0.35s;
 
+}
+ @font-face {    
+	font-family: 'Isocpeur';    
+	src: url('./fonts/isocpeur.eot'); /* IE9 Compat Modes */        
+	src: url('./fonts/isocpeur.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */             
+	url('./fonts/isocpeur.woff') format('woff'), /* Modern Browsers */             
+	url('./fonts/isocpeur.ttf')  format('truetype'), /* Safari, Android, iOS */             
+	url('./fonts/isocpeur.svg#isocpeur') format('svg'); /* Legacy iOS */       
+	font-weight: normal;    
+	font-style: normal;  
+}
+.star_desc{
+	color: #ffffff;
+	text-indent:20px;
+	font-family: 'Isocpeur'   
 }

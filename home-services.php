@@ -75,8 +75,8 @@
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-lg-8 col-md-8 col-sm-20">
-				<?php echo ($wl_theme_options['star_desc']); ?>
+			<div class="col-lg-11 col-md-11 col-sm-20">
+				<p class="star_desc">The Kia World Extreme Games is the most prestigious multi-event, action sports competition worldwide, and will be staged in Shanghai, China for the ninth time since 2007. Nearly 200 best action sport athletes from almost 30 countries and regions will compete in BMX freestyle, skateboarding and speed climbing competitions.  Considered the pinnacle of global action sports competition, the Kia World Extreme Games in Shanghai will be televised live across Asia, and delayed broadcast worldwide. More than 1k hours have been lived all over the world for Kia World Extreme Games 2014.</p>
 			</div>
 
 		</div>
