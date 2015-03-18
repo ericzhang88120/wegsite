@@ -1,6 +1,73 @@
 <!-- portfolio section -->
 <?php $wl_theme_options = weblizar_get_options(); ?>
 
+<div class="container" style="background-image:url(<?php echo esc_url($wl_theme_options['what_is_up_image_1']); ?>)">
+	<div class="row" style="padding-top:130px">
+		<div id="enigma_portfolio_section" class="enima_photo_gallery">
+			<div class="col-lg-7 col-md-7 col-sm-7 pull-left scrollimation fade-right d1"> 
+				<div class="row">
+					<div style="padding-top:20px" class="col-lg-3 col-md-3 col-sm-3 pull-left scrollimation fade-right d1">
+						<a href="#">
+							<img src="<?php echo esc_url($wl_theme_options['what_is_up_image_2']); ?>" alt="<?php the_title_attribute(); ?>">
+						</a>
+					</div>
+					<div style="padding-top:12px" class="col-lg-9 col-md-9 col-sm-9 pull-left scrollimation fade-right d1">
+						<div>
+							<font size="2px" color="#FFFFFF">////////////////////////////////////////////////////////////////////////////////////////////////////////////<br></font>
+							<font size="4px" color="#FFFFFF">FINAL MEDAL FRENZY AT KIA WORLD EXTREME GAME<br><br></font>
+							<font class="star_desc" size="2px">Shanghai, Saturday 3rd May...Final day of action at the Kia World Extre Game saw the athletes throw down some big moves...</font>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div style="padding-top:20px" class="col-lg-3 col-md-3 col-sm-3 pull-left scrollimation fade-right d1">
+						<a href="#">
+							<img src="<?php echo esc_url($wl_theme_options['what_is_up_image_3']); ?>" alt="<?php the_title_attribute(); ?>">
+						</a>
+					</div>
+					<div style="padding-top:12px" class="col-lg-9 col-md-9 col-sm-9 pull-left scrollimation fade-right d1">
+						<div>
+							<font size="2px" color="#FFFFFF">////////////////////////////////////////////////////////////////////////////////////////////////////////////<br></font>
+							<font size="4px" color="#FFFFFF">FINAL MEDAL FRENZY AT KIA WORLD EXTREME GAME<br><br></font>
+							<font class="star_desc" size="2px">Shanghai, Saturday 3rd May...Final day of action at the Kia World Extre Game saw the athletes throw down some big moves...</font>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div style="padding-top:20px" class="col-lg-3 col-md-3 col-sm-3 pull-left scrollimation fade-right d1">
+						<a href="#">
+							<img src="<?php echo esc_url($wl_theme_options['what_is_up_image_3']); ?>" alt="<?php the_title_attribute(); ?>">
+						</a>
+					</div>
+					<div style="padding-top:12px" class="col-lg-9 col-md-9 col-sm-9 pull-left scrollimation fade-right d1">
+						<div>
+							<font size="2px" color="#FFFFFF">////////////////////////////////////////////////////////////////////////////////////////////////////////////<br></font>
+							<font size="4px" color="#FFFFFF">FINAL MEDAL FRENZY AT KIA WORLD EXTREME GAME<br><br></font>
+							<font class="star_desc" size="2px">Shanghai, Saturday 3rd May...Final day of action at the Kia World Extre Game saw the athletes throw down some big moves...</font>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-5 col-md-5 col-sm-5 pull-left scrollimation fade-right d1">
+				<div class="img-wrapper">
+					<figure class="effect-lily">
+						<img src="<?php echo esc_url($wl_theme_options['what_is_up_image_4']); ?>" alt="<?php the_title_attribute(); ?>">
+						<div>
+							<figcaption>
+								<a href="#">
+									<img src="<?php echo esc_url($wl_theme_options['what_is_up_image_5']); ?>" style="display:hidden">
+								</a>
+							</figcaption>
+						</div>
+					</figure>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
 <div class="container" style="background-image:url(<?php echo esc_url($wl_theme_options['hall_of_fame_image_1']); ?>)">
 		<div class="row" style="padding-top:130px">
 			<div id="enigma_portfolio_section" class="enima_photo_gallery">
@@ -24,8 +91,7 @@
 				</div>
 				<?php } ?>
 			</div>
-		</div>
-						
+		</div>				
 </div>
 
 <div class="container" style="background-image:url(<?php echo esc_url($wl_theme_options['get_in_touch_image_1']); ?>)">
@@ -90,7 +156,7 @@
 	
 	<div class="row" >
 		<div id="enigma_portfolio_section" class="enima_photo_gallery">	
-			<div class="col-lg-6 col-md-6 col-sm-6 pull-left scrollimation fade-right d1"> 
+			<div class="col-lg-5 col-md-5 col-sm-5 pull-left scrollimation fade-right d1"> 
 				<div style="text-align:right">
 					
 				</div>
@@ -98,7 +164,7 @@
 			<div class="col-lg-6 col-md-6 col-sm-6 pull-left scrollimation fade-right d1">
 				<div>
 					<br>
-					<button style="width:100px;height:50px;display:block;background-image:url(<?php echo esc_url($wl_theme_options['get_in_touch_image_2']); ?>)" />
+					<button style="border:1px #ff0000 solid;width:100px;height:50px;display:block;background-image:url(<?php echo esc_url($wl_theme_options['get_in_touch_image_2']); ?>)" />
 				</div>
 			</div>
 				

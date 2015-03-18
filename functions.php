@@ -44,6 +44,12 @@
 	$sponsor_image_1 = WL_TEMPLATE_DIR_URI ."/images/Sponsor/background.png";
 
 	
+	$what_is_up_image_1 = WL_TEMPLATE_DIR_URI ."/images/WhatIsUp/background.jpg";
+	$what_is_up_image_2 = WL_TEMPLATE_DIR_URI ."/images/WhatIsUp/image1.jpg";
+	$what_is_up_image_3 = WL_TEMPLATE_DIR_URI ."/images/WhatIsUp/image2.png";
+	$what_is_up_image_4 = WL_TEMPLATE_DIR_URI ."/images/WhatIsUp/image3.jpg";
+	$what_is_up_image_5 = WL_TEMPLATE_DIR_URI ."/images/WhatIsUp/image4.png";
+	
 	$wl_theme_options=array(
 			//Logo and Fevicon header			
 			'upload_image_logo'=>$logo_image,
@@ -143,9 +149,14 @@
 			#get in touch
 			'get_in_touch_image_1'=>$get_in_touch_image_1,
 			'get_in_touch_image_2'=>$get_in_touch_image_2,
-			'sponsor_image_1'=>$sponsor_image_1
-
-
+			'sponsor_image_1'=>$sponsor_image_1,
+			
+			#what's up
+			'what_is_up_image_1'=>$what_is_up_image_1,
+			'what_is_up_image_2'=>$what_is_up_image_2,
+			'what_is_up_image_3'=>$what_is_up_image_3,
+			'what_is_up_image_4'=>$what_is_up_image_4,
+			'what_is_up_image_5'=>$what_is_up_image_5
 			
 		);
 		return apply_filters( 'enigma_options', $wl_theme_options );
