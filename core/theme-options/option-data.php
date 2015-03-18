@@ -90,6 +90,23 @@
 			wl_reset_home_star_setting();
 		}
 	}
+	if(isset($_POST['weblizar_settings_save_home-event']))
+	{	
+		if($_POST['weblizar_settings_save_home-event'] == 1) 
+		{
+			foreach($_POST as  $key => $value)
+			{
+				$wl_theme_options[$key]=sanitize_text_field($_POST[$key]);	
+			}
+			
+			update_option('enigma_options', stripslashes_deep( $wl_theme_options ));
+			
+		}	
+		if($_POST['weblizar_settings_save_home-event'] == 2) 
+		{
+			wl_reset_home_star_setting();
+		}
+	}
 	/*
 	* Home service setting 
 	*/

@@ -598,7 +598,82 @@ $site ="http://www.weblizar.com" ;?>
 		</div>
 	</form>
 </div>
+<!--------------- event settings ------------>
+<div class="block ui-tabs-panel deactive" id="option-home-event" >
+	<form method="post" id="weblizar_theme_options_home-event">
+		<div id="heading">
+			<table style="width:100%;"><tr>
+				<td cols=2 ><h2><?php _e('Event Settings','weblizar');?></h2></td>
+				<td style="width:30%;">
+					<div class="weblizar_settings_loding" id="weblizar_loding_home-event_image"></div>
+					<div class="weblizar_settings_massage" id="weblizar_settings_save_home-event_success" ><?php _e('Options Data updated','weblizar');?></div>
+					<div class="weblizar_settings_massage" id="weblizar_settings_save_home-event_reset" ><?php _e('Options data Reset','weblizar');?></div>
+				</td>
+				<td style="text-align:right;">					
+					<input class="button" type="button" name="reset" value="Restore Defaults" onclick="weblizar_option_data_reset('home-event');">
+					<input class="button button-primary" type="button" value="Save Options" onclick="weblizar_option_data_save('home-event')" >
+				</td>
+				</tr>
+			</table>			
+		</div>	
+		<div class="section">
+		<div class="panel-group" id="accordion81">
+		<div class="panel panel-default">		 
+			<div class="panel-heading">
+				<h4 class="panel-title"> <?php _e('Picture 1','weblizar'); ?>
+					<a data-toggle="collapse" data-parent="#accordion" href="#collapse81">
+					<i class="indicator glyphicon glyphicon-chevron-down  pull-right"></i>
+					</a>
+				</h4>
+			</div>
+			<div id="collapse81" class="panel-collapse collapse in">
+			<div class="panel-body">
+			<h3><?php _e('Picture 1','weblizar'); ?></h3>
+			<input class="weblizar_inpute" type="text" value="<?php if($wl_theme_options['event_image_1']!='') { echo esc_attr($wl_theme_options['event_image_1']); } ?>" id="event_image_1" name="event_image_1" size="36" class="upload has-file"/>
+			<input type="button" id="upload_button" value="Image 1" class="upload_image_button" />
+			<span class="explain"><?php _e('Add Pic1 here, size suggestion is 725X475.','weblizar');?></span>	
+			<?php if($wl_theme_options['event_image_1']!='') { ?>
+			<img style="height:475px; width:725px;" src="<?php if($wl_theme_options['event_image_1']!='') { echo esc_attr($wl_theme_options['event_image_1']); } ?>" />
+			<?php } ?>
+			</div>
+			</div>
+		</div>
+		</div>
+		</div>	
 
+		<div class="section">
+		<div class="panel-group" id="accordion82">
+		<div class="panel panel-default">		 
+			<div class="panel-heading">
+				<h4 class="panel-title"> <?php _e('Picture 2','weblizar'); ?>
+					<a data-toggle="collapse" data-parent="#accordion" href="#collapse82">
+					<i class="indicator glyphicon glyphicon-chevron-down  pull-right"></i>
+					</a>
+				</h4>
+			</div>
+			<div id="collapse82" class="panel-collapse collapse in">
+			<div class="panel-body">
+			<h3><?php _e('Picture 2','weblizar'); ?></h3>
+			<input class="weblizar_inpute" type="text" value="<?php if($wl_theme_options['event_image_2']!='') { echo esc_attr($wl_theme_options['event_image_2']); } ?>" id="event_image_2" name="event_image_2" size="36" class="upload has-file"/>
+			<input type="button" id="upload_button" value="Image 2" class="upload_image_button" />
+			<span class="explain"><?php _e('Add Pic2 here, size suggestion is 725X475.','weblizar');?></span>	
+			<?php if($wl_theme_options['event_image_2']!='') { ?>
+			<img style="height:475px; width:725px;" src="<?php if($wl_theme_options['event_image_2']!='') { echo esc_attr($wl_theme_options['event_image_2']); } ?>" />
+			<?php } ?>
+			</div>
+			</div>
+		</div>
+		</div>
+		</div>					
+
+		<div id="button_section">
+			<input type="hidden" value="1" id="weblizar_settings_save_home-event" name="weblizar_settings_save_home-event" />			
+			<input class="button" type="button" name="reset" value="Restore Defaults" onclick="weblizar_option_data_reset('home-event');">
+			<input class="button button-primary" type="button" value="Save Options" onclick="weblizar_option_data_save('home-event')" >
+			<!--  alert massage when data saved and reset -->
+		</div>
+	</form>
+</div>
 <!--------------- service settings ------------>
 <div class="block ui-tabs-panel deactive" id="option-home-service" >
 	<form method="post" id="weblizar_theme_options_home-service">
