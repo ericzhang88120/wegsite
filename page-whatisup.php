@@ -34,7 +34,7 @@
 				<font size="3px" color="#d0d0d0">New Sports, Multiple Venues and World-Class Athletes; Mat Hoffman, Trey Wood, Jimmy Wilkins and Filipe Gustavo Among the Elite to Attend from April 25 - May 3...</font>
 			</div>
 			<div class="row" style="overflow:hidden;text-align:right">
-				<a href="?page_id=9">
+				<a href='<?php echo get_permalink( get_page_by_title( 'media1' ) );?>'>
 					<button style="border:0px solid;width:100px;height:30px;background-image:url(wp-content/themes/wegsite/images/Temp/read.png)">
 					</button>
 				</a>

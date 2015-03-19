@@ -58,7 +58,20 @@ endif;
                             		<a href='#' title="">HOME</a>
                         		</li>
                         		<li>
-                            		<a href='#' title="">THE ACTION & THE STARS</a>
+                            		<a href='#' title="">THE ACTION</a>
+                            		<ul>
+                            			<li>
+                            				<div><img src="<?php echo esc_url($wl_theme_options['subnav_point']); ?>" style="height:20px;width:200px;"></div>
+                            				<a href='#' title="">VERT AT ORIENTAL PERL</a>
+                            				<a href='#' title="">STREET COURSE AT KIC</a>
+                            				<a href='#' title="">CLIMBING WALL</a>
+                            				<a href='#' title="">MINI MEGA</a>
+                            				<a href='#' title="">MOTO CROSS</a>
+                            			</li>
+                            		</ul>
+                        		</li>
+                        		<li>
+                            		<a href='#' title="">THE STARS</a>
                             		<ul>
                             			<li>
                             				<div><img src="<?php echo esc_url($wl_theme_options['subnav_point']); ?>" style="height:20px;width:200px;"></div>
@@ -70,13 +83,38 @@ endif;
                             		</ul>
                         		</li>
                         		 <li>
-                            		<a href='#' title="">ABOUTTHE EVENT</a>  
+                            		<a href='<?php echo get_permalink( get_page_by_title( 'event' ) );?>' title="">ABOUTTHE EVENT</a> 
+                            		<ul>
+                            			<li>
+                            				<div><img src="<?php echo esc_url($wl_theme_options['subnav_point']); ?>" style="height:20px;width:200px;"></div>
+                            				<a href='#' title="">EVENT INFO</a>
+                            				<a href='#' title="">COMPETITION SCHEDULE</a>
+                            				<a href='#' title="">BROADCAST SCHEDULE</a>
+                            				<a href='#' title="">TICKETING</a>
+                            				<a href='#' title="">SPONSORS &amp; PARTNERS</a>
+                            			</li>
+                            		</ul>                      
                         		</li>
                         		 <li>
-                            		<a href='#' title="">WHAT'S UP</a>
+                            		<a href='<?php echo get_permalink( get_page_by_title( 'whatisup' ) );?>' title="">WHAT'S UP</a>
+                             		<ul>
+                            			<li>
+                            				<div><img src="<?php echo esc_url($wl_theme_options['subnav_point']); ?>" style="height:20px;width:200px;"></div>
+                            				<a href='#' title="">PRE-EVENTS</a>
+                            				<a href='#' title="">MEDIA RELEASE</a>
+                            				<a href='#' title="">RESULT</a>
+                            			</li>
+                            		</ul>                           		
                         		</li>
                         		 <li>
                             		<a href='#' title="">HALL OF FAME</a>
+                              		<ul>
+                            			<li>
+                            				<div><img src="<?php echo esc_url($wl_theme_options['subnav_point']); ?>" style="height:20px;width:200px;"></div>
+                            				<a href='#' title="">PHOTOS</a>
+                            				<a href='#' title="">VIDEOS</a>
+                            			</li>
+                            		</ul>                           		
                         		</li>
                         		<li>
                             		<a href='#' title="">GET IN TOUCH</a>
