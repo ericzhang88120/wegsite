@@ -32,7 +32,9 @@
 	$logo_image = WL_TEMPLATE_DIR_URI ."/images/logo.png";
 	$ad_image = WL_TEMPLATE_DIR_URI ."/images/kiaad.jpg";
 	$stars_image_root = WL_TEMPLATE_DIR_URI ."/images/";
-	
+	$english_png = WL_TEMPLATE_DIR_URI ."/images/english.png";
+	$chinese_png = WL_TEMPLATE_DIR_URI ."/images/chinese.png";
+
 	$event_image_1 = WL_TEMPLATE_DIR_URI."/images/event1.jpg";
 	$event_image_2 = WL_TEMPLATE_DIR_URI."/images/event2.jpg";
 	
@@ -52,6 +54,8 @@
 			//Logo and Fevicon header			
 			'upload_image_logo'=>$logo_image,
 			'upload_image_ad'=>$ad_image,
+			'english_png'=>$english_png,
+			'chinese_png'=>$chinese_png,
 			'height'=>'130',
 			'width'=>'215',
 			'subnav_point'=>$subnav_point,
