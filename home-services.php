@@ -6,9 +6,9 @@
 			<div class="col-lg-3 col-md-3 col-sm-6 pull-left scrollimation fade-left d1">
 				<div class="img-wrapper-star starpic">
 					<figure class="effect-apollo figurestar">
-						<img  src="<?php echo $wl_theme_options['pic_image_1']; ?>">
+						<img class="the-stars-pic" data-pic-root="<?php echo $wl_theme_options['stars_image_root']; ?>" data-index=1>
 						<figcaption class="figurestar2">
-							<a href="#">View more</a>
+							<a href="#" class="the-stars-a" data-index=1>View more</a>
 						</figcaption>
 					</figure>
 				</div>
@@ -16,9 +16,9 @@
 			<div class="col-lg-3 col-md-3 col-sm-6 pull-left scrollimation fade-left d1 ">
 				<div class="img-wrapper-star starpic">
 					<figure class="effect-apollo figurestar">
-						<img  src="<?php echo $wl_theme_options['pic_image_2']; ?>">
+						<img class="the-stars-pic" data-pic-root="<?php echo $wl_theme_options['stars_image_root']; ?>" data-index=3>
 						<figcaption class="figurestar2">
-							<a href="#">View more</a>
+							<a href="#" class="the-stars-a" data-index=3>View more</a>
 						</figcaption>
 					</figure>
 				</div>
@@ -26,9 +26,9 @@
 			<div class="col-lg-3 col-md-3 col-sm-6 pull-left scrollimation fade-left d1">
 				<div class="img-wrapper-star starpic ">
 					<figure class="effect-apollo figurestar">
-						<img  src="<?php echo $wl_theme_options['pic_image_3']; ?>">
+						<img class="the-stars-pic" data-pic-root="<?php echo $wl_theme_options['stars_image_root']; ?>" data-index=5>
 						<figcaption class="figurestar2">
-							<a href="#">View more</a>
+							<a href="#" class="the-stars-a" data-index=5>View more</a>
 						</figcaption>
 					</figure>
 				</div>
@@ -36,9 +36,9 @@
 			<div class="col-lg-3 col-md-3 col-sm-6 pull-left scrollimation fade-left d1">
 				<div class="img-wrapper-star starpic">
 					<figure class="effect-apollo figurestar">
-						<img  src="<?php echo $wl_theme_options['pic_image_4']; ?>">
+						<img class="the-stars-pic" data-pic-root="<?php echo $wl_theme_options['stars_image_root']; ?>" data-index=7>
 						<figcaption class="figurestar2">
-							<a href="#">View more</a>
+							<a href="#" class="the-stars-a" data-index=7>View more</a>
 						</figcaption>
 					</figure>
 				</div>

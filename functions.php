@@ -27,14 +27,12 @@
 	$ImageUrl8 = WL_TEMPLATE_DIR_URI ."/images/portfolio5.png";
 	$ImageUrl9 = WL_TEMPLATE_DIR_URI ."/images/portfolio6.png";
 
+	$subnav_point=WL_TEMPLATE_DIR_URI ."/superfish/img/point.png";
 	//define image name
 	$logo_image = WL_TEMPLATE_DIR_URI ."/images/logo.png";
 	$ad_image = WL_TEMPLATE_DIR_URI ."/images/kiaad.jpg";
-	$star_image_1 = WL_TEMPLATE_DIR_URI ."/images/pic1.jpg";
-	$star_image_2 = WL_TEMPLATE_DIR_URI ."/images/pic2.jpg";
-	$star_image_3 = WL_TEMPLATE_DIR_URI ."/images/pic3.jpg";
-	$star_image_4 = WL_TEMPLATE_DIR_URI ."/images/pic4.jpg";
-
+	$stars_image_root = WL_TEMPLATE_DIR_URI ."/images/";
+	
 	$event_image_1 = WL_TEMPLATE_DIR_URI."/images/event1.jpg";
 	$event_image_2 = WL_TEMPLATE_DIR_URI."/images/event2.jpg";
 	
@@ -56,6 +54,7 @@
 			'upload_image_ad'=>$ad_image,
 			'height'=>'130',
 			'width'=>'215',
+			'subnav_point'=>$subnav_point,
 			'_frontpage' => 'on',
 			'text_title'=>'off',
 			'upload_image_favicon'=>'',			
@@ -131,10 +130,8 @@
 			'port_4_link'=>'#',
 
 			#the star
-			'pic_image_1'=>$star_image_1,
-			'pic_image_2'=>$star_image_2,
-			'pic_image_3'=>$star_image_3,
-			'pic_image_4'=>$star_image_4,
+			'stars_image_root'=>$stars_image_root,
+
 
 
 			'star_desc'=>__('NULL', 'weblizar' ),

@@ -26,56 +26,7 @@
 	add_action( 'wp_head', 'wl_title' );
 endif;
 	wp_head(); ?>
-	<style type="text/css">
-		nav ul {
-		  list-style: none;
-		  padding-left: 0;
-		  margin-top: 0;
-		  margin-bottom: 0;
-		}
-		.nav {
-		  width: 900px;
-		  margin: auto 0;
-		  background: #000000;
-		  color: #ffffff;
-		}
-		.nav b {
-		  display: block;
-		  padding: 0 16px;
-		  line-height: inherit;
-		  cursor: pointer;
-		}
-		.nav__menu {
-		  line-height: 35px;
-		  font-weight: 100;
-		  text-transform: uppercase;
-		}
-		.nav__menu-item {
-		  display: inline-block;
-		  position: relative;
-		}
-		.nav__menu-item:hover {
-		  background-color: #dcdcdc;
-		}
-		.nav__menu-item:hover .nav__submenu {
-		  display: block;
-		  z-index: 10;
-		}
-		.nav__submenu {
-		  font-weight: 100;
-		  text-transform: none;
-		  display: none;
-		  position: absolute;
-		  width: 220px;
-		  background-color: #000000;
-		}
-		.nav__submenu-item:hover {
-		  background: rgba(0, 0, 0, 0.1);
-		}
-		.owner-nav{
-			margin-left: 48px;
-		}
-	</style>
+
 </head>
 <body <?php body_class(); ?>>
 <div>
@@ -99,52 +50,39 @@ endif;
 				</div>
 				<div class="col-md-10 col-sm-20 wl_rtl">
 					<img class="img-responsive" src="<?php echo $wl_theme_options['upload_image_ad']; ?>" style="margin-left:60px;padding-top:5px;height:120px;width:900px;">
-					<div class="owner-nav">
-						<nav class="nav">
-						  <ul class="nav__menu">
-						    <li class="nav__menu-item"><b>HOME</b></li>
-						    <li class="nav__menu-item"><b>THE ACTION</b>
-						      <ul class="nav__submenu">
-						        <li class="nav__submenu-item"> <b>VERT AT ORIENTAL PERL</b></li>
-						        <li class="nav__submenu-item"> <b>STREET COURSE AT KIC</b></li>
-						        <li class="nav__submenu-item"> <b>CLIMBING WALL</b></li>
-						        <li class="nav__submenu-item"> <b>MINI MEGA</b></li>
-								<li class="nav__submenu-item"> <b>MOTO CROSS</b></li>
-						      </ul>
-						    </li>
-							<li class="nav__menu-item"><b>THE STARS</b>
-						      <ul class="nav__submenu">
-						        <li class="nav__submenu-item"> <b>SKATEBOARD</b></li>
-						        <li class="nav__submenu-item"> <b>BMX</b></li>
-						        <li class="nav__submenu-item"> <b>SPEED CLIMBING</b></li>
-						        <li class="nav__submenu-item"> <b>OTHERS</b></li>
-						      </ul>
-						    </li>
-						    <li class="nav__menu-item"><b>ABOUT THE EVENT</b>
-						      <ul class="nav__submenu">
-						        <li class="nav__submenu-item"> <b>EVENT INFO</b></li>
-						        <li class="nav__submenu-item"> <b>COMPETITION SCHEDULE</b></li>
-						        <li class="nav__submenu-item"> <b>BROADCAST SCHEDULE</b></li>
-								<li class="nav__submenu-item"> <b>TICKETING</b></li>
-								<li class="nav__submenu-item"> <b>SPONSORS &amp; PARTNERS</b></li>
-						      </ul>
-						    </li>
-						    <li class="nav__menu-item"><b>WHAT'S UP</b>
-							  <ul class="nav__submenu">
-						        <li class="nav__submenu-item"> <b>PRE-EVENTS</b></li>
-						        <li class="nav__submenu-item"> <b>MEDIA RELEASE</b></li>
-						        <li class="nav__submenu-item"> <b>RESULT</b></li>
-						      </ul>
-							</li>
-						    <li class="nav__menu-item"><b>HALL OF FAME</b>
-							  <ul class="nav__submenu">
-						        <li class="nav__submenu-item"> <b>PHOTOS</b></li>
-						        <li class="nav__submenu-item"> <b>VIDEOS</b></li>
-						      </ul>
-							</li>
-							<li class="nav__menu-item"><b>GET IN TOUCH</b></li>
-						  </ul>
-						</nav>
+					<div class="row">
+                        <div style="float:right;width:100px;">yuyan</div>
+					   <nav id="main-nav-menu">
+                            <ul class="sf-menu">
+                                <li>
+                            		<a href='#' title="">HOME</a>
+                        		</li>
+                        		<li>
+                            		<a href='#' title="">THE ACTION & THE STARS</a>
+                            		<ul>
+                            			<li>
+                            				<div><img src="<?php echo esc_url($wl_theme_options['subnav_point']); ?>" style="height:20px;width:200px;"></div>
+                            				<a href='#' title="">SKATEBOARD</a>
+                            				<a href='#' title="">BMX</a>
+                            				<a href='#' title="">SPEED CLIMBING</a>
+                            				<a href='#' title="">OTHERS</a>
+                            			</li>
+                            		</ul>
+                        		</li>
+                        		 <li>
+                            		<a href='#' title="">ABOUTTHE EVENT</a>
+                        		</li>
+                        		 <li>
+                            		<a href='#' title="">WHAT'S UP</a>
+                        		</li>
+                        		 <li>
+                            		<a href='#' title="">HALL OF FAME</a>
+                        		</li>
+                        		<li>
+                            		<a href='#' title="">GET IN TOUCH</a>
+                        		</li>
+                            </ul>
+                        </nav>
 					</div>
 				</div>
 			</div>	

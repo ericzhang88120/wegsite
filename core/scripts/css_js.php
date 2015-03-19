@@ -14,9 +14,11 @@
                 wp_enqueue_style('RobotoBold','//fonts.googleapis.com/css?family=Roboto:700');
                 wp_enqueue_style('RalewaySemiBold','//fonts.googleapis.com/css?family=Raleway:600');
                 wp_enqueue_style('Courgette','//fonts.googleapis.com/css?family=Courgette');
+                  wp_enqueue_style('superfish',WL_TEMPLATE_DIR_URI .'/superfish/superfish.css');
                 
                 // Js
-                wp_enqueue_script('menu', WL_TEMPLATE_DIR_URI .'/js/menu.js', array('jquery'));
+                wp_enqueue_script('superfish', WL_TEMPLATE_DIR_URI .'/superfish/superfish.js',array('jquery'));
+                wp_enqueue_script('thestarts', WL_TEMPLATE_DIR_URI .'/js/thestarts.js');
                 wp_enqueue_script('bootstrap-js', WL_TEMPLATE_DIR_URI .'/js/bootstrap.js');
                 wp_enqueue_script('enigma-theme-script', WL_TEMPLATE_DIR_URI .'/js/enigma_theme_script.js');
                 if(is_front_page()){
