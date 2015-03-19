@@ -87,6 +87,7 @@
 			'instagram_link' =>"#",
 			'weixin_link' =>"#",
 			'webo_link' =>"#",
+			'renren_link' =>'#',
 			'gplus' =>"#",
 			
 			'email_id' => 'enigma@mymail.com',

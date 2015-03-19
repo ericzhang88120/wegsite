@@ -98,12 +98,6 @@
 	<div class="row" style="padding-top:130px">
 		<div id="enigma_portfolio_section" class="enima_photo_gallery">	
 			<div class="col-lg-5 col-md-5 col-sm-5 pull-left scrollimation fade-right d1"> 
-				<br>
-				<br>
-				<br>
-				<div style="text-align:right">
-					<font size="4px" color="#FFFFFF"><b>DETAILS OF THE MEDIA</b></font>
-				</div>
 			</div>
 			<div class="col-lg-6 col-md-6 col-sm-6 pull-left scrollimation fade-right d1">
 				<br>
@@ -121,9 +115,9 @@
 		<div id="enigma_portfolio_section" class="enima_photo_gallery">	
 			<div class="col-lg-5 col-md-5 col-sm-5 pull-left scrollimation fade-right d1"> 
 				<div style="text-align:right">
-					<font class="star_desc" size="2px">China<br></font>
-					<font class="star_desc" size="2px">Michael Wang<br></font>
-					<font class="star_desc" size="2px">Email: yc.wang@wsgworld.com</font>
+					<font class="star_desc" size="3px">China<br></font>
+					<font class="star_desc" size="3px">Michael Wang<br></font>
+					<font class="star_desc" size="3px">Email: yc.wang@wsgworld.com</font>
 				</div>
 			</div>
 			<div class="col-lg-6 col-md-6 col-sm-6 pull-left scrollimation fade-right d1">
@@ -140,9 +134,9 @@
 			<div class="col-lg-5 col-md-5 col-sm-5 pull-left scrollimation fade-right d1"> 
 				<div style="text-align:right">
 					<br>
-					<font class="star_desc" size="2px">International<br></font>
-					<font class="star_desc" size="2px">Adeline See<br></font>
-					<font class="star_desc" size="2px">Email: a.see@wsgworld.com</font>
+					<font class="star_desc" size="3px">International<br></font>
+					<font class="star_desc" size="3px">Adeline See<br></font>
+					<font class="star_desc" size="3px">Email: a.see@wsgworld.com</font>
 				</div>
 			</div>
 			<div class="col-lg-6 col-md-6 col-sm-6 pull-left scrollimation fade-right d1">
@@ -175,12 +169,10 @@
 		
 </div>
 
-<div class="container" style="opacity:0.8;background-image:url(<?php echo esc_url($wl_theme_options['sponsor_image_1']); ?>)">
-	<div class="row" style="padding-top:130px">
+<div class="container">
+	<div class="row" style="overflow:hidden">
 		<div id="enigma_portfolio_section" class="enima_photo_gallery">
-				<?php for($i=1 ; $i<=9; $i++) { ?>
-					<br>
-				<?php } ?>
+				<img src="<?php echo esc_url($wl_theme_options['sponsor_image_1']); ?>" alt="<?php the_title_attribute(); ?>">
 			</div>
 		</div>				
 </div>

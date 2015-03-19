@@ -13,13 +13,15 @@
 					<?php if($wl_theme_options['fb_link']!='') { ?>
 					   <li class="facebook" data-placement="top" title="Facebook"><a  href="<?php echo esc_url($wl_theme_options['fb_link']); ?>"></a></li>
 					<?php } if($wl_theme_options['twitter_link']!='') { ?>
-					<li class="twitter" data-toggle="tooltip" data-placement="top" title="Twitter"><a href="<?php echo esc_url($wl_theme_options['twitter_link']) ; ?>"></a></li>				
+						<li class="twitter" data-toggle="tooltip" data-placement="top" title="Twitter"><a href="<?php echo esc_url($wl_theme_options['twitter_link']) ; ?>"></a></li>				
 					<?php } if($wl_theme_options['instagram_link']!='') { ?>
-					<li class="linkedin" data-toggle="tooltip" data-placement="top" title="instagram"><a href="<?php echo esc_url($wl_theme_options['instagram_link']) ; ?>"></a></li>
+						<li class="linkedin" data-toggle="tooltip" data-placement="top" title="instagram"><a href="<?php echo esc_url($wl_theme_options['instagram_link']) ; ?>"></a></li>
 					<?php } if($wl_theme_options['weixin_link']!='') { ?>
-					<li class="youtube" data-toggle="tooltip" data-placement="top" title="WeChat"><a href="<?php echo esc_url($wl_theme_options['weixin_link']) ; ?>"></a></li>
+						<li class="youtube" data-toggle="tooltip" data-placement="top" title="WeChat"><a href="<?php echo esc_url($wl_theme_options['weixin_link']) ; ?>"></a></li>
 	                <?php } if($wl_theme_options['webo_link']!='') { ?>
-					<li class="webo" data-toggle="tooltip" data-placement="top" title="Weibo"><a href="<?php echo esc_url($wl_theme_options['webo_link']) ; ?>"></a></li>
+						<li class="webo" data-toggle="tooltip" data-placement="top" title="Weibo"><a href="<?php echo esc_url($wl_theme_options['webo_link']) ; ?>"></a></li>
+					<?php } if($wl_theme_options['renren_link']!='') { ?>
+						<li class="renren" data-toggle="tooltip" data-placement="top" title="Renren"><a href="<?php echo esc_url($wl_theme_options['renren_link']) ; ?>"></a></li>
 	                <?php } ?>
 				</ul>
 			</div>
