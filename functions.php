@@ -82,12 +82,12 @@
 			//Social media links
 			'header_social_media_in_enabled'=>'on',
 			'footer_section_social_media_enbled'=>'on',
-			'twitter_link' =>"#",
-			'fb_link' =>"#",
-			'instagram_link' =>"#",
+			'twitter_link' =>"https://twitter.com/kiaextremegames",
+			'fb_link' =>"https://www.facebook.com/kiaworldextremegames",
+			'instagram_link' =>"https://instagram.com/kiaworldextremegames",
 			'weixin_link' =>"#",
-			'webo_link' =>"#",
-			'renren_link' =>'#',
+			'webo_link' =>"http://www.weibo.com/kiaxgamesasia",
+			'renren_link' =>'http://page.renren.com/weg',
 			'gplus' =>"#",
 			
 			'email_id' => 'enigma@mymail.com',
