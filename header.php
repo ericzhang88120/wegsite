@@ -55,7 +55,7 @@ endif;
 					   <nav id="main-nav-menu">
                             <ul class="sf-menu">
                                 <li>
-                            		<a href='#' title="">HOME</a>
+                            		<a href="<?php echo esc_url(home_url( '/' )); ?>" title="">HOME</a>
                         		</li>
                         		<li>
                             		<a href='#' title="">THE ACTION</a>
