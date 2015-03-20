@@ -1,7 +1,7 @@
 <!-- portfolio section -->
 <?php $wl_theme_options = weblizar_get_options(); ?>
 
-<div class="container" style="background-image:url(<?php echo esc_url($wl_theme_options['what_is_up_image_1']); ?>)">
+<div class="container" style="background-image:url(<?php echo esc_url($wl_theme_options['what_is_up_image_1']); ?>);background-repeat:no-repeat;">
 	<div class="row" style="padding-top:130px">
 		<div id="enigma_portfolio_section" class="enima_photo_gallery">
 			<div class="col-lg-7 col-md-7 col-sm-7 pull-left scrollimation fade-right d1"> 
