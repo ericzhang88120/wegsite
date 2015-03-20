@@ -1,7 +1,6 @@
 <?php get_header(); ?>
-<div class="container">
+<div class="container"style="background-image:url(wp-content/themes/wegsite/images/Temp/image1.jpg);height:549px;background-repeat:no-repeat">
 	<div>
-		<img src="wp-content/themes/wegsite/images/Temp/image1.jpg">
 	</div>
 </div>
 <div class="container" style="background-image:url(wp-content/themes/wegsite/images/Temp/image2.jpg)">
@@ -88,9 +87,8 @@
 	</div>
 
 </div>
-<div class="container">
+<div class="container"style="background-image:url(wp-content/themes/wegsite/images/Temp/image5.jpg);height:800px;background-repeat:no-repeat">
 	<div>
-		<img src="wp-content/themes/wegsite/images/Temp/image5.jpg">
 	</div>
 </div>
 <?php get_footer(); ?>
