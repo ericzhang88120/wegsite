@@ -17,6 +17,8 @@
                   wp_enqueue_style('superfish',WL_TEMPLATE_DIR_URI .'/superfish/superfish.css');
                 
                 // Js
+		wp_enqueue_script('menu', WL_TEMPLATE_DIR_URI .'/js/menu.js', array('jquery'));
+		wp_enqueue_script('response', WL_TEMPLATE_DIR_URI .'/js/respond.min.js');
                 wp_enqueue_script('superfish', WL_TEMPLATE_DIR_URI .'/superfish/superfish.js',array('jquery'));
                 wp_enqueue_script('thestarts', WL_TEMPLATE_DIR_URI .'/js/thestarts.js');
                 wp_enqueue_script('bootstrap-js', WL_TEMPLATE_DIR_URI .'/js/bootstrap.js');

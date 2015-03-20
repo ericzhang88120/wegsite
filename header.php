@@ -51,14 +51,14 @@ endif;
 				<div class="col-md-10 col-sm-20 wl_rtl">
 					<img class="img-responsive" src="<?php echo $wl_theme_options['upload_image_ad']; ?>" style="margin-left:60px;padding-top:5px;height:120px;width:900px;">
 					<div class="row">
-                       <div style="float:right;width:100px;padding-top:10px"><a href="#"><img src="<?php echo $wl_theme_options['english_png']; ?>"></a></div>
-					   <nav id="main-nav-menu">
+                        <div class="col-md-10 col-sm-20 wl_rtl">
+                        <nav id="main-nav-menu">
                             <ul class="sf-menu">
                                 <li>
-                            		<a href="<?php echo esc_url(home_url( '/' )); ?>" title="">HOME</a>
+                            		<a href="<?php echo esc_url(home_url( '/' )); ?>" title=""> HOME |</a>
                         		</li>
                         		<li>
-                            		<a href='#' title="">THE ACTION</a>
+                            		<a href='#' title="">&nbspTHE ACTION |</a>
                             		<ul>
                             			<li>
                             				<div><img src="<?php echo esc_url($wl_theme_options['subnav_point']); ?>" style="height:20px;width:200px;"></div>
@@ -71,7 +71,7 @@ endif;
                             		</ul>
                         		</li>
                         		<li>
-                            		<a href='#' title="">THE STARS</a>
+                            		<a href='#' title="">&nbspTHE STARS |</a>
                             		<ul>
                             			<li>
                             				<div><img src="<?php echo esc_url($wl_theme_options['subnav_point']); ?>" style="height:20px;width:200px;"></div>
@@ -83,7 +83,7 @@ endif;
                             		</ul>
                         		</li>
                         		 <li>
-                            		<a href='<?php echo get_permalink( get_page_by_title( 'event' ) );?>' title="">ABOUTTHE EVENT</a> 
+                            		<a href='<?php echo get_permalink( get_page_by_title( 'event' ) );?>' title="">&nbspABOUTTHE EVENT |</a> 
                             		<ul>
                             			<li>
                             				<div><img src="<?php echo esc_url($wl_theme_options['subnav_point']); ?>" style="height:20px;width:200px;"></div>
@@ -96,7 +96,7 @@ endif;
                             		</ul>                      
                         		</li>
                         		 <li>
-                            		<a href='<?php echo get_permalink( get_page_by_title( 'whatisup' ) );?>' title="">WHAT'S UP</a>
+                            		<a href='<?php echo get_permalink( get_page_by_title( 'whatisup' ) );?>' title="">&nbspWHAT'S UP |</a>
                              		<ul>
                             			<li>
                             				<div><img src="<?php echo esc_url($wl_theme_options['subnav_point']); ?>" style="height:20px;width:200px;"></div>
@@ -107,7 +107,7 @@ endif;
                             		</ul>                           		
                         		</li>
                         		 <li>
-                            		<a href='#' title="">HALL OF FAME</a>
+                            		<a href='#' title="">&nbspHALL OF FAME |</a>
                               		<ul>
                             			<li>
                             				<div><img src="<?php echo esc_url($wl_theme_options['subnav_point']); ?>" style="height:20px;width:200px;"></div>
@@ -117,10 +117,14 @@ endif;
                             		</ul>                           		
                         		</li>
                         		<li>
-                            		<a href='#' title="">GET IN TOUCH</a>
+                            		<a href='#' title="">&nbspGET IN TOUCH</a>
                         		</li>
                             </ul>
                         </nav>
+                        </div>
+                        <div class="col-md-2 col-sm-4 wl_rtl">
+                            <div style="float:right;width:100px;padding-top:10px;"><a href="#"><img src="<?php echo $wl_theme_options['english_png']; ?>"></a></div>
+                        </div>
 					</div>
 				</div>
 			</div>	
