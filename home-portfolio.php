@@ -7,7 +7,7 @@
 			<div class="col-lg-7 col-md-7 col-sm-7 pull-left scrollimation fade-right d1"> 
 				<div class="row">
 					<div style="padding-top:20px" class="col-lg-3 col-md-3 col-sm-3 pull-left scrollimation fade-right d1">
-						<a href="#">
+						<a href="<?php echo get_permalink( get_page_by_title( 'media1' ) );?>">
 							<img src="<?php echo esc_url($wl_theme_options['what_is_up_image_2']); ?>" alt="<?php the_title_attribute(); ?>">
 						</a>
 					</div>
@@ -21,7 +21,7 @@
 				</div>
 				<div class="row">
 					<div style="padding-top:20px" class="col-lg-3 col-md-3 col-sm-3 pull-left scrollimation fade-right d1">
-						<a href="#">
+						<a href="<?php echo get_permalink( get_page_by_title( 'media2' ) );?>">
 							<img src="<?php echo esc_url($wl_theme_options['what_is_up_image_3']); ?>" alt="<?php the_title_attribute(); ?>">
 						</a>
 					</div>
@@ -79,7 +79,7 @@
 							<img src="<?php echo esc_url($wl_theme_options['port_'.$i.'_img']); ?>" alt="<?php the_title_attribute(); ?>">
 							<div>
 								<figcaption>
-									<a href="<?php echo esc_url($wl_theme_options['port_'.$i.'_link']); ?>">
+									<a href="#">
 										<img src="<?php echo esc_url($wl_theme_options['port_'.$i.'_img_shade']); ?>" style="display:hidden">
 									</a>
 								</figcaption>
