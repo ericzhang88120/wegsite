@@ -164,7 +164,7 @@
 </div>
 
 <div class="container">
-	<div style="background-image:url(<?php echo esc_url($wl_theme_options['sponsor_image_1']); ?>);background-repeat:no-repeat;height:600px">
+	<div style="background-image:url(<?php echo esc_url($wl_theme_options['sponsor_image_1']); ?>);background-repeat:no-repeat;height:317px">
 	</div>				
 </div>
 
