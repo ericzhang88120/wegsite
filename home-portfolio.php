@@ -94,7 +94,7 @@
 		</div>				
 </div>
 
-<div class="container" style="background-image:url(<?php echo esc_url($wl_theme_options['get_in_touch_image_1']); ?>)">
+<div class="container" style="background-image:url(<?php echo esc_url($wl_theme_options['get_in_touch_image_1']); ?>);background-repeat:no-repeat">
 	<div class="row" style="padding-top:130px">
 		<div id="enigma_portfolio_section" class="enima_photo_gallery">	
 			<div class="col-lg-5 col-md-5 col-sm-5 pull-left scrollimation fade-right d1"> 
@@ -148,20 +148,14 @@
 		</div>
 	</div>
 	
-	<div class="row" >
-		<div id="enigma_portfolio_section" class="enima_photo_gallery">	
+	<div class="row" style="padding-top:10px">
 			<div class="col-lg-5 col-md-5 col-sm-5 pull-left scrollimation fade-right d1"> 
 				<div style="text-align:right">
 					
 				</div>
 			</div>
-			<div class="col-lg-6 col-md-6 col-sm-6 pull-left scrollimation fade-right d1">
-				<div>
-					<br>
-					<button style="border:1px #ff0000 solid;width:100px;height:50px;display:block;background-image:url(<?php echo esc_url($wl_theme_options['get_in_touch_image_2']); ?>)" />
-				</div>
-			</div>
-				
+		<div class="col-lg-6 col-md-6 col-sm-6 pull-left scrollimation fade-right d1">
+			<button style="border:1px #ff0000 solid;width:100px;height:50px;display:block;background-image:url(<?php echo esc_url($wl_theme_options['get_in_touch_image_2']); ?>);background-repeat:no-repeat"></button>
 		</div>
 	</div>
 	
@@ -170,11 +164,8 @@
 </div>
 
 <div class="container">
-	<div class="row" style="overflow:hidden">
-		<div id="enigma_portfolio_section" class="enima_photo_gallery">
-				<img src="<?php echo esc_url($wl_theme_options['sponsor_image_1']); ?>" alt="<?php the_title_attribute(); ?>">
-			</div>
-		</div>				
+	<div style="background-image:url(<?php echo esc_url($wl_theme_options['sponsor_image_1']); ?>);background-repeat:no-repeat;height:600px">
+	</div>				
 </div>
 
 
