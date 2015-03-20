@@ -46,7 +46,8 @@
 	
 	$what_is_up_image_1 = WL_TEMPLATE_DIR_URI ."/images/WhatIsUp/background.jpg";
 	$what_is_up_image_2 = WL_TEMPLATE_DIR_URI ."/images/WhatIsUp/image1.jpg";
-	$what_is_up_image_3 = WL_TEMPLATE_DIR_URI ."/images/WhatIsUp/image2.png";
+	$what_is_up_image_3 = WL_TEMPLATE_DIR_URI ."/images/WhatIsUp/image2.jpg";
+	$what_is_up_image_6 = WL_TEMPLATE_DIR_URI ."/images/WhatIsUp/image5.png";
 	$what_is_up_image_4 = WL_TEMPLATE_DIR_URI ."/images/WhatIsUp/image3.jpg";
 	$what_is_up_image_5 = WL_TEMPLATE_DIR_URI ."/images/WhatIsUp/image4.png";
 	
@@ -158,7 +159,8 @@
 			'what_is_up_image_2'=>$what_is_up_image_2,
 			'what_is_up_image_3'=>$what_is_up_image_3,
 			'what_is_up_image_4'=>$what_is_up_image_4,
-			'what_is_up_image_5'=>$what_is_up_image_5
+			'what_is_up_image_5'=>$what_is_up_image_5,
+			'what_is_up_image_6'=>$what_is_up_image_6
 			
 		);
 		return apply_filters( 'enigma_options', $wl_theme_options );

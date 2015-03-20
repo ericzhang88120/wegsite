@@ -45,8 +45,10 @@
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-lg-11 col-md-11 col-sm-20">
-				<p class="star_desc">The Kia World Extreme Games is the most prestigious multi-event, action sports competition worldwide, and will be staged in Shanghai, China for the ninth time since 2007. Nearly 200 best action sport athletes from almost 30 countries and regions will compete in BMX freestyle, skateboarding and speed climbing competitions.  Considered the pinnacle of global action sports competition, the Kia World Extreme Games in Shanghai will be televised live across Asia, and delayed broadcast worldwide. More than 1k hours have been lived all over the world for Kia World Extreme Games 2014.</p>
+			<div class="col-lg-12 col-md-12 col-sm-20 stardes">
+				<p>Shanghai to host the world’s best action sports athletes at the Kia World Extreme Games, including Mat Hoffman and Chris Cole.</p>
+				<p>New Sports, Multiple Venues, World-Class Athletes; BMX and Skateboard Legends Dennis McCoy and Tom Asta are also among the elite to attend this prestigious, global action sports event from April 25 to May 3 2015.  More than 150 of the best action sport athletes from 25 countries and regions will compete in BMX freestyle, Skateboarding and Speed Climbing.</p>
+				<p>Freestyle Motocross, Aggressive In-Line Skating and, for the first time, Women's Vert Skateboard athletes will join the event to participate in demonstrations at the Oriental Pearl Tower and Jiangwan Stadium.</p>
 			</div>
 
 		</div>
@@ -66,6 +68,17 @@
 				<p>Nearly 200 best action sport athletes from almost 30 countries and regions will compete in BMX freestyle, skateboarding, speed climbing and International freestyle Motocross (FMX) competition at 2 venues: Oriental Pearl Radio &amp; TV Tower (Vert Finals) and KIC Jiangwan Sports Centre (other Competitions)</p>
 				<p>Action sport big names, including Vince Byron, Trey Wood, Jimmy Wilkins and Filipe Gustavo etc. are confirmed to come and compete. Also, BMX legend Mat Hoffman will appear on-site as event ambassador and head judge for BMX category.</p>
 				<p>Considered the pinnacle of global action sports competition, the Kia World Extreme Games in Shanghai will be televised live across Asia, and delayed broadcast worldwide. Kia Motors is the Title Sponsor of the event.</p>
+				<br>
+				<p>Event Highlights</p>
+				<ul>
+					<li>Addition of downtown iconic venue: Vert Competitions @Oriental Pearl Tower</li>
+					<li>Revolutionarised Street Course @KIC Plaza</li>
+					<li>New climbing wall design</li>
+					<li>Press conference and pre-event promotion with Extreme Interactive Carnival @Oriental Pearl </li>
+					<li>Tower</li>
+					<li>Vert Demo Launch: “Vert on the Bund” @ Oriental Pearl Tower</li>
+					<li>First ever online extreme sports video contest from March to May, 2015</li>
+				</ul>
 			</div>
 		</div>
 	</div>
