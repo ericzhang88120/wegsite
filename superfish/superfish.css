@@ -13,7 +13,7 @@ nav { float: left;}
 
 .sf-menu a { display: block; position: relative; }
 
-.sf-menu li:hover ul, .sf-menu li.sfHover ul { left: 0; top: 40px; /* match top ul list item height */ z-index: 99; }
+.sf-menu li:hover ul, .sf-menu li.sfHover ul { left: -50px; top: 40px; /* match top ul list item height */ z-index: 99; }
 
 ul.sf-menu li:hover li ul, ul.sf-menu li.sfHover li ul { top: -999em; }
 
@@ -38,7 +38,7 @@ ul.sf-menu li li li:hover ul, ul.sf-menu li li li.sfHover ul { left: 10em; /* ma
 
 .sf-menu > li.active { }
 
-.sf-menu ul { position: absolute; top: -999em; width: 180px; padding: 0; }
+.sf-menu ul { position: absolute; top: -999em; width: 180px; padding: 0;}
 
 .sf-menu li li a { font: 700 15px/29px Isocpeur; background: none no-repeat black;color: white; text-shadow: none; padding: 0 5px 0 5px; text-align: center;}
 

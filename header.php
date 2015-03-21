@@ -1,12 +1,13 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>
-    <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+
     <!--[if IE 7]>
-    <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+    <html class="no-js lt-ie9 lt-ie8"> 
+    <![endif]-->
     <!--[if IE 8]>
-    <html class="no-js lt-ie9"> <![endif]-->
-    <!--[if gt IE 8]><!-->
-<html <?php language_attributes(); ?>><!--<![endif]-->
+    <html class="no-js lt-ie9"> 
+    <![endif]-->
+
+<html class="no-js" <?php language_attributes(); ?>><!--<![endif]-->
 <head>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">  
@@ -123,7 +124,7 @@ endif;
                         </nav>
                         </div>
                         <div class="col-md-2 col-sm-4 wl_rtl">
-                            <div style="float:right;width:100px;padding-top:10px;"><a href="#"><img src="<?php echo $wl_theme_options['english_png']; ?>"></a></div>
+                            <div style="float:right;width:100px;padding-top:5px;"><a href="#"><img src="<?php echo $wl_theme_options['english_png']; ?>"></a></div>
                         </div>
 					</div>
 				</div>

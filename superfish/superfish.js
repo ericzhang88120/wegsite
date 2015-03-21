@@ -119,6 +119,6 @@
 
 })(jQuery);
 /*---------------------*/
-$(function(){
-	$('.sf-menu').superfish()
+jQuery(function(){
+	jQuery('.sf-menu').superfish()
 })
