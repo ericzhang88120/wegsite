@@ -37,6 +37,9 @@
 
 	$event_image_1 = WL_TEMPLATE_DIR_URI."/images/event1.jpg";
 	$event_image_2 = WL_TEMPLATE_DIR_URI."/images/event2.jpg";
+	$event_image_3 = WL_TEMPLATE_DIR_URI."/images/event3.jpg";
+	$event_image_4 = WL_TEMPLATE_DIR_URI."/images/event4.jpg";
+	$event_image_5 = WL_TEMPLATE_DIR_URI."/images/event5.jpg";
 	
 	$hall_of_fame_image_1 = WL_TEMPLATE_DIR_URI ."/images/HallOfFame/background.jpg";
 	$get_in_touch_image_1 = WL_TEMPLATE_DIR_URI ."/images/GetInTouch/background.jpg";
@@ -145,6 +148,11 @@
 			#events
 			'event_image_1'=>$event_image_1,
 			'event_image_2'=>$event_image_2,
+			'event_image_3'=>$event_image_3,
+			'event_image_4'=>$event_image_4,
+			'event_image_5'=>$event_image_5,
+			
+			'event_info_text'=>__('NULL', 'weblizar' ),
 			
 			#hall of fame
 			'hall_of_fame_image_1'=>$hall_of_fame_image_1,

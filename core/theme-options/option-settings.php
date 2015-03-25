@@ -664,7 +664,89 @@ $site ="http://www.weblizar.com" ;?>
 			</div>
 		</div>
 		</div>
-		</div>					
+		</div>	
+
+		<div class="section">
+		<div class="panel-group" id="accordion83">
+		<div class="panel panel-default">		 
+			<div class="panel-heading">
+				<h4 class="panel-title"> <?php _e('Picture 3','weblizar'); ?>
+					<a data-toggle="collapse" data-parent="#accordion" href="#collapse83">
+					<i class="indicator glyphicon glyphicon-chevron-down  pull-right"></i>
+					</a>
+				</h4>
+			</div>
+			<div id="collapse83" class="panel-collapse collapse in">
+			<div class="panel-body">
+			<h3><?php _e('Picture 3','weblizar'); ?></h3>
+			<input class="weblizar_inpute" type="text" value="<?php if($wl_theme_options['event_image_3']!='') { echo esc_attr($wl_theme_options['event_image_3']); } ?>" id="event_image_3" name="event_image_3" size="36" class="upload has-file"/>
+			<input type="button" id="upload_button" value="Image 3" class="upload_image_button" />
+			<span class="explain"><?php _e('Add Pic3 here, size suggestion is 725X475.','weblizar');?></span>	
+			<?php if($wl_theme_options['event_image_3']!='') { ?>
+			<img style="height:475px; width:725px;" src="<?php if($wl_theme_options['event_image_3']!='') { echo esc_attr($wl_theme_options['event_image_3']); } ?>" />
+			<?php } ?>
+			</div>
+			</div>
+		</div>
+		</div>
+		</div>	
+
+		<div class="section">
+		<div class="panel-group" id="accordion84">
+		<div class="panel panel-default">		 
+			<div class="panel-heading">
+				<h4 class="panel-title"> <?php _e('Picture 4','weblizar'); ?>
+					<a data-toggle="collapse" data-parent="#accordion" href="#collapse84">
+					<i class="indicator glyphicon glyphicon-chevron-down  pull-right"></i>
+					</a>
+				</h4>
+			</div>
+			<div id="collapse84" class="panel-collapse collapse in">
+			<div class="panel-body">
+			<h3><?php _e('Picture 4','weblizar'); ?></h3>
+			<input class="weblizar_inpute" type="text" value="<?php if($wl_theme_options['event_image_4']!='') { echo esc_attr($wl_theme_options['event_image_4']); } ?>" id="event_image_4" name="event_image_4" size="36" class="upload has-file"/>
+			<input type="button" id="upload_button" value="Image 4" class="upload_image_button" />
+			<span class="explain"><?php _e('Add Pic4 here, size suggestion is 725X475.','weblizar');?></span>	
+			<?php if($wl_theme_options['event_image_4']!='') { ?>
+			<img style="height:475px; width:725px;" src="<?php if($wl_theme_options['event_image_4']!='') { echo esc_attr($wl_theme_options['event_image_4']); } ?>" />
+			<?php } ?>
+			</div>
+			</div>
+		</div>
+		</div>
+		</div>	
+
+		<div class="section">
+		<div class="panel-group" id="accordion85">
+		<div class="panel panel-default">		 
+			<div class="panel-heading">
+				<h4 class="panel-title"> <?php _e('Picture 5','weblizar'); ?>
+					<a data-toggle="collapse" data-parent="#accordion" href="#collapse85">
+					<i class="indicator glyphicon glyphicon-chevron-down  pull-right"></i>
+					</a>
+				</h4>
+			</div>
+			<div id="collapse85" class="panel-collapse collapse in">
+			<div class="panel-body">
+			<h3><?php _e('Picture 5','weblizar'); ?></h3>
+			<input class="weblizar_inpute" type="text" value="<?php if($wl_theme_options['event_image_5']!='') { echo esc_attr($wl_theme_options['event_image_5']); } ?>" id="event_image_5" name="event_image_5" size="36" class="upload has-file"/>
+			<input type="button" id="upload_button" value="Image 5" class="upload_image_button" />
+			<span class="explain"><?php _e('Add Pic5 here, size suggestion is 725X475.','weblizar');?></span>	
+			<?php if($wl_theme_options['event_image_5']!='') { ?>
+			<img style="height:475px; width:725px;" src="<?php if($wl_theme_options['event_image_5']!='') { echo esc_attr($wl_theme_options['event_image_5']); } ?>" />
+			<?php } ?>
+			</div>
+			</div>
+		</div>
+		</div>
+		</div>	
+
+		<h3><?php _e('Event Info Description','weblizar'); ?></h3>			
+		<?php $settings = array( "media_buttons" => false,"quicktags" => false, "tinymce" => array( "plugins" => "wordpress" ) ); ?>
+		<?php $content = $wl_theme_options["event_info_text"]!="" ? esc_attr($wl_theme_options["event_info_text"]) : "" ; ?>                     
+		<?php $editor_id = "event_info_text"; ?>
+		<?php wp_editor( $content, $editor_id,$settings ); ?>
+		<div class="explain"><?php _e('Type here event info.','weblizar'); ?></div>		
 
 		<div id="button_section">
 			<input type="hidden" value="1" id="weblizar_settings_save_home-event" name="weblizar_settings_save_home-event" />			
