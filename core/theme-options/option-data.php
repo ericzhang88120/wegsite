@@ -108,6 +108,26 @@
 		}
 	}
 	/*
+	* what's up page
+	*/
+	if(isset($_POST['weblizar_settings_save_home-whatisup']))
+	{	
+		if($_POST['weblizar_settings_save_home-whatisup'] == 1) 
+		{
+			foreach($_POST as  $key => $value)
+			{
+				$wl_theme_options[$key]=sanitize_text_field($_POST[$key]);	
+			}
+			
+			update_option('enigma_options', stripslashes_deep( $wl_theme_options ));
+			
+		}	
+		if($_POST['weblizar_settings_save_home-whatisup'] == 2) 
+		{
+			wl_reset_home_star_setting();
+		}
+	}
+	/*
 	* Home service setting 
 	*/
 	if(isset($_POST['weblizar_settings_save_home-service']))

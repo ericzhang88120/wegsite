@@ -54,6 +54,26 @@
 	$what_is_up_image_4 = WL_TEMPLATE_DIR_URI ."/images/WhatIsUp/image3.jpg";
 	$what_is_up_image_5 = WL_TEMPLATE_DIR_URI ."/images/WhatIsUp/image4.png";
 	
+	//Page what's up
+	$page_what_is_up_background_1 = WL_TEMPLATE_DIR_URI ."/images/PageWhatIsUp/background1.png";
+	$page_what_is_up_background_2 = WL_TEMPLATE_DIR_URI ."/images/PageWhatIsUp/background2.png";
+	$page_what_is_up_background_3 = WL_TEMPLATE_DIR_URI ."/images/PageWhatIsUp/background3.png";
+	$page_what_is_up_image_1 = WL_TEMPLATE_DIR_URI ."/images/PageWhatIsUp/image1.png";
+	$page_what_is_up_image_2 = WL_TEMPLATE_DIR_URI ."/images/PageWhatIsUp/image2.png";
+	$page_what_is_up_image_3 = WL_TEMPLATE_DIR_URI ."/images/PageWhatIsUp/image3.png";
+	$page_what_is_up_image_4 = WL_TEMPLATE_DIR_URI ."/images/PageWhatIsUp/image4.png";
+	$page_what_is_up_image_5 = WL_TEMPLATE_DIR_URI ."/images/PageWhatIsUp/image5.png";
+	$page_what_is_up_image_6 = WL_TEMPLATE_DIR_URI ."/images/PageWhatIsUp/image6.png";
+	$page_what_is_up_image_7 = WL_TEMPLATE_DIR_URI ."/images/PageWhatIsUp/image7.png";
+	$page_what_is_up_image_8 = WL_TEMPLATE_DIR_URI ."/images/PageWhatIsUp/image8.png";
+	$page_what_is_up_image_9 = WL_TEMPLATE_DIR_URI ."/images/PageWhatIsUp/image9.png";
+	$page_what_is_up_image_10 = WL_TEMPLATE_DIR_URI ."/images/PageWhatIsUp/image10.png";
+	$page_what_is_up_image_11 = WL_TEMPLATE_DIR_URI ."/images/PageWhatIsUp/image11.png";
+	$page_what_is_up_line = WL_TEMPLATE_DIR_URI ."/images/PageWhatIsUp/line.png";
+	$page_what_is_up_read = WL_TEMPLATE_DIR_URI ."/images/PageWhatIsUp/read.png";
+	$page_what_is_up_more = WL_TEMPLATE_DIR_URI ."/images/PageWhatIsUp/more.png";
+	$page_what_is_up_year = WL_TEMPLATE_DIR_URI ."/images/PageWhatIsUp/year.png";
+	
 	$wl_theme_options=array(
 			//Logo and Fevicon header			
 			'upload_image_logo'=>$logo_image,
@@ -168,7 +188,27 @@
 			'what_is_up_image_3'=>$what_is_up_image_3,
 			'what_is_up_image_4'=>$what_is_up_image_4,
 			'what_is_up_image_5'=>$what_is_up_image_5,
-			'what_is_up_image_6'=>$what_is_up_image_6
+			'what_is_up_image_6'=>$what_is_up_image_6,
+			
+			#page what's up
+			'page_what_is_up_background_1'=>$page_what_is_up_background_1,
+			'page_what_is_up_background_2'=>$page_what_is_up_background_2,
+			'page_what_is_up_background_3'=>$page_what_is_up_background_3,
+			'page_what_is_up_image_1'=>$page_what_is_up_image_1,
+			'page_what_is_up_image_2'=>$page_what_is_up_image_2,
+			'page_what_is_up_image_3'=>$page_what_is_up_image_3,
+			'page_what_is_up_image_4'=>$page_what_is_up_image_4,
+			'page_what_is_up_image_5'=>$page_what_is_up_image_5,
+			'page_what_is_up_image_6'=>$page_what_is_up_image_6,
+			'page_what_is_up_image_7'=>$page_what_is_up_image_7,
+			'page_what_is_up_image_8'=>$page_what_is_up_image_8,
+			'page_what_is_up_image_9'=>$page_what_is_up_image_9,
+			'page_what_is_up_image_10'=>$page_what_is_up_image_10,
+			'page_what_is_up_image_11'=>$page_what_is_up_image_11,
+			'page_what_is_up_line'=>$page_what_is_up_line,
+			'page_what_is_up_more'=>$page_what_is_up_more,
+			'page_what_is_up_read'=>$page_what_is_up_read,
+			'page_what_is_up_year'=>$page_what_is_up_year
 			
 		);
 		return apply_filters( 'enigma_options', $wl_theme_options );
