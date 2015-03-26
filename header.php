@@ -88,11 +88,11 @@ endif;
                             		<ul>
                             			<li>
                             				<div><img src="<?php echo esc_url($wl_theme_options['subnav_point']); ?>" style="height:20px;width:200px;"></div>
-                            				<a href='#' title="">EVENT INFO</a>
-                            				<a href='#' title="">COMPETITION SCHEDULE</a>
-                            				<a href='#' title="">BROADCAST SCHEDULE</a>
-                            				<a href='#' title="">TICKETING</a>
-                            				<a href='#' title="">SPONSORS &amp; PARTNERS</a>
+                            				<a href='<?php echo get_permalink( get_page_by_title( 'event' ) );?>#event-info' title="EVENT INFO">EVENT INFO</a>
+                            				<a href='<?php echo get_permalink( get_page_by_title( 'event' ) );?>#schedule' title="COMPETITION SCHEDULE">COMPETITION SCHEDULE</a>
+                            				<a href='<?php echo get_permalink( get_page_by_title( 'event' ) );?>#broadcast' title="BROADCAST SCHEDULE">BROADCAST SCHEDULE</a>
+                            				<a href='<?php echo get_permalink( get_page_by_title( 'event' ) );?>#ticketing' title="TICKETING">TICKETING</a>
+                            				<a href='<?php echo get_permalink( get_page_by_title( 'event' ) );?>#sponsor' title="SPONSORS &amp; PARTNERS">SPONSORS &amp; PARTNERS</a>
                             			</li>
                             		</ul>                      
                         		</li>

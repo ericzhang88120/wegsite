@@ -1,16 +1,23 @@
+<?php $wl_theme_options = weblizar_get_options(); ?>
+
 <?php get_header(); ?>
+
 <style>
 .schedule-date{
 	float: left;
 	width: 20%;
 }
+.words-desc{
+color: white;
+padding-top: 15px;
+}
 </style>
 <div class="container">
-	<div class="row" id="event-info" style="background: #272727 url(wp-content/themes/wegsite/images/event/bg1.jpg) no-repeat; height:660px;padding:140px 0 0;">
-		<div class="col-lg-8 col-md-8 col-sm-8" >
+	<div class="row" id="event-info" style="background: #272727 url(wp-content/themes/wegsite/images/event/bg1.jpg) no-repeat; height:660px;padding:140px 0 0 10px;">
+		<div class="col-lg-8 col-md-8 col-sm-8" style="background: #272727 url(wp-content/themes/wegsite/images/event/image-bg.png);padding:5px;">
 			<?php get_template_part('home','slideshow-event'); ?>
 		</div>
-		<div class="col-lg-4 col-md-4 col-sm-8">
+		<div class="col-lg-4 col-md-4 col-sm-8 words-desc">
 			<?php echo $wl_theme_options["event_info_text"]; ?>
 		</div>
 	</div>
@@ -46,12 +53,24 @@
 			</div>
 		</div>
 	</div>
-	<div class="row" id="broadcast">
-		<div class="col-lg-12 col-md-12 col-sm-12" style="background: #272727 url(wp-content/themes/wegsite/images/event/bg3.png) no-repeat; height:570px;">
-			<div class="row" style="padding:150px 0 0 0;margin:0 auto;width:95%;">
-				
-			</div>
-			
+	<div class="row" id="broadcast" style="background: #272727 url(wp-content/themes/wegsite/images/event/bg3.png) no-repeat; height:570px;padding:140px 2% 0;">
+		<div class="col-lg-6 col-md-6 col-sm-12 scrollimation d1"> 
+				<div class="img-wrapper" style="margin:0">
+					<figure class="effect-lily">
+						<img src="<?php echo esc_url($wl_theme_options['event_image_6']); ?>" alt="<?php the_title_attribute(); ?>">
+						<div>
+							<figcaption>
+								<a href="#">
+									<img src="<?php echo esc_url($wl_theme_options['event_broadcast_mark']); ?>" style="display:hidden">
+								</a>
+							</figcaption>
+						</div>
+					</figure>
+				</div>
+		</div>
+
+		<div class="col-lg-6 col-md-6 col-sm-6 words-desc">
+			<?php echo $wl_theme_options["event_broadcast_text"]; ?>
 		</div>
 	</div>
 	<div class="row" id="ticketing">
