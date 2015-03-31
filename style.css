@@ -2430,6 +2430,10 @@ padding-top: 20px;
 	text-indent:20px;
 	font-family: 'Isocpeur';	
 }
+.eventdes li{
+	text-indent:20px;
+	font-family: 'Isocpeur';	
+}
 .event{
 	background: url(images/event_background.jpg);
 	background-repeat: no-repeat;	

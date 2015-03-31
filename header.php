@@ -61,11 +61,11 @@ endif;
                             		<a href="<?php echo esc_url(home_url( '/' )); ?>" title=""> HOME |</a>
                         		</li>
                         		<li>
-                            		<a href='#' title="">&nbspTHE ACTION |</a>
+                            		<a href='<?php echo get_permalink( get_page_by_title( 'action' ) );?>' title="">&nbspTHE ACTION |</a>
                             		<ul>
                             			<li>
                             				<div><img src="<?php echo esc_url($wl_theme_options['subnav_point']); ?>" style="height:20px;width:200px;"></div>
-                            				<a href='#' title="">VERT AT ORIENTAL PERL</a>
+                            				<a href='#' title="">VERT AT ORIENTAL PEARL</a>
                             				<a href='#' title="">STREET COURSE AT KIC</a>
                             				<a href='#' title="">CLIMBING WALL</a>
                             				<a href='#' title="">MINI MEGA</a>
@@ -86,7 +86,7 @@ endif;
                             		</ul>
                         		</li>
                         		 <li>
-                            		<a href='<?php echo get_permalink( get_page_by_title( 'event' ) );?>' title="">&nbspABOUTTHE EVENT |</a> 
+                            		<a href='<?php echo get_permalink( get_page_by_title( 'event' ) );?>' title="">&nbspABOUT&nbspTHE EVENT |</a> 
                             		<ul>
                             			<li>
                             				<div><img src="<?php echo esc_url($wl_theme_options['subnav_point']); ?>" style="height:20px;width:200px;"></div>
