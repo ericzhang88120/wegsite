@@ -49,8 +49,10 @@ endif;
 					</a>
 					</div>
 				</div>
-				<div class="col-md-10 col-sm-20 wl_rtl">
-					<img class="img-responsive" src="<?php echo $wl_theme_options['upload_image_ad']; ?>" style="margin-left:60px;padding-top:5px;height:120px;width:900px;">
+				<div class="col-md-10 col-sm-6 wl_rtl">
+					<a href="http://www.kia.com">
+                    <img class="img-responsive" src="<?php echo $wl_theme_options['upload_image_ad']; ?>" style="margin-left:60px;padding-top:5px;height:120px;width:900px;">
+                    </a>
 					<div class="row">
                         <div class="col-md-10 col-sm-20 wl_rtl">
                         <nav id="main-nav-menu">
