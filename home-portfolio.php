@@ -117,7 +117,7 @@
 				<div style="text-align:right">
 					<font class="star_desc" size="3px">China<br></font>
 					<font class="star_desc" size="3px">Michael Wang<br></font>
-					<font class="star_desc" size="3px">Email: yc.wang@wsgworld.com</font>
+					<font class="star_desc" size="3px">Email: michael.wang@kiaweg.com</font>
 				</div>
 			</div>
 			<div class="col-lg-6 col-md-6 col-sm-6 pull-left scrollimation fade-right d1">
