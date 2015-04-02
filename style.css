@@ -2410,7 +2410,16 @@ padding-top: 20px;
 .fa-arrow-left:before{content: "\f060" ;}
 .fa-arrow-right:before{content: "\f061" ;}
 
-
+.actiondes h4{
+	text-indent:20px;
+	font-family: 'Isocpeur';
+	color: #ffffff;
+}
+.actiondes p{
+	text-indent:20px;
+	font-family: 'Isocpeur';
+	color: #ffffff;
+}
 .star{
 	background: url(images/star_background.jpg);
 	background-repeat: no-repeat;

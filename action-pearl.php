@@ -55,5 +55,4 @@
       </div>
       <a class="left carousel-control" href="#myCarousel1" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
       <a class="right carousel-control" href="#myCarousel1" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
-	  <div class="enigma_slider_shadow"></div>
     </div><!-- /.carousel -->

@@ -456,6 +456,132 @@ $site ="http://www.weblizar.com" ;?>
 		</div>
 	</form>	
 </div>
+<!--------------- action page settings ------------>
+<div class="block ui-tabs-panel deactive" id="option-page-action" >
+	<form method="post" id="weblizar_theme_options_page-action">
+		<div id="heading">
+			<table style="width:100%;"><tr>
+				<td cols=2 ><h2><?php _e('Action Page Settings','weblizar');?></h2></td>
+				<td style="width:30%;">
+					<div class="weblizar_settings_loding" id="weblizar_loding_page-action_image"></div>
+					<div class="weblizar_settings_massage" id="weblizar_settings_save_page-action_success" ><?php _e('Options Data updated','weblizar');?></div>
+					<div class="weblizar_settings_massage" id="weblizar_settings_save_page-action_reset" ><?php _e('Options data Reset','weblizar');?></div>
+				</td>
+				<td style="text-align:right;">					
+					<input class="button" type="button" name="reset" value="Restore Defaults" onclick="weblizar_option_data_reset('page-action');">
+					<input class="button button-primary" type="button" value="Save Options" onclick="weblizar_option_data_save('page-action')" >
+				</td>
+				</tr>
+			</table>			
+		</div>	
+		<div class="section">
+		<div class="panel-group" id="accordion91">
+		<div class="panel panel-default">		 
+			<div class="panel-heading">
+				<h4 class="panel-title"> <?php _e('Picture 1','weblizar'); ?>
+					<a data-toggle="collapse" data-parent="#accordion" href="#collapse91">
+					<i class="indicator glyphicon glyphicon-chevron-down  pull-right"></i>
+					</a>
+				</h4>
+			</div>
+			<div id="collapse91" class="panel-collapse collapse in">
+			<div class="panel-body">
+			<h3><?php _e('Picture 1','weblizar'); ?></h3>
+			<input class="weblizar_inpute" type="text" value="<?php if($wl_theme_options['pic_image_1']!='') { echo esc_attr($wl_theme_options['pic_image_1']); } ?>" id="pic_image_1" name="pic_image_1" size="36" class="upload has-file"/>
+			<input type="button" id="upload_button" value="Image 1" class="upload_image_button" />
+			<span class="explain"><?php _e('Add Pic1 here, size suggestion is 300X480.','weblizar');?></span>	
+			<?php if($wl_theme_options['pic_image_1']!='') { ?>
+			<img style="height:480px; width:300px;" src="<?php if($wl_theme_options['pic_image_1']!='') { echo esc_attr($wl_theme_options['pic_image_1']); } ?>" />
+			<?php } ?>
+			</div>
+			</div>
+		</div>
+		</div>
+		</div>	
+
+		<div class="section">
+		<div class="panel-group" id="accordion92">
+		<div class="panel panel-default">		 
+			<div class="panel-heading">
+				<h4 class="panel-title"> <?php _e('Picture 2','weblizar'); ?>
+					<a data-toggle="collapse" data-parent="#accordion" href="#collapse92">
+					<i class="indicator glyphicon glyphicon-chevron-down  pull-right"></i>
+					</a>
+				</h4>
+			</div>
+			<div id="collapse92" class="panel-collapse collapse in">
+			<div class="panel-body">
+			<h3><?php _e('Picture 2','weblizar'); ?></h3>
+			<input class="weblizar_inpute" type="text" value="<?php if($wl_theme_options['pic_image_2']!='') { echo esc_attr($wl_theme_options['pic_image_2']); } ?>" id="pic_image_2" name="pic_image_2" size="36" class="upload has-file"/>
+			<input type="button" id="upload_button" value="Image 2" class="upload_image_button" />
+			<span class="explain"><?php _e('Add Pic2 here, size suggestion is 300X480.','weblizar');?></span>	
+			<?php if($wl_theme_options['pic_image_2']!='') { ?>
+			<img style="height:480px; width:300px;" src="<?php if($wl_theme_options['pic_image_2']!='') { echo esc_attr($wl_theme_options['pic_image_2']); } ?>" />
+			<?php } ?>
+			</div>
+			</div>
+		</div>
+		</div>
+		</div>	
+
+		<div class="section">
+		<div class="panel-group" id="accordion93">
+		<div class="panel panel-default">		 
+			<div class="panel-heading">
+				<h4 class="panel-title"> <?php _e('Picture 3','weblizar'); ?>
+					<a data-toggle="collapse" data-parent="#accordion" href="#collapse93">
+					<i class="indicator glyphicon glyphicon-chevron-down  pull-right"></i>
+					</a>
+				</h4>
+			</div>
+			<div id="collapse93" class="panel-collapse collapse in">
+			<div class="panel-body">
+			<h3><?php _e('Picture 3','weblizar'); ?></h3>
+			<input class="weblizar_inpute" type="text" value="<?php if($wl_theme_options['pic_image_3']!='') { echo esc_attr($wl_theme_options['pic_image_3']); } ?>" id="pic_image_3" name="pic_image_3" size="36" class="upload has-file"/>
+			<input type="button" id="upload_button" value="Image 3" class="upload_image_button" />
+			<span class="explain"><?php _e('Add Pic3 here, size suggestion is 300X480.','weblizar');?></span>	
+			<?php if($wl_theme_options['pic_image_3']!='') { ?>
+			<img style="height:480px; width:300px;" src="<?php if($wl_theme_options['pic_image_3']!='') { echo esc_attr($wl_theme_options['pic_image_3']); } ?>" />
+			<?php } ?>
+			</div>
+			</div>
+		</div>
+		</div>
+		</div>	
+
+		<div class="section">
+		<div class="panel-group" id="accordion94">
+		<div class="panel panel-default">		 
+			<div class="panel-heading">
+				<h4 class="panel-title"> <?php _e('Picture 4','weblizar'); ?>
+					<a data-toggle="collapse" data-parent="#accordion" href="#collapse94">
+					<i class="indicator glyphicon glyphicon-chevron-down  pull-right"></i>
+					</a>
+				</h4>
+			</div>
+			<div id="collapse93" class="panel-collapse collapse in">
+			<div class="panel-body">
+			<h3><?php _e('Picture 4','weblizar'); ?></h3>
+			<input class="weblizar_inpute" type="text" value="<?php if($wl_theme_options['pic_image_4']!='') { echo esc_attr($wl_theme_options['pic_image_4']); } ?>" id="pic_image_4" name="pic_image_4" size="36" class="upload has-file"/>
+			<input type="button" id="upload_button" value="Image 4" class="upload_image_button" />
+			<span class="explain"><?php _e('Add Pic4 here, size suggestion is 300X480.','weblizar');?></span>	
+			<?php if($wl_theme_options['pic_image_3']!='') { ?>
+			<img style="height:480px; width:300px;" src="<?php if($wl_theme_options['pic_image_4']!='') { echo esc_attr($wl_theme_options['pic_image_4']); } ?>" />
+			<?php } ?>
+			</div>
+			</div>
+		</div>
+		</div>
+		</div>				
+
+		<div id="button_section">
+			<input type="hidden" value="1" id="weblizar_settings_save_home-star" name="weblizar_settings_save_home-star" />			
+			<input class="button" type="button" name="reset" value="Restore Defaults" onclick="weblizar_option_data_reset('home-star');">
+			<input class="button button-primary" type="button" value="Save Options" onclick="weblizar_option_data_save('home-star')" >
+			<!--  alert massage when data saved and reset -->
+		</div>
+	</form>
+</div>
 <!--------------- star settings ------------>
 <div class="block ui-tabs-panel deactive" id="option-home-star" >
 	<form method="post" id="weblizar_theme_options_home-star">

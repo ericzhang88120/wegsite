@@ -65,11 +65,11 @@ endif;
                             		<ul>
                             			<li>
                             				<div><img src="<?php echo esc_url($wl_theme_options['subnav_point']); ?>" style="height:20px;width:200px;"></div>
-                            				<a href='#' title="">VERT AT ORIENTAL PEARL</a>
-                            				<a href='#' title="">STREET COURSE AT KIC</a>
-                            				<a href='#' title="">CLIMBING WALL</a>
-                            				<a href='#' title="">MINI MEGA</a>
-                            				<a href='#' title="">MOTO CROSS</a>
+                            				<a href='<?php echo get_permalink( get_page_by_title( 'action' ) );?>#pearl' title="">VERT AT ORIENTAL PEARL</a>
+                            				<a href='<?php echo get_permalink( get_page_by_title( 'action' ) );?>#street' title="">STREET COURSE AT KIC</a>
+                            				<a href='<?php echo get_permalink( get_page_by_title( 'action' ) );?>#wall' title="">CLIMBING WALL</a>
+                            				<a href='<?php echo get_permalink( get_page_by_title( 'action' ) );?>#mini' title="">MINI MEGA</a>
+                            				<a href='<?php echo get_permalink( get_page_by_title( 'action' ) );?>#moto' title="">MOTO CROSS</a>
                             			</li>
                             		</ul>
                         		</li>
