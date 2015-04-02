@@ -160,13 +160,15 @@
 	</div>
 	
 	<br>
-		
+	<div class="row" id="sponsor">
+		<div class="col-lg-12 col-md-12 col-sm-12" style="background: #272727">
+				<img src="wp-content/themes/wegsite/images/event/sponsor.png" style="width:100%">
+				<img src="wp-content/themes/wegsite/images/event/sponsor-words.png" style="margin-top:20px;width:100%">
+		</div>
+	</div		
 </div>
 
-<div class="container">
-	<div style="background-image:url(<?php echo esc_url($wl_theme_options['sponsor_image_1']); ?>);background-repeat:no-repeat;height:434px">
-	</div>				
-</div>
+
 
 
 <!-- /portfolio section -->
