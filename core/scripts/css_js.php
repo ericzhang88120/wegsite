@@ -18,7 +18,8 @@
                 
                 // Js
                 wp_enqueue_script('modernizr', WL_TEMPLATE_DIR_URI .'/js/modernizr.js');
-		        wp_enqueue_script('response', WL_TEMPLATE_DIR_URI .'/js/respond.min.js');
+		wp_enqueue_script('response', WL_TEMPLATE_DIR_URI .'/js/respond.min.js');
+                wp_enqueue_script('jtemplates', WL_TEMPLATE_DIR_URI .'/js/jquery-jtemplates.js');
                 wp_enqueue_script('superfish', WL_TEMPLATE_DIR_URI .'/superfish/superfish.js',array('jquery'));
                 wp_enqueue_script('thestarts', WL_TEMPLATE_DIR_URI .'/js/thestarts.js');
                 wp_enqueue_script('bootstrap-js', WL_TEMPLATE_DIR_URI .'/js/bootstrap.js');
