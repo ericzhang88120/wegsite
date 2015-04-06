@@ -30,8 +30,10 @@
 #photos li img{
 width: 290px;
 height:290px;
-
 }
+
+/* This rule is read by Galleria to define the gallery height: */
+#galleria{height:520px;width:100%;}
 </style>
 
 <div class="container">
@@ -79,10 +81,10 @@ height:290px;
 	<!-- Templates -->
 	<p style="display:none"><textarea id="template-photos" rows="0" cols="0">
 	<!--<ul id="list-photo">
-		{#foreach $T.Items as item}  
+		{#foreach $T.Photos as photo}  
 	     <li>
-	     	<a href="#" class="gallery-photo" data-pid="{$T.item.pid}">
-				<img src="{$T.item.path}/{$T.item.filename}"/>
+	     	<a href="#" class="gallery-photo" data-pid="{$T.photo.PhotoID}" data-toggle="modal" data-target="#myModal">
+				<img src="{$T.photo.PhotoThumbURL}"/>
 			</a>
 		</li>
 	    {#/for}
@@ -96,9 +98,33 @@ height:290px;
 	</div>
 </div>
 
+ 	<!-- Modal -->
+<div class="modal fade bs-example-modal-lg" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  	<div class="modal-dialog modal-lg" style="z-index:1200">
+  	  	<div class="modal-content">
+         	<div id="galleria">
+	           
+	     	</div>
+    	</div>
+  	</div>
+</div>
+
+<!-- Templates -->
+	<p style="display:none">
+	<textarea id="template-photos-gallery" rows="0" cols="0">
+	<!--
+		{#foreach $T.PhotosForGallery as photo}  
+			<a href="{$T.photo.PhotoURL}">
+	                <img src="{$T.photo.PhotoThumbURL}"/>
+	        </a>
+	    {#/for}
+  	-->
+  	</textarea></p>
+	<!-- End Templates -->
 
 <script type="text/javascript">
 	jQuery(document).ready(function() {
+	 	
 
 		var hallOfFame={
 			photos:jQuery('#photos'),
@@ -171,6 +197,8 @@ height:290px;
 		});	
 	});
 
+	Galleria.loadTheme('wp-content/themes/wegsite/galleria/galleria.classic.min.js');
+
 	function GetPhotos(gallery,page,year){
 		
 		jQuery.ajax({ 
@@ -179,8 +207,13 @@ height:290px;
 	        dataType: "json", 
 	        data: {"gallery":gallery,"page":page,"year":year},
 	        success: function(json){
+
 	        	//document.write(JSON.stringify(json));
 				jQuery("#photos").setTemplateElement("template-photos").processTemplate(json);
+
+				var data=json.PhotosForGallery;
+			    // Initialize Galleria
+			    Galleria.run('#galleria',{dataSource: data});
 	        }
 	    });
 	}

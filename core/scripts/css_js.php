@@ -15,12 +15,14 @@
                 wp_enqueue_style('RalewaySemiBold','//fonts.googleapis.com/css?family=Raleway:600');
                 wp_enqueue_style('Courgette','//fonts.googleapis.com/css?family=Courgette');
                 wp_enqueue_style('superfish',WL_TEMPLATE_DIR_URI .'/superfish/superfish.css');
+                //wp_enqueue_style('galleria',WL_TEMPLATE_DIR_URI .'/galleria/superfish.css');
                 
                 // Js
                 wp_enqueue_script('modernizr', WL_TEMPLATE_DIR_URI .'/js/modernizr.js');
 		wp_enqueue_script('response', WL_TEMPLATE_DIR_URI .'/js/respond.min.js');
                 wp_enqueue_script('jtemplates', WL_TEMPLATE_DIR_URI .'/js/jquery-jtemplates.js');
                 wp_enqueue_script('superfish', WL_TEMPLATE_DIR_URI .'/superfish/superfish.js',array('jquery'));
+                wp_enqueue_script('galleria', WL_TEMPLATE_DIR_URI .'/galleria/galleria-1.4.2.js');
                 wp_enqueue_script('thestarts', WL_TEMPLATE_DIR_URI .'/js/thestarts.js');
                 wp_enqueue_script('bootstrap-js', WL_TEMPLATE_DIR_URI .'/js/bootstrap.js');
                 wp_enqueue_script('enigma-theme-script', WL_TEMPLATE_DIR_URI .'/js/enigma_theme_script.js');

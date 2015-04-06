@@ -1,6 +1,46 @@
 
 <?php 
-	include('C:\xampp\htdocs\wordpress\wp-config.php' );
+	/**
+	* 
+	*/
+	class HallOfFamePhoto
+	{
+		public  $PhotoID;
+		public  $PhotoURL;
+		public  $PhotoThumbURL;
+
+		public function __construct($PhotoID,$PhotoURL,$PhotoThumbURL) {  
+	        $this->PhotoID=$PhotoID;  
+	        $this->PhotoURL=$PhotoURL;  
+	        $this->PhotoThumbURL=$PhotoThumbURL;  
+    	} 
+	}
+
+	/**
+	* 
+	*/
+	class PhotoForGallery
+	{
+	    public $image;
+        public $thumb;
+        public $big;
+        public $title;
+        public $description;
+        public $link;
+		
+		function __construct($image,$thumb)
+		{
+	        $this->image=$image;  
+	        $this->thumb=$thumb; 
+	        $this->big="";
+	        $this->title="";
+	        $this->description="";
+	        $this->link="";
+		}
+	}
+
+
+	include('../../../wp-config.php' );
 
 	global $wpdb;
 
@@ -30,6 +70,8 @@
 		$query=$query. " AND b.name='".$gallery."'";	
 	}
 
+	$photos_for_gallery=$wpdb->get_results($query);
+
 	$query=$query." LIMIT ".$photo_begin.",7 ";
 
 	//echo $query;
@@ -46,9 +88,28 @@
 
 	$photos = $wpdb->get_results($query);
 
+	$ArrayPhoto=array();
 	foreach ($photos as $key => $value) {
-		$photos[$key]->path = str_replace("\\","/",ltrim($value->path,"\\"));
+		$a = $value->pid;
+		$path=str_replace("\\","/",ltrim($value->path,"\\"));
+		$photo_path=$path."/".$value->filename;
+		$thumb_path = $path."/thumbs/thumbs_".$value->filename;
+		
+		$p=new HallOfFamePhoto($a,$photo_path,$thumb_path);
+		$ArrayPhoto[]=$p;
 	}
 
-	echo "{\"Items\":".json_encode($photos)."}";
+	$ArrayPhotoForGallery= array();
+
+	foreach ($photos_for_gallery as $key => $value) {
+		$a = $value->pid;
+		$path=str_replace("\\","/",ltrim($value->path,"\\"));
+		$photo_path=$path."/".$value->filename;
+		$thumb_path = $path."/thumbs/thumbs_".$value->filename;
+		
+		$p=new PhotoForGallery($photo_path,$thumb_path);
+		$ArrayPhotoForGallery[]=$p;
+	}
+
+	echo "{\"Photos\":".json_encode($ArrayPhoto).",\"PhotosForGallery\":".json_encode($ArrayPhotoForGallery)."}";
  ?>
