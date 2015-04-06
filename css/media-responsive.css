@@ -77,6 +77,11 @@
 	.navbar-collapse ul li a { height:38px;}
 	.navbar-default .navbar-nav > li > a { width:80%; }
 	ul.dropdown-menu > li > a { width:80%; }
+
+#wechat-scan-image{
+  bottom: 100px;
+  right: 285px;
+}
 	
 .logo{
 	text-align:center;

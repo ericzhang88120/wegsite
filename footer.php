@@ -17,7 +17,7 @@
 					<?php } if($wl_theme_options['instagram_link']!='') { ?>
 						<a href="<?php echo esc_url($wl_theme_options['instagram_link']) ; ?>"><li class="linkedin" data-toggle="tooltip" data-placement="top" title="instagram"></li></a>
 					<?php } if($wl_theme_options['weixin_link']!='') { ?>
-						<a href="<?php echo esc_url($wl_theme_options['weixin_link']) ; ?>"><li class="youtube" data-toggle="tooltip" data-placement="top" title="WeChat"></li></a>
+						<a id="wechat-logo" href="<?php echo esc_url($wl_theme_options['weixin_link']) ; ?>"><li class="youtube" data-toggle="tooltip" data-placement="top" title="WeChat"></li></a>
 	                <?php } if($wl_theme_options['webo_link']!='') { ?>
 						<a href="<?php echo esc_url($wl_theme_options['webo_link']) ; ?>"><li class="webo" data-toggle="tooltip" data-placement="top" title="Weibo"></li></a>
 					<?php } if($wl_theme_options['renren_link']!='') { ?>
@@ -25,11 +25,13 @@
 	                <?php } ?>
 				</ul>
 			</div>
+			<img src="<?php echo esc_url($wl_theme_options['wechat_scan_image']); ?>" id="wechat-scan-image" style="position:absolute;display:none;">
 			</span>
 			<?php } ?>			
 			</div>		
 		</div>		
 </div>	
+
 <!-- /Footer Widget Secton -->
 </div>
 <a href="#" title="Go Top" class="enigma_scrollup" style="display: inline;"><i class="fa fa-chevron-up"></i></a>
@@ -38,5 +40,13 @@
 <?php { echo esc_attr($wl_theme_options['custom_css']); } ?>
 </style>
 <?php wp_footer(); ?>
+
+<script type="text/javascript">
+	jQuery('#wechat-logo').hover(function() {
+	    jQuery('#wechat-scan-image').show();
+	  }, function() {
+	    jQuery('#wechat-scan-image').hide();
+	  });
+</script>
 </body>
 </html>

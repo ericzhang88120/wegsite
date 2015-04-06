@@ -26,6 +26,7 @@
 	$ImageUrl7 = WL_TEMPLATE_DIR_URI ."/images/portfolio4.png";
 	$ImageUrl8 = WL_TEMPLATE_DIR_URI ."/images/portfolio5.png";
 	$ImageUrl9 = WL_TEMPLATE_DIR_URI ."/images/portfolio6.png";
+	$ImageUrlWechatScan = WL_TEMPLATE_DIR_URI ."/images/wechat-scan.png";
 
 	$subnav_point=WL_TEMPLATE_DIR_URI ."/superfish/img/point.png";
 	//define image name
@@ -115,6 +116,7 @@
 			'fb_link' =>"https://www.facebook.com/kiaworldextremegames",
 			'instagram_link' =>"https://instagram.com/kiaworldextremegames",
 			'weixin_link' =>"#",
+			'wechat_scan_image' =>$ImageUrlWechatScan,
 			'webo_link' =>"http://www.weibo.com/kiaxgamesasia",
 			'renren_link' =>'http://page.renren.com/weg',
 			'gplus' =>"#",
