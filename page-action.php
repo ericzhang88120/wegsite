@@ -5,7 +5,7 @@
 		<?php get_template_part('action','pearl'); ?>
 		<div class="actiondes" style="padding:0 20px 0 20px;height:200px">
 			<h4>VERT AT ORIENTAL PEARL</h4>
-			<p>Following the success of the Bund Stunt in 2014, the Oriental Pearl Jam will be the curtain-raiserto the main KWEG competition starting from 28 April 2015.  Held against the iconic backdrop of the Oriental Pearl Tower, it will set the scene for the BMX and Skateboard Vert competition held on 28 & 29 April at the same venue and will be a guaranteed spectacle.</p>
+			<p>Following the success of the Bund Stunt in 2014, the Oriental Pearl Jam will be the curtain-raiser to the main KWEG competition starting from 28 April 2015.  Held against the iconic backdrop of the Oriental Pearl Tower, it will set the scene for the BMX and Skateboard Vert competition held on 28 & 29 April at the same venue and will be a guaranteed spectacle.</p>
 			<p>The Oriental Pearl Jam will feature a bevy of top notch names in action sports such as Trey Wood, Neal Hendrix, Andy Macdonald, Dennis McCoy, Simon Tabron, Lizzie Armanto as well as BMX legend Mat Hoffman; who will be thrilling the crowds with their gravity-defying flips and moves throughout the weekend of 25 and 26 April 2015.
 			&nbsp;So, get your cameras ready.  C’mon down to the Oriental Pearl Tower and be wowed by all the stars and action!</p>
 			</div>
