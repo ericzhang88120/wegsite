@@ -13,11 +13,15 @@
 	if(isset($_POST['categroy'])){
 		$categroy= $_POST['categroy'];
 	}
+	if(isset($_POST['video_url'])){
+		$video_url= $_POST['video_url'];
+	}
 	$table = "videolist";
 	$data_array = array(
         'url'=> $url,
         'year'=> $year,
-        'categroy'=>$categroy
+        'categroy'=>$categroy,
+        'video_url'=>$video_url
 	);
 	$wpdb->insert($wpdb->prefix.$table,$data_array);
 ?>
