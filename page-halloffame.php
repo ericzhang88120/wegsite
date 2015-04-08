@@ -6,28 +6,33 @@
 #photo-gallery{
 
 }
-#photo-gallery ul li{
+#photo-gallery ul li,
+#video-gallery ul li{
 	float: left;
 	list-style: none;
 	margin: 0 30px 0 0;
 }
-#photo-gallery ul li a{
+#photo-gallery ul li a,
+#video-gallery ul li a{
 	display: inline-block;
 	color: white;
 	text-transform: uppercase;
 	font-weight: bold;
 }
-#photos ul,#photo-gallery ul{
+#photos ul,#photo-gallery ul,
+#videos ul,#video-gallery ul{
 	margin:0;
 	padding: 0;
 }
 
-#photos li{
+#photos li,
+#videos li{
 	width: 25%;
 	float: left;
 	list-style: none;
 }
-#photos li img{
+#photos li img,
+#videos li img{
 width: 290px;
 height:290px;
 }
@@ -93,9 +98,63 @@ height:290px;
 	<!-- End Templates -->
 
 	<div class="row" id="event-info" style="background: #272727 url(wp-content/themes/wegsite/images/halloffame/video-bg.png) no-repeat; height:660px;padding:140px 0 0 10px;">
-		<div class="col-lg-12 col-md-12 col-sm-12">
+		<div id="video-gallery">
+			<div class="col-lg-10 col-md-10 col-sm-10">
+				<ul>
+				<li>
+					<a href="#" data-gallery-name="All">All</a>
+				</li>
+				<?php 
+				
+				global $wpdb;
+
+				$wpdb->videolist = $wpdb->prefix . 'videolist';
+
+				$galleries = $wpdb->get_results("SELECT distinct categroy FROM $wpdb->videolist");
+
+				foreach ($galleries as $gallery) {
+				?>
+					<li>
+						<a href="#" data-gallery-name="<?php echo $gallery->categroy ?>"><?php echo $gallery->categroy ?></a>
+					</li>
+				<?php
+				}
+				?>
+				</ul>	
+			</div>
+			<div class="col-lg-2 col-md-2 col-sm-2">
+				<select id="video-gallery-year" class="pull-right">
+					<?PHP 
+						$query="SELECT distinct a.year 
+								FROM $wpdb->videolist a";
+
+						$years = $wpdb->get_results($query);
+
+						foreach ($years as $year) {
+					?>
+						<option value="<?php echo $year->year ?>"><?php echo $year->year ?></option>
+					<?php
+					}
+					?>
+				</select>
+			</div>
 		</div>
+		<div id="videos" data-current-page="1" data-current-gallery="All"></div>
 	</div>
+	<!-- Templates -->
+	<p style="display:none"><textarea id="template-videos" rows="0" cols="0">
+	<!--<ul id="list-video">
+		{#foreach $T.Videos as video}  
+	     <li>
+	     	<a href="#" class="gallery-video" data-pid="{$T.video.VideoID}" data-toggle="modal" data-target="#myModalVideo" data-url="{$T.video.VideoURL}">
+				<img src="{$T.video.VideoThumbURL}"/>
+			</a>
+		</li>
+	    {#/for}
+	</ul>
+  	--></textarea></p>
+	<!-- End Templates -->
+
 </div>
 
  	<!-- Modal -->
@@ -109,18 +168,16 @@ height:290px;
   	</div>
 </div>
 
-<!-- Templates -->
-	<p style="display:none">
-	<textarea id="template-photos-gallery" rows="0" cols="0">
-	<!--
-		{#foreach $T.PhotosForGallery as photo}  
-			<a href="{$T.photo.PhotoURL}">
-	                <img src="{$T.photo.PhotoThumbURL}"/>
-	        </a>
-	    {#/for}
-  	-->
-  	</textarea></p>
-	<!-- End Templates -->
+
+<div class="modal fade bs-example-modal" id="myModalVideo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  	<div class="modal-dialog" style="z-index:1200">
+  	  	<div class="modal-content">
+         	<div>
+	            <iframe id="video-frame"  height=498 width=100% src="" frameborder=0 allowfullscreen></iframe>
+	     	</div>
+    	</div>
+  	</div>
+</div>
 
 <script type="text/javascript">
 	jQuery(document).ready(function() {
@@ -129,10 +186,12 @@ height:290px;
 		var hallOfFame={
 			photos:jQuery('#photos'),
 			gallery:jQuery('#photo-gallery'),
-			year:jQuery("#photo-gallery-year")
+			year:jQuery("#photo-gallery-year"),
+			videos:jQuery("#videos")
 		};
 
 		GetPhotos("All",1,2015);
+		GetVideos("All",1,2015);
 
 		hallOfFame.year.on('change',function(){
 			var currentGallery,
@@ -195,6 +254,11 @@ height:290px;
 
 			}
 		});	
+
+		hallOfFame.videos.on('click','.gallery-video',function(event){
+			event.preventDefault();
+			jQuery('#video-frame').attr('src',jQuery(this).data("url"));
+		});
 	});
 
 	Galleria.loadTheme('wp-content/themes/wegsite/galleria/galleria.classic.min.js');
@@ -214,6 +278,22 @@ height:290px;
 				var data=json.PhotosForGallery;
 			    // Initialize Galleria
 			    Galleria.run('#galleria',{dataSource: data});
+	        }
+	    });
+	}
+
+	function GetVideos(gallery,page,year){
+		
+		jQuery.ajax({ 
+	        type: "POST", 
+	        url: "wp-content/themes/wegsite/get-videos.php", 
+	        dataType: "json", 
+	        data: {"gallery":gallery,"page":page,"year":year},
+	        success: function(json){
+
+	        	//document.write(JSON.stringify(json));
+				jQuery("#videos").setTemplateElement("template-videos").processTemplate(json);
+
 	        }
 	    });
 	}
