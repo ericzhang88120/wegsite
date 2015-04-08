@@ -79,6 +79,10 @@ var uploader = new plupload.Uploader({
 		},
 
 		FilesAdded: function(up, files) {
+			if(files.length !=1){
+				alert("Please choose one file");
+				return;
+			}
 			plupload.each(files, function(file) {
 				file.name=myform.year.value+"_"+myform.categroy.value+"_"+file.name,
 				myform.url.value = myform.url.value+file.name;
