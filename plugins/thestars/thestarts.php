@@ -7,10 +7,10 @@ Version: 1.0
 Author: clare wang
 Author URI: http://cesever.cn/
 */
-register_activation_hook(__FILE__,'table_new');
-register_deactivation_hook(__FILE__,'table_drop');
+register_activation_hook(__FILE__,'table_new_star');
+register_deactivation_hook(__FILE__,'table_drop_star');
 
-function table_new () {
+function table_new_star () {
    global $wpdb;
 
    $table_name = $wpdb->prefix . "thestars";
@@ -25,7 +25,7 @@ function table_new () {
 	$wpdb->query($sql);
   
 }
-function table_drop(){
+function table_drop_star(){
 	global $wpdb;
 	$table_name = $wpdb->prefix . "thestars";
 	$sql = "drop table ".$table_name;
@@ -40,13 +40,12 @@ function wp_the_starts_options(){
 	<form method="post" id="starinfo" name="myform"action="">
 		<h2>The Star</h2>
 		<p>URL:<input type="text" name="url" size="80" value="<?php echo  (home_url()."/wp-content/plugins/uploads/");?>"></p>
-		<p>Category:<input type="text" name="categroy"value=""></p>
-			
-			<h3><?php _e('Description','weblizar'); ?></h3>
-			<?php $settings = array( "media_buttons" => false,"quicktags" => false, "tinymce" => array( "plugins" => "wordpress" ) ); ?>
-			<textarea name="txt" id="txt" rows="10" cols="30"></textarea>
-		<p><input type="button" name="wp_the_starts_options" value="Update Options &raquo;" onclick="savevideoinfo()"/></p>
+		<p>Category:<input type="text" name="categroy"value=""></p>		
+		<h3><?php _e('Description','weblizar'); ?></h3>
+		<?php $settings = array( "tinymce" => array( "plugins" => "" ) ); ?> 
+		<?php wp_editor( '', 'star_desc' ,$settings ); ?>
 	</form>
+	<p><input type="button" name="wp_the_starts_options" value="Update Options &raquo;" onclick="savevideoinfo()"/></p>
 	<div id="container">
 		<h2>Upload img</h2>
 	    <a id="pickfiles" href="javascript:;">[Select files]</a> 
@@ -107,8 +106,8 @@ uploader.init();
 
 </script>
 <script type="text/javascript">
-
 	function savevideoinfo(){
+		tinyMCE.triggerSave();
 		jQuery.ajax({
 			url:'../wp-content/plugins/thestars/dbhandler.php',
 			type:'post',

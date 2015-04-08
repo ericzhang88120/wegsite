@@ -10,8 +10,8 @@
 	if(isset($_POST['categroy'])){
 		$categroy= $_POST['categroy'];
 	}
-	if(isset($_POST['txt'])){
-		$txt= $_POST['txt'];
+	if(isset($_POST['star_desc'])){
+		$txt= $_POST['star_desc'];
 	}
 	$table = "thestars";
 	$data_array = array(
