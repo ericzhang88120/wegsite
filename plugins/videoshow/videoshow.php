@@ -20,6 +20,7 @@ function table_new () {
 	  year VARCHAR(10) NOT NULL,
 	  categroy VARCHAR(10) NOT NULL,
 	  url VARCHAR(80) NOT NULL,
+	  video_url VARCHAR(80) NOT NULL,
 	  primary key (id)
 	);";
 	$wpdb->query($sql);
@@ -41,6 +42,7 @@ function wp_video_options(){
 		<h2>Video show</h2>
 		<p>Year:<input type="text" name="year"value=""></p>
 		<p>URL:<input type="text" name="url" size="80" value="<?php echo  (home_url()."/wp-content/plugins/uploads/");?>"></p>
+		<p>Video_URL:<input type="text" name="video_url" size="80" value=""></p>
 		<p>Category:<input type="text" name="categroy"value=""></p>
 		<p><input type="button" name="wp_video_options" value="Update Options &raquo;" onclick="savevideoinfo()"/></p>
 	</form>
