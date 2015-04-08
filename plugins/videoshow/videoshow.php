@@ -34,7 +34,7 @@ function table_drop(){
 
 function wp_video_options(){
 ?>
-<script type="text/javascript" src="../wp-content/plugins/plupload.full.min.js"></script>
+<script type="text/javascript" src="../wp-content/plugins/videoshow/plupload.full.min.js"></script>
 
 <div class=wrap>
 	<form method="post" id="videoinfo" name="myform"action="">
