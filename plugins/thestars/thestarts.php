@@ -41,21 +41,10 @@ function wp_the_starts_options(){
 		<h2>The Star</h2>
 		<p>URL:<input type="text" name="url" size="80" value="<?php echo  (home_url()."/wp-content/plugins/uploads/");?>"></p>
 		<p>Category:<input type="text" name="categroy"value=""></p>
-		<div class="section">
-			<div class="panel-group" id="accordion95">
-			<div class="panel panel-default">
-			<div id="collapse95" class="panel-collapse collapse in">
-			<div class="panel-body">
-			<hr>			
+			
 			<h3><?php _e('Description','weblizar'); ?></h3>
-			<?php $settings = array( "media_buttons" => false,"quicktags" => false, "tinymce" => array( "plugins" => "wordpress" ) ); ?>                  
-			<?php wp_editor( "", the_star_desc ,$settings ); ?>
-			</div>
-			</div>
-			</div>
-			</div>
-		</div>
-		<p><input type="text" name="txt" id="the_star_desc" size="1024"></p>
+			<?php $settings = array( "media_buttons" => false,"quicktags" => false, "tinymce" => array( "plugins" => "wordpress" ) ); ?>
+			<textarea name="txt" id="txt" rows="10" cols="30"></textarea>
 		<p><input type="button" name="wp_the_starts_options" value="Update Options &raquo;" onclick="savevideoinfo()"/></p>
 	</form>
 	<div id="container">
