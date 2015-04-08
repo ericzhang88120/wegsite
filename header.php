@@ -74,7 +74,7 @@ endif;
                             		</ul>
                         		</li>
                         		<li>
-                            		<a href='#' title="">&nbspTHE STARS |</a>
+                            		<a href='<?php echo get_permalink(get_page_by_title('stars'));?>' title="">&nbspTHE STARS |</a>
                             		<ul>
                             			<li>
                             				<div><img src="<?php echo esc_url($wl_theme_options['subnav_point']); ?>" style="height:20px;width:200px;"></div>
