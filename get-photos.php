@@ -93,8 +93,12 @@
 		$a = $value->pid;
 		$path=str_replace("\\","/",ltrim($value->path,"\\"));
 		$photo_path=$path."/".$value->filename;
-		$thumb_path = $path."/thumbs/thumbs_".$value->filename;
-		
+		$thumb_path=$photo_path;
+
+		if ($a>0) {
+			$thumb_path = $path."/thumbs/thumbs_".$value->filename;
+		}
+
 		$p=new HallOfFamePhoto($a,$photo_path,$thumb_path);
 		$ArrayPhoto[]=$p;
 	}

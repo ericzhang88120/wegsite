@@ -88,7 +88,7 @@ height:290px;
 	<!--<ul id="list-photo">
 		{#foreach $T.Photos as photo}  
 	     <li>
-	     	<a href="#" class="gallery-photo" data-pid="{$T.photo.PhotoID}" data-toggle="modal" data-target="#myModal">
+	     	<a href="#" class="gallery-photo" data-pid="{$T.photo.PhotoID}">
 				<img src="{$T.photo.PhotoThumbURL}"/>
 			</a>
 		</li>
@@ -158,7 +158,7 @@ height:290px;
 </div>
 
  	<!-- Modal -->
-<div class="modal fade bs-example-modal-lg" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<div class="modal fade bs-example-modal-lg" id="myModalPhoto" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   	<div class="modal-dialog modal-lg" style="z-index:1200">
   	  	<div class="modal-content">
          	<div id="galleria">
@@ -185,15 +185,17 @@ height:290px;
 
 		var hallOfFame={
 			photos:jQuery('#photos'),
-			gallery:jQuery('#photo-gallery'),
-			year:jQuery("#photo-gallery-year"),
-			videos:jQuery("#videos")
+			photogallery:jQuery('#photo-gallery'),
+			photoyear:jQuery("#photo-gallery-year"),
+			videos:jQuery("#videos"),
+			videogallery:jQuery('#video-gallery'),
+			videoyear:jQuery("#video-gallery-year")
 		};
 
 		GetPhotos("All",1,2015);
 		GetVideos("All",1,2015);
 
-		hallOfFame.year.on('change',function(){
+		hallOfFame.photoyear.on('change',function(){
 			var currentGallery,
 				currentYear;
 
@@ -203,7 +205,7 @@ height:290px;
 			GetPhotos(currentGallery,1,currentYear);
 		});
 
-		hallOfFame.gallery.on('click','a',function(event){
+		hallOfFame.photogallery.on('click','a',function(event){
 			
 			event.preventDefault();
 			
@@ -211,12 +213,14 @@ height:290px;
 				currentYear;
 
 			currentGallery=jQuery(this).data("gallery-name");
-			currentYear=hallOfFame.year.val();
+			currentYear=hallOfFame.photoyear.val();
 			
 			if (currentGallery!=hallOfFame.photos.data("current-gallery")) {
 				GetPhotos(currentGallery,1,currentYear);
 				hallOfFame.photos.data("current-gallery",currentGallery);
 			};
+
+			$('#myModal').modal('show');
 		});
 
 		hallOfFame.photos.on('click','.gallery-photo',function(event){
@@ -230,7 +234,7 @@ height:290px;
 			
 			currentPage=hallOfFame.photos.data("current-page");
 			currentGallery=hallOfFame.photos.data("current-gallery");
-			currentYear=hallOfFame.year.val();
+			currentYear=hallOfFame.photoyear.val();
 			pid = jQuery(this).data("pid");
 
 			switch(pid)
@@ -250,8 +254,8 @@ height:290px;
 				break;
 
 				default:
+				jQuery('#myModalPhoto').modal('show');
 				break;
-
 			}
 		});	
 
@@ -259,6 +263,10 @@ height:290px;
 			event.preventDefault();
 			jQuery('#video-frame').attr('src',jQuery(this).data("url"));
 		});
+
+		jQuery('#myModalVideo').on('hidden.bs.modal', function (e) {
+		  jQuery('#video-frame').attr('src',"");
+		})
 	});
 
 	Galleria.loadTheme('wp-content/themes/wegsite/galleria/galleria.classic.min.js');
