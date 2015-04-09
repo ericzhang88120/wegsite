@@ -51,7 +51,7 @@ height:290px;
 				</li>
 				<?php 
 				
-				$galleries = $wpdb->get_results("SELECT * FROM $wpdb->nggallery");
+				$galleries = $wpdb->get_results("SELECT * FROM $wpdb->nggallery where galdesc='halloffame'");
 
 				foreach ($galleries as $gallery) {
 				?>

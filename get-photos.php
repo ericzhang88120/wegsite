@@ -52,14 +52,14 @@
 	$photo_begin=($page-1)*7;
 
     $queryCount = " SELECT COUNT(*) FROM WP_NGG_PICTURES a
-					INNER JOIN WP_NGG_GALLERY b ON a.galleryid=b.gid
+					INNER JOIN WP_NGG_GALLERY b ON a.galleryid=b.gid and b.galdesc='halloffame'
 					INNER JOIN wp_term_relationships c on a.pid=c.object_id 
 					INNER JOIN wp_terms d on c.term_taxonomy_id=d.term_id
 					INNER JOIN wp_term_taxonomy e on e.term_id=d.term_id and e.taxonomy='ngg_tag'
 					WHERE d.name='".$year."' "; 
 	
 	$query = "SELECT b.path,a.filename,a.pid FROM WP_NGG_PICTURES a
-		 	  INNER JOIN WP_NGG_GALLERY b ON a.galleryid=b.gid
+		 	  INNER JOIN WP_NGG_GALLERY b ON a.galleryid=b.gid and b.galdesc='halloffame'
 		 	  INNER JOIN wp_term_relationships c on a.pid=c.object_id 
 		 	  INNER JOIN wp_terms d on c.term_taxonomy_id=d.term_id
 		 	  INNER JOIN wp_term_taxonomy e on e.term_id=d.term_id and e.taxonomy='ngg_tag'

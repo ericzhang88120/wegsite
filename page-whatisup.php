@@ -1,18 +1,35 @@
 <?php $wl_theme_options = weblizar_get_options(); ?>
 
 <?php get_header(); ?>
+<?php global $wpdb; ?>
 
 <div class="container" style="background-image:url(<?php echo esc_url($wl_theme_options['page_what_is_up_background_1']); ?>);background-repeat:no-repeat;height:550px;">
 	<div class="row" style="padding-top:160px;text-align:right">
+	<?php 
+			$query="SELECT a.gid,a.path,a.title,a.name,b.filename 
+					FROM $wpdb->nggallery a inner join $wpdb->nggpictures b on a.gid=b.galleryid 
+					WHERE a.galdesc='whatisup'
+					order by a.gid desc limit 0,1";
+				
+			$galleries = $wpdb->get_results($query);
+
+			foreach ($galleries as $gallery) {
+
+			$path=str_replace("\\","/",ltrim($gallery->path,"\\"));
+	?>
 		<div class="col-lg-6 col-md-6 col-sm-6">
 			<a href="#">
-				<img src="<?php echo esc_url($wl_theme_options['page_what_is_up_image_1']); ?>" alt="<?php the_title_attribute(); ?>">
+				<img src="<?php echo $path.'/'.$gallery->filename; ?>" style="width:100%">
 			</a>
 		</div>
 		<div class="col-lg-6 col-md-6 col-sm-6" style="overflow:hidden;text-align:left;">
-			<font size="0.5px" color="#c0c0c0">//////////////////////////////////////////////////////////////////////////////////////////////////////////<br></font>
-			<font size="2px" color="#ffffff">Hang in there...</font>
+			<a href='<?php echo get_permalink( get_page_by_title( 'preevent' ) );?>&gid=<?php echo $gallery->gid ?>'>
+				<?php echo $gallery->title ?>
+			</a>
 		</div>
+	<?php
+	}
+	?>
 	</div>
 </div>
 <div class="container" style="background-image:url(<?php echo esc_url($wl_theme_options['page_what_is_up_background_2']); ?>);background-repeat:no-repeat;height:685px;">
