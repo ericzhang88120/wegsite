@@ -4,7 +4,7 @@
 <?php global $wpdb; ?>
 
 <div class="container" style="background-image:url(<?php echo esc_url($wl_theme_options['page_what_is_up_background_1']); ?>);background-repeat:no-repeat;height:550px;">
-	<div class="row" style="padding-top:160px;text-align:right">
+	<div id="pre-events" class="row" style="padding-top:160px;text-align:right">
 	<?php 
 			$query="SELECT a.gid,a.path,a.title,a.name,b.filename 
 					FROM $wpdb->nggallery a inner join $wpdb->nggpictures b on a.gid=b.galleryid 
@@ -32,7 +32,7 @@
 	?>
 	</div>
 </div>
-<div class="container" style="background-image:url(<?php echo esc_url($wl_theme_options['page_what_is_up_background_2']); ?>);background-repeat:no-repeat;height:685px;">
+<div id="media-release" class="container" style="background-image:url(<?php echo esc_url($wl_theme_options['page_what_is_up_background_2']); ?>);background-repeat:no-repeat;height:685px;">
 
 	<div class="row" style="padding-top:140px;text-align:right">
 		<div class="col-lg-1 col-md-1 col-sm-1">
@@ -116,7 +116,7 @@
 	</div>
 
 </div>
-<div class="container" style="background-image:url(<?php echo esc_url($wl_theme_options['page_what_is_up_background_3']); ?>);background-repeat:no-repeat;height:746px;">
+<div class="container" id="results" style="background-image:url(<?php echo esc_url($wl_theme_options['page_what_is_up_background_3']); ?>);background-repeat:no-repeat;height:746px;">
 	<div class="row" style="padding-top:140px;text-align:right;padding-right:10px">
 		<a href="#">
 			<img  src="<?php echo esc_url($wl_theme_options['page_what_is_up_year']); ?>" style="border:0px solid;width:48px;height:18px; overflow-y:auto;">

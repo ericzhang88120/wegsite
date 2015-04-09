@@ -103,9 +103,9 @@ endif;
                              		<ul>
                             			<li>
                             				<div><img src="<?php echo esc_url($wl_theme_options['subnav_point']); ?>" style="height:20px;width:200px;"></div>
-                            				<a href='#' title="">PRE-EVENTS</a>
-                            				<a href='#' title="">MEDIA RELEASE</a>
-                            				<a href='#' title="">RESULT</a>
+                            				<a href='<?php echo get_permalink( get_page_by_title( 'whatisup' ) );?>#pre-events' title="">PRE-EVENTS</a>
+                            				<a href='<?php echo get_permalink( get_page_by_title( 'whatisup' ) );?>#media-release' title="">MEDIA RELEASE</a>
+                            				<a href='<?php echo get_permalink( get_page_by_title( 'whatisup' ) );?>#results' title="">RESULT</a>
                             			</li>
                             		</ul>                           		
                         		</li>
@@ -115,7 +115,7 @@ endif;
                             			<li>
                             				<div><img src="<?php echo esc_url($wl_theme_options['subnav_point']); ?>" style="height:20px;width:200px;"></div>
                                             <a href='<?php echo get_permalink( get_page_by_title( 'halloffame' ) );?>#photo-part' title="">PHOTOS</a>
--                                           <a href='<?php echo get_permalink( get_page_by_title( 'halloffame' ) );?>#video-part' title="">VIDEOS</a>
+                                            <a href='<?php echo get_permalink( get_page_by_title( 'halloffame' ) );?>#video-part' title="">VIDEOS</a>
                             			</li>
                             		</ul>                           		
                         		</li>
