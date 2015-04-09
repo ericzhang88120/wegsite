@@ -72,56 +72,61 @@
 		$query=$query. " AND b.name='".$gallery."'";	
 	}
 
-	$photos_for_gallery=$wpdb->get_results($query);
+	if ($pid>0) {
+		$photos_for_gallery=$wpdb->get_results($query);
 
-	$query=$query." LIMIT ".$photo_begin.",7 ";
+		$ArrayPhotoForGallery= array();
 
-	//echo $query;
-
-	$photo_total_page = ceil($wpdb->get_var($queryCount)/7);
-	
-	
-	if ($page<$photo_total_page & $photo_total_page>1) {
-		$query=$query."union select 'wp-content/themes/wegsite/images/halloffame','p-next.png',0";
-	}
-	if ($page==$photo_total_page & $photo_total_page>1) {
-		$query=$query."union select 'wp-content/themes/wegsite/images/halloffame','p-previous.png',-1";
-	}
-
-	$photos = $wpdb->get_results($query);
-
-	$ArrayPhoto=array();
-	foreach ($photos as $key => $value) {
-		$a = $value->pid;
-		$path=str_replace("\\","/",ltrim($value->path,"\\"));
-		$photo_path=$path."/".$value->filename;
-		$thumb_path=$photo_path;
-
-		if ($a>0) {
+		foreach ($photos_for_gallery as $key => $value) {
+			$a = $value->pid;
+			$path=str_replace("\\","/",ltrim($value->path,"\\"));
+			$photo_path=$path."/".$value->filename;
 			$thumb_path = $path."/thumbs/thumbs_".$value->filename;
+			
+			$p=new PhotoForGallery($photo_path,$thumb_path);
+
+			if ($a==$pid) {
+				array_unshift($ArrayPhotoForGallery,$p);
+			}else{
+				$ArrayPhotoForGallery[]=$p;
+			}
 		}
 
-		$p=new HallOfFamePhoto($a,$photo_path,$thumb_path);
-
-		$ArrayPhoto[]=$p;
-	}
-
-	$ArrayPhotoForGallery= array();
-
-	foreach ($photos_for_gallery as $key => $value) {
-		$a = $value->pid;
-		$path=str_replace("\\","/",ltrim($value->path,"\\"));
-		$photo_path=$path."/".$value->filename;
-		$thumb_path = $path."/thumbs/thumbs_".$value->filename;
+		echo "{\"PhotosForGallery\":".json_encode($ArrayPhotoForGallery)."}";
 		
-		$p=new PhotoForGallery($photo_path,$thumb_path);
+	}else{
 
-		if ($a==$pid) {
-			array_unshift($ArrayPhotoForGallery,$p);
-		}else{
-			$ArrayPhotoForGallery[]=$p;
+		$query=$query." LIMIT ".$photo_begin.",7 ";
+
+		//echo $query;
+
+		$photo_total_page = ceil($wpdb->get_var($queryCount)/7);
+		
+		
+		if ($page<$photo_total_page & $photo_total_page>1) {
+			$query=$query."union select 'wp-content/themes/wegsite/images/halloffame','p-next.png',0";
 		}
-	}
+		if ($page==$photo_total_page & $photo_total_page>1) {
+			$query=$query."union select 'wp-content/themes/wegsite/images/halloffame','p-previous.png',-1";
+		}
 
-	echo "{\"Photos\":".json_encode($ArrayPhoto).",\"PhotosForGallery\":".json_encode($ArrayPhotoForGallery)."}";
- ?>
+		$photos = $wpdb->get_results($query);
+
+		$ArrayPhoto=array();
+		foreach ($photos as $key => $value) {
+			$a = $value->pid;
+			$path=str_replace("\\","/",ltrim($value->path,"\\"));
+			$photo_path=$path."/".$value->filename;
+			$thumb_path=$photo_path;
+
+			if ($a>0) {
+				$thumb_path = $path."/thumbs/thumbs_".$value->filename;
+			}
+
+			$p=new HallOfFamePhoto($a,$photo_path,$thumb_path);
+
+			$ArrayPhoto[]=$p;
+		}
+
+		echo "{\"Photos\":".json_encode($ArrayPhoto)."}";
+	}

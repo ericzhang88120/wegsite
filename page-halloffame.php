@@ -230,7 +230,6 @@ height:290px;
 				hallOfFame.photos.data("current-gallery",currentGallery);
 			};
 
-			$('#myModalPhoto').modal('show');
 		});
 
 		hallOfFame.videogallery.on('click','a',function(event){
@@ -248,7 +247,6 @@ height:290px;
 				hallOfFame.videos.data("current-gallery",currentGallery);
 			};
 
-			$('#myModalVideo').modal('show');
 		});
 
 		hallOfFame.photos.on('click','.gallery-photo',function(event){
@@ -352,7 +350,7 @@ height:290px;
 	        type: "POST", 
 	        url: "wp-content/themes/wegsite/get-photos.php", 
 	        dataType: "json", 
-	        data: {"gallery":gallery,"page":page,"year":year},
+	        data: {"gallery":gallery,"page":page,"year":year,"pid":0},
 	        success: function(json){
 
 	        	//document.write(JSON.stringify(json));
