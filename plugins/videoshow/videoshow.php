@@ -38,20 +38,23 @@ function wp_video_options(){
 <script type="text/javascript" src="../wp-content/plugins/videoshow/plupload.full.min.js"></script>
 
 <div class=wrap>
-	<form method="post" id="videoinfo" name="myform"action="">
-		<h2>Video show</h2>
-		<p>Year:<input type="text" name="year"value=""></p>
-		<p>URL:<input type="text" name="url" size="80" value="<?php echo  (home_url()."/wp-content/plugins/uploads/");?>"></p>
-		<p>Video_URL:<input type="text" name="video_url" size="80" value=""></p>
-		<p>Category:<input type="text" name="categroy"value=""></p>
-		<p><input type="button" name="wp_video_options" value="Update Options &raquo;" onclick="savevideoinfo()"/></p>
-	</form>
+	<h1>Video show</h1>
+	<br/>
 	<div id="container">
-		<h2>Upload img</h2>
+		<h3>Upload thumbs</h3>
 	    <a id="pickfiles" href="javascript:;">[Select files]</a> 
 	    <a id="uploadfiles" href="javascript:;">[Upload files]</a>
 	</div>
 	<div id="filelist"></div>
+
+	<form method="post" id="videoinfo" name="myform"action="">
+		<p>Year:<input type="text" name="year"value=""></p>
+		<p>URL(Auto generate):<input type="text" readonly name="url" size="80" data-home-url="<?php echo  (home_url()."/wp-content/plugins/videoshow/uploads/");?>"></p>
+		<p>Video_URL:<input type="text" name="video_url" size="80" value=""></p>
+		<p>Category:<input type="text" name="categroy"value=""></p>
+		<p><input type="button" name="wp_video_options" value="Update Options &raquo;" onclick="savevideoinfo()"/></p>
+	</form>
+
 </div>
 <script type="text/javascript">
 var uploader = new plupload.Uploader({
@@ -87,7 +90,7 @@ var uploader = new plupload.Uploader({
 			}
 			plupload.each(files, function(file) {
 				file.name=myform.year.value+"_"+myform.categroy.value+"_"+file.name,
-				myform.url.value = myform.url.value+file.name;
+				myform.url.value = myform.url.getAttribute('data-home-url')+file.name;
 				document.getElementById('filelist').innerHTML += '<div id="' + file.id + '">' + file.name + ' (' + plupload.formatSize(file.size) + ') <b></b></div>';
 			});
 		},
@@ -104,11 +107,19 @@ var uploader = new plupload.Uploader({
 	}
 });
 uploader.init();
-
 </script>
 <script type="text/javascript">
 
 	function savevideoinfo(){
+		if (jQuery.trim(myform.url.value)==="" 
+			||jQuery.trim(myform.year.value)==="" 
+			||jQuery.trim(myform.categroy.value)==="" 
+			||jQuery.trim(myform.video_url.value)===""
+			) {
+			alert("please complete video info");
+			return false;
+		};
+
 		jQuery.ajax({
 			url:'../wp-content/plugins/videoshow/video.php',
 			type:'post',
