@@ -103,29 +103,39 @@
 <div class="container" style="background-image:url(<?php echo esc_url($wl_theme_options['page_what_is_up_background_3']); ?>);background-repeat:no-repeat;height:746px;">
 	<div class="row" style="padding-top:140px;text-align:right;padding-right:10px">
 		<a href="#">
-			<img style="border:0px solid;width:48px;height:18px;background-image:url(<?php echo esc_url($wl_theme_options['page_what_is_up_year']); ?>)">
+			<img  src="<?php echo esc_url($wl_theme_options['page_what_is_up_year']); ?>" style="border:0px solid;width:48px;height:18px; overflow-y:auto;">
 			</img>
 		</a>
 	</div>
 	<div class="row" style="padding-top:5px;padding-right:10px">
-		<div class="col-lg-3 col-md-3 col-sm-3">
-			<div class="row">
-				<img src="<?php echo esc_url($wl_theme_options['page_what_is_up_image_5']);?>">
+		<div class="col-lg-2 col-md-2 col-sm-2">
+			<div class="row" style="margin-left:30px;">
+				<img src="<?php echo esc_url($wl_theme_options['page_what_is_up_image_5']);?>" onclick="javascript:funbmx();">
+			</div>
+			<div class="row" style="padding-top:5px; margin-left:30px;">
 				<img src="<?php echo esc_url($wl_theme_options['page_what_is_up_image_6']);?>">
 			</div>
-			<div class="row" style="padding-top:5px;">
-			<img src="<?php echo esc_url($wl_theme_options['page_what_is_up_image_7']);?>">
-			<img src="<?php echo esc_url($wl_theme_options['page_what_is_up_image_8']);?>">
-			</div>
-			<div class="row" style="padding-top:5px;">
-			<img src="<?php echo esc_url($wl_theme_options['page_what_is_up_image_9']);?>">
-			<img src="<?php echo esc_url($wl_theme_options['page_what_is_up_image_10']);?>">
+			<div class="row" style="padding-top:5px; margin-left:30px;">
+				<img src="<?php echo esc_url($wl_theme_options['page_what_is_up_image_7']);?>">
 			</div>
 		</div>
-		<div class="col-lg-9 col-md-9 col-sm-9" style="overflow:hidden">
-			<img src="<?php echo esc_url($wl_theme_options['page_what_is_up_image_11']);?>">
-			<font style="position:absolute;top:50%; right:50%;z-index:10;" class="star_desc" size="5px"><b>HAND IN THERE...<br></b></font>
+		<div class="col-lg-10 col-md-10 col-sm-10" style="height:500px; overflow-x:hidden; overflow-y:auto;">
+			<img id="img" src="<?php echo esc_url($wl_theme_options['page_what_is_up_image_11']);?>">
 		</div>
 	</div>
 </div>
+<?php 
+echo '<script type="text/javascript">';
+echo 'function funbmx(){';
+
+global $wpdb;
+$table_name = $wpdb->prefix . "whatisup";
+$sql_query = "select * from ".$table_name." where year='2015' and categroy='1'";
+$res_query=$wpdb->get_results($sql_query);
+
+
+echo 'document.getElementById("img").src="'.$res_query[0]->url.'";';
+echo '}';
+echo '</script>';
+?>
 <?php get_footer(); ?>
