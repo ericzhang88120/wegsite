@@ -47,6 +47,8 @@
  	$gallery = stripslashes(trim($_POST['gallery'])); 
     $page = stripslashes(trim($_POST['page'])); 
     $year = stripslashes(trim($_POST['year']));
+    $pid = stripslashes(trim($_POST['pid']));
+
 	$photo_begin=($page-1)*7;
 
     $queryCount = " SELECT COUNT(*) FROM WP_NGG_PICTURES a
@@ -100,6 +102,7 @@
 		}
 
 		$p=new HallOfFamePhoto($a,$photo_path,$thumb_path);
+
 		$ArrayPhoto[]=$p;
 	}
 
@@ -112,7 +115,12 @@
 		$thumb_path = $path."/thumbs/thumbs_".$value->filename;
 		
 		$p=new PhotoForGallery($photo_path,$thumb_path);
-		$ArrayPhotoForGallery[]=$p;
+
+		if ($a==$pid) {
+			array_unshift($ArrayPhotoForGallery,$p);
+		}else{
+			$ArrayPhotoForGallery[]=$p;
+		}
 	}
 
 	echo "{\"Photos\":".json_encode($ArrayPhoto).",\"PhotosForGallery\":".json_encode($ArrayPhotoForGallery)."}";

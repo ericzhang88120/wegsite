@@ -46,7 +46,7 @@
     $queryCount = " SELECT COUNT(*) FROM wp_videolist a
 					WHERE a.year='".$year."' "; 
 	
-	$query = "SELECT * FROM wp_videolist a
+	$query = "SELECT id,url,video_url FROM wp_videolist a
 		 	  WHERE a.year='".$year."' "; 
 			
 
@@ -66,10 +66,10 @@
 	
 	
 	if ($page<$photo_total_page & $photo_total_page>1) {
-		$query=$query."union select 'wp-content/themes/wegsite/images/halloffame','v-next.png',0";
+		$query=$query." union select 0,'wp-content/themes/wegsite/images/halloffame/v-next.png',''";
 	}
 	if ($page==$photo_total_page & $photo_total_page>1) {
-		$query=$query."union select 'wp-content/themes/wegsite/images/halloffame','v-previous.png',-1";
+		$query=$query." union select -1,'wp-content/themes/wegsite/images/halloffame/v-previous.png',''";
 	}
 
 	$videos = $wpdb->get_results($query);
@@ -77,7 +77,7 @@
 	$ArrayVideo=array();
 	foreach ($videos as $key => $value) {
 		
-		$p=new HallOfFameVideo($value->pid,$value->url,$value->video_url);
+		$p=new HallOfFameVideo($value->id,$value->url,$value->video_url);
 		$ArrayVideo[]=$p;
 	}
 
