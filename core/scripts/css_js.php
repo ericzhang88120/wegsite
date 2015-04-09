@@ -10,7 +10,6 @@
                 wp_enqueue_style('OpenSansRegular','//fonts.useso.com/css?family=Open+Sans');
                 wp_enqueue_style('OpenSansBold','//fonts.useso.com/css?family=Open+Sans:700');
                 wp_enqueue_style('OpenSansSemiBold','//fonts.useso.com/css?family=Open+Sans:600');
-                wp_enqueue_style('RobotoRegular','//fonts.useso.comm/css?family=Roboto');
                 wp_enqueue_style('RobotoBold','//fonts.useso.com/css?family=Roboto:700');
                 wp_enqueue_style('RalewaySemiBold','//fonts.useso.com/css?family=Raleway:600');
                 wp_enqueue_style('Courgette','//fonts.useso.com/css?family=Courgette');
@@ -25,6 +24,8 @@
                 wp_enqueue_script('galleria', WL_TEMPLATE_DIR_URI .'/galleria/galleria-1.4.2.js');
                 wp_enqueue_script('thestarts', WL_TEMPLATE_DIR_URI .'/js/thestarts.js');
                 wp_enqueue_script('bootstrap-js', WL_TEMPLATE_DIR_URI .'/js/bootstrap.js');
+                wp_enqueue_script('starshow', WL_TEMPLATE_DIR_URI .'/starshow/jssor.slider.js');
+                wp_enqueue_script('starshow2', WL_TEMPLATE_DIR_URI .'/starshow/jssor.js');
                 wp_enqueue_script('enigma-theme-script', WL_TEMPLATE_DIR_URI .'/js/enigma_theme_script.js');
                 if(is_front_page()){
                 /*Carofredsul Slides*/

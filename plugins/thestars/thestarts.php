@@ -18,7 +18,8 @@ function table_new_star () {
       $sql = "CREATE TABLE " . $table_name . " (
 	  id mediumint(9) NOT NULL AUTO_INCREMENT,
 	  url VARCHAR(80) NOT NULL,
-	  categroy VARCHAR(10) NOT NULL,
+	  thumbnail_url VARCHAR(80) NOT NULL,
+	  categroy VARCHAR(20) NOT NULL,
 	  txt TEXT,
 	  primary key (id)
 	);";
@@ -34,78 +35,25 @@ function table_drop_star(){
 
 function wp_the_starts_options(){
 ?>
-<script type="text/javascript" src="../wp-content/plugins/thestars/plupload.full.min.js"></script>
 
 <div class=wrap>
 	<form method="post" id="starinfo" name="myform"action="">
 		<h2>The Star</h2>
-		<p>URL:<input type="text" name="url" size="80" value="<?php echo  (home_url()."/wp-content/plugins/uploads/");?>"></p>
-		<p>Category:<input type="text" name="categroy"value=""></p>		
+		<p>URL:<input type="text" id="url" name="url" size="80" value=""></p>
+		<p>Thumbnail URL:<input type="text" id="thumbnail_url" name="thumbnail_url" size="80" value=""></p>
+		<span><p>If your file named a.png the thumbnail_url is a-160x187.png</p></span>
+		<p>Category:<input type="text" name="categroy"value=""></p>	
+		<span><p>skateboard,bmx,speedclimbing,motocross,jamdemo</p></span>	
 		<h3><?php _e('Description','weblizar'); ?></h3>
 		<?php $settings = array( "tinymce" => array( "plugins" => "" ) ); ?> 
 		<?php wp_editor( '', 'star_desc' ,$settings ); ?>
 	</form>
 	<p><input type="button" name="wp_the_starts_options" value="Update Options &raquo;" onclick="savevideoinfo()"/></p>
-	<div id="container">
-		<h2>Upload img</h2>
-	    <a id="pickfiles" href="javascript:;">[Select files]</a> 
-	    <a id="uploadfiles" href="javascript:;">[Upload files]</a>
-	</div>
-	<div id="filelist"></div>
 </div>
-<script type="text/javascript">
-var uploader = new plupload.Uploader({
-	runtimes : 'html5,flash,silverlight,html4',
-	browse_button : 'pickfiles', // you can pass in id...
-	container: document.getElementById('container'), // ... or DOM Element itself
-	url : '../wp-content/plugins/thestars/upload.php',
-	flash_swf_url : '../js/Moxie.swf',
-	silverlight_xap_url : '../js/Moxie.xap',
-	
-	filters : {
-		max_file_size : '10mb',
-		mime_types: [
-			{title : "Image files", extensions : "jpg,gif,png"},
-			{title : "Zip files", extensions : "zip"}
-		]
-	},
-
-	init: {
-		PostInit: function() {
-			document.getElementById('filelist').innerHTML = '';
-
-			document.getElementById('uploadfiles').onclick = function() {
-				uploader.start();
-				return false;
-			};
-		},
-
-		FilesAdded: function(up, files) {
-			if(files.length !=1){
-				alert("Please choose one file");
-				return;
-			}
-			plupload.each(files, function(file) {
-				myform.url.value = myform.url.value+file.name;
-				document.getElementById('filelist').innerHTML += '<div id="' + file.id + '">' + file.name + ' (' + plupload.formatSize(file.size) + ') <b></b></div>';
-			});
-		},
-
-		UploadProgress: function(up, file) {
-			document.getElementById(file.id).getElementsByTagName('b')[0].innerHTML = '<span>' + file.percent + "%</span>";
-
-		},
-
-		Error: function(up, err) {
-			document.getElementById('console').innerHTML += "\nError #" + err.code + ": " + err.message;
-		}
-
-	}
-});
-uploader.init();
 
 </script>
 <script type="text/javascript">
+
 	function savevideoinfo(){
 		tinyMCE.triggerSave();
 		jQuery.ajax({
