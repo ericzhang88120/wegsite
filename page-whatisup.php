@@ -58,8 +58,8 @@
 				<img src="<?php echo esc_url($wl_theme_options['page_what_is_up_line']); ?>">
 			</div>
 			<div class="row" style="overflow:hidden">
-				<font class="star_desc" size="5px"><b><?php echo $wl_theme_options['page_what_is_up_des_1_1']; ?><br></b></font>
-				<font size="3px" color="#d0d0d0"><?php echo $wl_theme_options['page_what_is_up_des_1_2']; ?></font>
+				<font class="star_desc" size="5px"><b>NEW SPORTS, MULTIPLE VENUES,WORLD-CLASS ATHLETES; BMX AND SKATEBOARD LEGENDS DENNIS...<br></b></font>
+				<font size="3px" color="#d0d0d0">Shanghai to Host the World’s Best Action Sports Athletes at the Kia World Extreme Games Including Mat Hoffman...</font>
 			</div>
 			<div class="row" style="overflow:hidden;text-align:right">
 				<a href='<?php echo get_permalink( get_page_by_title( 'media1' ) );?>'>
@@ -82,8 +82,8 @@
 				<img src="<?php echo esc_url($wl_theme_options['page_what_is_up_line']); ?>">
 			</div>
 			<div class="row" style="overflow:hidden">
-				<font class="star_desc" size="5px"><b><?php echo $wl_theme_options['page_what_is_up_des_2_1']; ?><br></b></font>
-				<font size="3px" color="#d0d0d0"><?php echo $wl_theme_options['page_what_is_up_des_2_2']; ?></font>
+				<font class="star_desc" size="5px"><b>PRESTIGIOUS GLOBAL ACTION SPORTS COMPETITION STAGED IN SHANGHAI FOR THE NINTH CONSECUTIVE YEAR...<br></b></font>
+				<font size="3px" color="#d0d0d0">New Sports, Multiple Venues and World-Class Athletes; Mat Hoffman, Trey Wood, Jimmy Wilkins and Filipe Gustavo..</font>
 			</div>
 			<div class="row" style="overflow:hidden;text-align:right">
 				<a href='<?php echo get_permalink( get_page_by_title( 'media2' ) );?>'>
@@ -106,8 +106,7 @@
 				<img src="<?php echo esc_url($wl_theme_options['page_what_is_up_line']); ?>">
 			</div>
 			<div class="row" style="overflow:hidden">
-				<font class="star_desc" size="5px"><b><?php echo $wl_theme_options['page_what_is_up_des_3_1']; ?><br></b></font>
-				<font size="3px" color="#d0d0d0"><?php echo $wl_theme_options['page_what_is_up_des_3_2']; ?></font>
+				<font class="star_desc" size="4px"><b>HAND IN THERE...<br></b></font>
 			</div>
 			<div class="row" style="overflow:hidden;text-align:right">
 			</div>
