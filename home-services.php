@@ -8,7 +8,7 @@
 					<figure class="effect-apollo figurestar">
 						<img class="the-stars-pic" data-pic-root="<?php echo $wl_theme_options['stars_image_root']; ?>" data-index=1>
 						<figcaption class="figurestar2">
-							<a href="#" class="the-stars-a" data-index=1>View more</a>
+							<a href="<?php echo get_permalink( get_page_by_title( 'stars' ) );?>#bmx" class="the-stars-a" data-index=1>View more</a>
 						</figcaption>
 					</figure>
 				</div>
@@ -18,7 +18,7 @@
 					<figure class="effect-apollo figurestar">
 						<img class="the-stars-pic" data-pic-root="<?php echo $wl_theme_options['stars_image_root']; ?>" data-index=3>
 						<figcaption class="figurestar2">
-							<a href="#" class="the-stars-a" data-index=3>View more</a>
+							<a href="<?php echo get_permalink( get_page_by_title( 'stars' ) );?>#skateboard" class="the-stars-a" data-index=3>View more</a>
 						</figcaption>
 					</figure>
 				</div>
@@ -28,7 +28,7 @@
 					<figure class="effect-apollo figurestar">
 						<img class="the-stars-pic" data-pic-root="<?php echo $wl_theme_options['stars_image_root']; ?>" data-index=5>
 						<figcaption class="figurestar2">
-							<a href="#" class="the-stars-a" data-index=5>View more</a>
+							<a href="<?php echo get_permalink( get_page_by_title( 'stars' ) );?>#speedclimbing" class="the-stars-a" data-index=5>View more</a>
 						</figcaption>
 					</figure>
 				</div>
@@ -38,7 +38,7 @@
 					<figure class="effect-apollo figurestar">
 						<img class="the-stars-pic" data-pic-root="<?php echo $wl_theme_options['stars_image_root']; ?>" data-index=7>
 						<figcaption class="figurestar2">
-							<a href="#" class="the-stars-a" data-index=7>View more</a>
+							<a href="<?php echo get_permalink( get_page_by_title( 'stars' ) );?>#motocross" class="the-stars-a" data-index=7>View more</a>
 						</figcaption>
 					</figure>
 				</div>
