@@ -43,10 +43,12 @@
     $year = stripslashes(trim($_POST['year']));
 	$photo_begin=($page-1)*7;
 
-    $queryCount = " SELECT COUNT(*) FROM wp_videolist a
+	$wpdb->videolist = $wpdb->prefix . 'videolist';
+	
+    $queryCount = " SELECT COUNT(*) FROM $wpdb->videolist a
 					WHERE a.year='".$year."' "; 
 	
-	$query = "SELECT id,url,video_url FROM wp_videolist a
+	$query = "SELECT id,url,video_url FROM $wpdb->videolist a
 		 	  WHERE a.year='".$year."' "; 
 			
 
