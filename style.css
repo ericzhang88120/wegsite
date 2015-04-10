@@ -2660,3 +2660,7 @@ figure.effect-lily:hover a {
 	text-indent:20px;
 	font-family: 'Isocpeur'   
 }
+.post{
+ border-bottom: gainsboro 1px solid; /*分割线颜色，线为实线，粗细为 1px*/
+ padding-bottom: 10px;               /*分割线距文章底部10px，否则会紧贴文章底部，不美观*/
+}
