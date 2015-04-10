@@ -79,7 +79,7 @@
 
 		foreach ($photos_for_gallery as $key => $value) {
 			$a = $value->pid;
-			$path=str_replace("\\","/",ltrim($value->path,"\\"));
+			$path=ltrim(str_replace("\\","/",$value->path),"/");
 			$photo_path=$path."/".$value->filename;
 			$thumb_path = $path."/thumbs/thumbs_".$value->filename;
 			
@@ -115,7 +115,7 @@
 		$ArrayPhoto=array();
 		foreach ($photos as $key => $value) {
 			$a = $value->pid;
-			$path=str_replace("\\","/",ltrim($value->path,"\\"));
+			$path=ltrim(str_replace("\\","/",$value->path),"/");
 			$photo_path=$path."/".$value->filename;
 			$thumb_path=$photo_path;
 
