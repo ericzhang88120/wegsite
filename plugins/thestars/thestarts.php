@@ -20,6 +20,7 @@ function table_new_star () {
 	  url VARCHAR(80) NOT NULL,
 	  thumbnail_url VARCHAR(80) NOT NULL,
 	  categroy VARCHAR(20) NOT NULL,
+	  name VARCHAR(20) NOT NULL unique,
 	  txt TEXT,
 	  primary key (id)
 	);";
@@ -39,6 +40,8 @@ function wp_the_starts_options(){
 <div class=wrap>
 	<form method="post" id="starinfo" name="myform"action="">
 		<h2>The Star</h2>
+		<p>NAME:<input type="text" id="name" name="name" size="80" value=""></p>
+		<span><p>data name unique</p></span>
 		<p>URL:<input type="text" id="url" name="url" size="80" value=""></p>
 		<p>Thumbnail URL:<input type="text" id="thumbnail_url" name="thumbnail_url" size="80" value=""></p>
 		<span><p>If your file named a.png the thumbnail_url is a-160x187.png</p></span>

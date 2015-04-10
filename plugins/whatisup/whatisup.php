@@ -17,6 +17,7 @@ function table_new_whatisup () {
 
       $sql = "CREATE TABLE " . $table_name . " (
 	  id mediumint(9) NOT NULL AUTO_INCREMENT,
+	  name VARCHAR(20) NOT NULL unique,
 	  url VARCHAR(80) NOT NULL,
 	  year VARCHAR(10) NOT NULL,
 	  categroy VARCHAR(10) NOT NULL,
@@ -39,6 +40,7 @@ function wp_what_is_up_options(){
 <div class=wrap>
 	<form method="post" id="whatisupinfo" name="myform"action="">
 		<h2>What's Up</h2>
+		<p>Name:<input type="text" id="name" name="name" size="80" value=""></p>
 		<p>URL:<input type="text" id="url" name="url" size="80" value=""></p>
 		<p>year:<input type="text" name="year"value=""></p>
 		<p>categroy:<input type="text" name="categroy"value=""></p>				

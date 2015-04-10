@@ -17,8 +17,12 @@
 	if(isset($_POST['txt'])){
 		$txt= $_POST['txt'];
 	}
+	if(isset($_POST['name'])){
+		$name= $_POST['name'];
+	}
 	$table = "whatisup";
 	$data_array = array(
+		'name' =>$name,
         'url'=> $url,
         'year'=>$year,
 		'categroy'=>$categroy,

@@ -17,6 +17,7 @@ function table_new () {
 
       $sql = "CREATE TABLE " . $table_name . " (
 	  id mediumint(9) NOT NULL AUTO_INCREMENT,
+	  name VARCHAR(20) NOT NULL unique, 
 	  year VARCHAR(10) NOT NULL,
 	  categroy VARCHAR(10) NOT NULL,
 	  url VARCHAR(80) NOT NULL,
@@ -48,6 +49,7 @@ function wp_video_options(){
 	<div id="filelist"></div>
 
 	<form method="post" id="videoinfo" name="myform"action="">
+		<p>Name:<input type="text" name="name"value=""></p>
 		<p>Year:<input type="text" name="year"value=""></p>
 		<p>URL(Auto generate):<input type="text" readonly name="url" size="80" data-home-url="<?php echo  (home_url()."/wp-content/plugins/videoshow/uploads/");?>"></p>
 		<p>Video_URL:<input type="text" name="video_url" size="80" value=""></p>

@@ -16,11 +16,15 @@
 	if(isset($_POST['thumbnail_url'])){
 		$thumbnail_url= $_POST['thumbnail_url'];
 	}
+	if(isset($_POST['name'])){
+		$name= $_POST['name'];
+	}
 	$table = "thestars";
 	$data_array = array(
         'url'=> $url,
         'categroy'=>$categroy,
         'thumbnail_url' =>$thumbnail_url,
+        'name' =>$name,
         'txt'=>$txt
 	);
 	$wpdb->insert($wpdb->prefix.$table,$data_array);

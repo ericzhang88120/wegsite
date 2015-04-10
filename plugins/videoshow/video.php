@@ -16,8 +16,12 @@
 	if(isset($_POST['video_url'])){
 		$video_url= $_POST['video_url'];
 	}
+	if(isset($_POST['name'])){
+		$name= $_POST['name'];
+	}
 	$table = "videolist";
 	$data_array = array(
+		'name' =>$name,
         'url'=> $url,
         'year'=> $year,
         'categroy'=>$categroy,
