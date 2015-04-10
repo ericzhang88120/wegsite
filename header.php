@@ -120,7 +120,7 @@ endif;
                             		</ul>                           		
                         		</li>
                         		<li>
-                            		<a href='#' title="">&nbspGET IN TOUCH</a>
+                            		<a href='<?php echo esc_url(home_url( '/' )); ?>#getintouch' title="">&nbspGET IN TOUCH</a>
                         		</li>
                             </ul>
                         </nav>

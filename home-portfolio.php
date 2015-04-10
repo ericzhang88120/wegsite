@@ -54,7 +54,7 @@
 						<img src="<?php echo esc_url($wl_theme_options['what_is_up_image_4']); ?>" alt="<?php the_title_attribute(); ?>">
 						<div>
 							<figcaption>
-								<a href="#">
+								<a href="<?php echo get_permalink( get_page_by_title( 'whatisup' ) );?>">
 									<img src="<?php echo esc_url($wl_theme_options['what_is_up_image_5']); ?>" style="display:hidden">
 								</a>
 							</figcaption>
@@ -79,7 +79,7 @@
 							<img src="<?php echo esc_url($wl_theme_options['port_'.$i.'_img']); ?>" alt="<?php the_title_attribute(); ?>">
 							<div>
 								<figcaption>
-									<a href="#">
+									<a href="<?php echo get_permalink( get_page_by_title( 'halloffame' ) );?>">
 										<img src="<?php echo esc_url($wl_theme_options['port_'.$i.'_img_shade']); ?>" style="display:hidden">
 									</a>
 								</figcaption>
@@ -94,7 +94,7 @@
 		</div>				
 </div>
 
-<div class="container" style="background-image:url(<?php echo esc_url($wl_theme_options['get_in_touch_image_1']); ?>);background-repeat:no-repeat">
+<div class="container" id="getintouch" style="background-image:url(<?php echo esc_url($wl_theme_options['get_in_touch_image_1']); ?>);background-repeat:no-repeat">
 	<div class="row" style="padding-top:130px">
 		<div id="enigma_portfolio_section" class="enima_photo_gallery">	
 			<div class="col-lg-5 col-md-5 col-sm-5 pull-left scrollimation fade-right d1"> 
@@ -161,9 +161,8 @@
 	
 	<br>
 	<div class="row" id="sponsor">
-		<div class="col-lg-12 col-md-12 col-sm-12" style="background: #272727">
-				<img src="wp-content/themes/wegsite/images/event/sponsor.png" style="width:100%">
-				<img src="wp-content/themes/wegsite/images/event/sponsor-words.png" style="margin-top:20px;width:100%">
+		<div class="col-lg-12 col-md-12 col-sm-12" style="background: #272727;height:450px">
+				<img src="wp-content/themes/wegsite/images/Sponsor/sponsor.png" style="width:100%">
 		</div>
 	</div		
 </div>
