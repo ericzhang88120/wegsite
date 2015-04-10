@@ -321,7 +321,7 @@ height:290px;
 			}
 		});
 
-		jQuery('#myModalVideo').on('hidden.bs.modal', function (e) {
+		jQuery('#myModalVideo').on('hidden.bs.modal', function (event) {
 			event.preventDefault();
 		  	jQuery('#video-frame').attr('src',"");
 		});
