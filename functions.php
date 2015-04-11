@@ -378,7 +378,6 @@
     echo '</ul>';
 	}
 	
-	
 	//PAGINATION
 		function weblizar_pagination($pages = '', $range = 2)
 {  
