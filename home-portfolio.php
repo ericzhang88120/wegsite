@@ -1,52 +1,41 @@
 <!-- portfolio section -->
 <?php $wl_theme_options = weblizar_get_options(); ?>
-
+<style type="text/css">
+	.wp-post-image{
+		width: 156px;
+		height: 111px;
+	}
+</style>
 <div class="container" style="background-image:url(<?php echo esc_url($wl_theme_options['what_is_up_image_1']); ?>);background-repeat:no-repeat;">
 	<div class="row" style="padding-top:130px">
 		<div id="enigma_portfolio_section" class="enima_photo_gallery">
 			<div class="col-lg-7 col-md-7 col-sm-7 pull-left scrollimation fade-right d1"> 
+				<?php 
+				if ( have_posts()): 
+					$args = array( 'post_type' => 'post','posts_per_page' => 3);
+					$post_type_data = new WP_Query( $args );
+					while ( $post_type_data->have_posts()): $post_type_data->the_post();
+					global $post;
+				?>
 				<div class="row">
 					<div style="padding-top:20px" class="col-lg-3 col-md-3 col-sm-3 pull-left scrollimation fade-right d1">
 						<a href="<?php echo get_permalink( get_page_by_title( 'media1' ) );?>">
-							<img src="<?php echo esc_url($wl_theme_options['what_is_up_image_2']); ?>" alt="<?php the_title_attribute(); ?>">
+							<?php echo the_post_thumbnail(array(300, 196));?>
 						</a>
 					</div>
 					<div style="padding-top:12px" class="col-lg-9 col-md-9 col-sm-9 pull-left scrollimation fade-right d1">
-						<div>
-							<font size="2px" color="#FFFFFF">/////////////////////////////////////////////////////////////////////////////////////////////////<br></font>
-							<font size="3px" color="#FFFFFF">NEW SPORTS, MULTIPLE VENUES,WORLD-CLASS ATHLETES; BMX AND SKATEBOARD LEGENDS DENNIS...<br><br></font>
-							<font class="star_desc" size="2px">Shanghai to Host the World’s Best Action Sports Athletes at the Kia World Extreme Games Including Mat Hoffman...</font>
+						<div style="word-break: break-all;word-wrap: break-word;color:#FFF;">
+							<p style="font-size:13px;margin:0;">////////////////////////////////////////////////////////////////////////////////////////////////</p>
+							<p style="font-size:16px;"><?php echo the_title();?></p>
+							<p style="font-size:14px;text-indent: 20px;font-family: 'Isocpeur'"><?php echo mb_strimwidth(strip_tags(apply_filters("the_content",$post->post_content)),0,150);?></p>
 						</div>
 					</div>
 				</div>
-				<div class="row">
-					<div style="padding-top:20px" class="col-lg-3 col-md-3 col-sm-3 pull-left scrollimation fade-right d1">
-						<a href="<?php echo get_permalink( get_page_by_title( 'media2' ) );?>">
-							<img src="<?php echo esc_url($wl_theme_options['what_is_up_image_3']); ?>" alt="<?php the_title_attribute(); ?>">
-						</a>
-					</div>
-					<div style="padding-top:12px" class="col-lg-9 col-md-9 col-sm-9 pull-left scrollimation fade-right d1">
-						<div>
-							<font size="2px" color="#FFFFFF">/////////////////////////////////////////////////////////////////////////////////////////////////<br></font>
-							<font size="3px" color="#FFFFFF">PRESTIGIOUS GLOBAL ACTION SPORTS COMPETITION STAGED IN SHANGHAI FOR THE NINTH CONSECUTIVE YEAR...<br><br></font>
-							<font class="star_desc" size="2px">New Sports, Multiple Venues and World-Class Athletes; Mat Hoffman, Trey Wood, Jimmy Wilkins and Filipe Gustavo..</font>
-						</div>
-					</div>
-				</div>
-				<div class="row">
-					<div style="padding-top:20px" class="col-lg-3 col-md-3 col-sm-3 pull-left scrollimation fade-right d1">
-						<a href="#">
-							<img style="z-index=2;" src="<?php echo esc_url($wl_theme_options['what_is_up_image_6']); ?>" alt="<?php the_title_attribute(); ?>">
-						</a>
-					</div>
-					<div style="padding-top:12px" class="col-lg-9 col-md-9 col-sm-9 pull-left scrollimation fade-right d1">
-						<div>
-							<font size="2px" color="#FFFFFF">/////////////////////////////////////////////////////////////////////////////////////////////////<br></font>
-							<font size="3px" color="#FFFFFF">HANG IN THERE...<br><br></font>
-							<font class="star_desc" size="2px"></font>
-						</div>
-					</div>
-				</div>
+				<?php
+				endwhile; 
+				wp_reset_query();
+				endif; 
+				?>
 			</div>
 			<div class="col-lg-5 col-md-5 col-sm-5 pull-left scrollimation fade-right d1">
 				<div class="img-wrapper">
