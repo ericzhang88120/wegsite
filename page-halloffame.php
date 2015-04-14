@@ -42,7 +42,7 @@ height:290px;
 </style>
 
 <div class="container">
-	<div class="row" id="photo-part" style="background: #272727 url(wp-content/themes/wegsite/images/halloffame/photo-bg.png) no-repeat; height:800px;padding:140px 0 0 2px;">
+	<div class="row" id="photo-part" style="background: #272727 url(wp-content/themes/wegsite/images/HallOfFame/photo-bg.png) no-repeat; height:800px;padding:140px 0 0 2px;">
 		<div id="photo-gallery">
 			<div class="col-lg-10 col-md-10 col-sm-10">
 				<ul>
@@ -97,7 +97,7 @@ height:290px;
   	--></textarea></p>
 	<!-- End Templates -->
 
-	<div class="row" id="video-part" style="background: #272727 url(wp-content/themes/wegsite/images/halloffame/video-bg.png) no-repeat; height:755px;padding:140px 0 0 2px;">
+	<div class="row" id="video-part" style="background: #272727 url(wp-content/themes/wegsite/images/HallOfFame/video-bg.png) no-repeat; height:755px;padding:140px 0 0 2px;">
 		<div id="video-gallery">
 			<div class="col-lg-10 col-md-10 col-sm-10">
 				<ul>
