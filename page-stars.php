@@ -34,6 +34,16 @@
 		$firstvalue_jamdemo = $res_jamdemo[0];
 	}
 ?>
+<?php
+$bg = WL_TEMPLATE_DIR_URI ."/images/stars/bg.png";
+$loading = WL_TEMPLATE_DIR_URI ."/images/loading.gif";
+$skateboard = WL_TEMPLATE_DIR_URI ."/images/stars/skateboard.jpg";
+$bmx = WL_TEMPLATE_DIR_URI ."/images/stars/bmx.jpg";
+$speedclimbing = WL_TEMPLATE_DIR_URI ."/images/stars/speedclimbing.jpg";
+$moto = WL_TEMPLATE_DIR_URI ."/images/stars/moto.jpg";
+$demo = WL_TEMPLATE_DIR_URI ."/images/stars/demo.jpg";
+
+?>
 <style>
     /* jssor slider arrow navigator skin 03 css */
     /*
@@ -51,7 +61,7 @@
         width: 55px;
         height: 55px;
         cursor: pointer;
-        background: url(wp-content/themes/wegsite/images/a03.png) no-repeat;
+        background: url(http://www.kiaworldextremegames.com/wp-content/themes/wegsite/images/a03.png) no-repeat;
         overflow: hidden;
     }
     .jssora03l { background-position: -3px -33px; }
@@ -62,15 +72,15 @@
     .jssora03r.jssora03rdn { background-position: -303px -33px; }
 </style>
 <div class="container">
-	<div class="row" id="skateboard"style="background: #272727 url(wp-content/themes/wegsite/images/stars/skateboard.jpg) no-repeat; height:920px;padding:140px 0 0 0;">
+	<div class="row" id="skateboard"style="background: #272727 url(<?php echo esc_url($skateboard);?>) no-repeat; height:920px;padding:140px 0 0 0;">
 		<div id="content">
 			<div class="row">
 				<div class="col-lg-1 col-md-1 col-sm-2"></div>
-				<div class="col-lg-10 col-md-10 col-sm-10" style="background: url(wp-content/themes/wegsite/images/stars/bg.png) no-repeat; height:562px;padding:0px 0 0 0;">
+				<div class="col-lg-10 col-md-10 col-sm-10" style="background: url(<?php echo esc_url($bg);?>) no-repeat; height:562px;padding:0px 0 0 0;">
 					<div class="col-lg-7" >
 						<img id="skateboard_img"src=<?php if(isset($firstvalue_skateboard->url)){echo "\"".$firstvalue_skateboard->url."\"";}?>>
 					</div>
-					<div class="col-lg-5" id="skateboard_desc" style="overflow: scroll;overflow-x: hidden;">
+					<div class="col-lg-5" id="skateboard_desc" style="overflow: scroll;overflow-x: hidden;height:565px;">
 						<?php if(isset($firstvalue_skateboard->txt)){echo $firstvalue_skateboard->txt;}?>
 					</div>
 				</div>
@@ -85,13 +95,13 @@
 			            	<div style="filter: alpha(opacity=70); opacity:0.7; position: absolute; display: block;
 			                        background-color: #000; top: 0px; left: 0px;width: 100%;height:100%;">
 			            	</div>
-				            <div style="position: absolute; display: block; background: url(wp-content/themes/wegsite/images/loading.gif) no-repeat center center;
+				            <div style="position: absolute; display: block; background: url(<?php echo esc_url($loading);?>) no-repeat center center;
 				                        top: 0px; left: 0px;width: 100%;height:100%;">
 				            </div>
 		        		</div>
 
 				        <!-- Slides Container -->
-				        <div u="slides" style="cursor: move;width: 975px; height: 187px; overflow: hidden;">
+				        <div u="slides" style="cursor: move;width: 975px; height: 187px; overflow: hidden;height:565px;">
 				        	<?php
 				        		foreach ($res_skateboard as $key => $value) {
 				        			echo $str = "<div><a href=\"javascript:void(0)\" txt=\"".$value->txt."\"imgurl=\"".$value->url."\"><img src=\"".$value->thumbnail_url."\"/></a></div>";
@@ -112,15 +122,15 @@
 		</div>
 	</div>
 
-	<div class="row" id="bmx"style="background: #272727 url(wp-content/themes/wegsite/images/stars/bmx.jpg) no-repeat; height:920px;padding:140px 0 0 0;">
+	<div class="row" id="bmx"style="background: #272727 url(<?php echo esc_url($bmx);?>) no-repeat; height:920px;padding:140px 0 0 0;">
 		<div id="content">
 			<div class="row">
 				<div class="col-lg-1 col-md-1 col-sm-2"></div>
-				<div class="col-lg-10 col-md-10 col-sm-10" style="background: url(wp-content/themes/wegsite/images/stars/bg.png) no-repeat; height:562px;padding:0px 0 0 0;">
+				<div class="col-lg-10 col-md-10 col-sm-10" style="background: url(<?php echo esc_url($bg);?>) no-repeat; height:562px;padding:0px 0 0 0;">
 					<div class="col-lg-7" >
 						<img id="bmx_img"src=<?php if(isset($firstvalue_bmx->url)){echo "\"".$firstvalue_bmx->url."\"";}?>>
 					</div>
-					<div class="col-lg-5" id="bmx_desc" style="overflow: scroll;overflow-x: hidden;">
+					<div class="col-lg-5" id="bmx_desc" style="overflow: scroll;overflow-x: hidden;height:565px;">
 						<?php if(isset($firstvalue_bmx->txt)){echo $firstvalue_bmx->txt;}?>
 					</div>
 				</div>
@@ -135,7 +145,7 @@
 			            	<div style="filter: alpha(opacity=70); opacity:0.7; position: absolute; display: block;
 			                        background-color: #000; top: 0px; left: 0px;width: 100%;height:100%;">
 			            	</div>
-				            <div style="position: absolute; display: block; background: url(wp-content/themes/wegsite/images/loading.gif) no-repeat center center;
+				            <div style="position: absolute; display: block; background: url(<?php echo esc_url($loading);?>)  no-repeat center center;
 				                        top: 0px; left: 0px;width: 100%;height:100%;">
 				            </div>
 		        		</div>
@@ -161,11 +171,11 @@
 			</div>
 		</div>
 	</div>
-	<div class="row" id="speedclimbing"style="background: #272727 url(wp-content/themes/wegsite/images/stars/speedclimbing.jpg) no-repeat; height:920px;padding:140px 0 0 0;">
+	<div class="row" id="speedclimbing"style="background: #272727 url(<?php echo esc_url($speedclimbing);?>) no-repeat; height:920px;padding:140px 0 0 0;">
 			<div id="content">
 			<div class="row">
 				<div class="col-lg-1 col-md-1 col-sm-2"></div>
-				<div class="col-lg-10 col-md-10 col-sm-10" style="background: url(wp-content/themes/wegsite/images/stars/bg.png) no-repeat; height:562px;padding:0px 0 0 0;">
+				<div class="col-lg-10 col-md-10 col-sm-10" style="background: url(<?php echo esc_url($bg);?>) no-repeat; height:562px;padding:0px 0 0 0;">
 					<div class="col-lg-7" >
 						<img id="speedclimbing_img"src=<?php if(isset($firstvalue_speedclimbing->url)){echo "\"".$firstvalue_speedclimbing->url."\"";}?>>
 					</div>
@@ -184,7 +194,7 @@
 			            	<div style="filter: alpha(opacity=70); opacity:0.7; position: absolute; display: block;
 			                        background-color: #000; top: 0px; left: 0px;width: 100%;height:100%;">
 			            	</div>
-				            <div style="position: absolute; display: block; background: url(wp-content/themes/wegsite/images/loading.gif) no-repeat center center;
+				            <div style="position: absolute; display: block; background: url(<?php echo esc_url($loading);?>) no-repeat center center;
 				                        top: 0px; left: 0px;width: 100%;height:100%;">
 				            </div>
 		        		</div>
@@ -210,15 +220,15 @@
 			</div>
 		</div>
 	</div>
-	<div class="row" id="motocross"style="background: #272727 url(wp-content/themes/wegsite/images/stars/moto.jpg) no-repeat; height:920px;padding:140px 0 0 0;">
+	<div class="row" id="motocross"style="background: #272727 url(<?php echo esc_url($moto);?>) no-repeat; height:920px;padding:140px 0 0 0;">
 		<div id="content">
 			<div class="row">
 				<div class="col-lg-1 col-md-1 col-sm-2"></div>
-				<div class="col-lg-10 col-md-10 col-sm-10" style="background: url(wp-content/themes/wegsite/images/stars/bg.png) no-repeat; height:562px;padding:0px 0 0 0;">
+				<div class="col-lg-10 col-md-10 col-sm-10" style="background: url(<?php echo esc_url($bg);?>) no-repeat; height:562px;padding:0px 0 0 0;">
 					<div class="col-lg-7" >
 						<img id="motocross_img"src=<?php if(isset($firstvalue_motocross->url)){echo "\"".$firstvalue_motocross->url."\"";}?>>
 					</div>
-					<div class="col-lg-5" id="motocross_desc" style="overflow: scroll;overflow-x: hidden;">
+					<div class="col-lg-5" id="motocross_desc" style="overflow: scroll;overflow-x: hidden;height:565px;">
 						<?php if(isset($firstvalue_motocross->txt)){echo $firstvalue_motocross->txt;}?>
 					</div>
 				</div>
@@ -233,7 +243,7 @@
 			            	<div style="filter: alpha(opacity=70); opacity:0.7; position: absolute; display: block;
 			                        background-color: #000; top: 0px; left: 0px;width: 100%;height:100%;">
 			            	</div>
-				            <div style="position: absolute; display: block; background: url(wp-content/themes/wegsite/images/loading.gif) no-repeat center center;
+				            <div style="position: absolute; display: block; background: url(<?php echo esc_url($loading);?>) no-repeat center center;
 				                        top: 0px; left: 0px;width: 100%;height:100%;">
 				            </div>
 		        		</div>
@@ -259,15 +269,15 @@
 			</div>
 		</div>
 	</div>
-	<div class="row" id="jamdemo"style="background: #272727 url(wp-content/themes/wegsite/images/stars/demo.jpg) no-repeat; height:920px;padding:140px 0 0 0;">
+	<div class="row" id="jamdemo"style="background: #272727 url(<?php echo esc_url($demo);?>) no-repeat; height:920px;padding:140px 0 0 0;">
 		<div id="content">
 			<div class="row">
 				<div class="col-lg-1 col-md-1 col-sm-2"></div>
-				<div class="col-lg-10 col-md-10 col-sm-10" style="background: url(wp-content/themes/wegsite/images/stars/bg.png) no-repeat; height:562px;padding:0px 0 0 0;">
+				<div class="col-lg-10 col-md-10 col-sm-10" style="background: url(<?php echo esc_url($bg);?>) no-repeat; height:562px;padding:0px 0 0 0;">
 					<div class="col-lg-7" >
 						<img id="jamdemo_img"src=<?php if(isset($firstvalue_jamdemo->url)){echo "\"".$firstvalue_jamdemo->url."\"";}?>>
 					</div>
-					<div class="col-lg-5" id="jamdemo_desc" style="overflow: scroll;overflow-x: hidden;">
+					<div class="col-lg-5" id="jamdemo_desc" style="overflow: scroll;overflow-x: hidden;height:565px;">
 						<?php if(isset($firstvalue_jamdemo->txt)){echo $firstvalue_jamdemo->txt;}?>
 					</div>
 				</div>
@@ -282,7 +292,7 @@
 			            	<div style="filter: alpha(opacity=70); opacity:0.7; position: absolute; display: block;
 			                        background-color: #000; top: 0px; left: 0px;width: 100%;height:100%;">
 			            	</div>
-				            <div style="position: absolute; display: block; background: url(wp-content/themes/wegsite/images/loading.gif) no-repeat center center;
+				            <div style="position: absolute; display: block; background: url(<?php echo esc_url($loading);?>) no-repeat center center;
 				                        top: 0px; left: 0px;width: 100%;height:100%;">
 				            </div>
 		        		</div>

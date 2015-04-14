@@ -1,7 +1,14 @@
 <?php $wl_theme_options = weblizar_get_options(); ?>
 <?php get_header(); ?>
+<?php 
+$ImageUrl1 = WL_TEMPLATE_DIR_URI ."/images/action/pearl/bg.png";
+$ImageUrl2 = WL_TEMPLATE_DIR_URI ."/images/action/street/bg.png";
+$ImageUrl3 = WL_TEMPLATE_DIR_URI ."/images/action/wall/bg.png";
+$ImageUrl4 = WL_TEMPLATE_DIR_URI ."/images/action/mini/bg.png";
+$ImageUrl5 = WL_TEMPLATE_DIR_URI ."/images/action/moto/bg.png";
+?>
 <div class="container">
-	<div class="row" id="pearl" style="background: #272727 url(wp-content/themes/wegsite/images/action/pearl/bg.png) no-repeat; height:900px;padding:127px 0 0 0;">
+	<div class="row" id="pearl" style="background: #272727 url(<?php echo esc_url($ImageUrl1);?>) no-repeat; height:900px;padding:127px 0 0 0;">
 		<?php get_template_part('action','pearl'); ?>
 		<div class="actiondes" style="padding:0 20px 0 20px;height:200px;overflow: scroll;overflow-x: hidden;">
 			<h4>VERT AT ORIENTAL PEARL</h4>
@@ -10,7 +17,7 @@
 			&nbsp;So, get your cameras ready.  C’mon down to the Oriental Pearl Tower and be wowed by all the stars and action!</p>
 		</div>
 	</div>
-	<div class="row" id="street" style="background: #272727 url(wp-content/themes/wegsite/images/action/street/bg.png) no-repeat; height:862px;padding:127px 0 0 0;">
+	<div class="row" id="street" style="background: #272727 url(<?php echo esc_url($ImageUrl2);?>) no-repeat; height:862px;padding:127px 0 0 0;">
 	<?php get_template_part('action','street'); ?>
 		<div class="actiondes" style="padding:0 20px 0 20px">
 			<h4>STREET COURSE AT KIC</h4>
@@ -18,21 +25,21 @@
 			<p>Pioneering the build and design of a new street course at Shanghai’s KIC Plaza (which is used by urban skaters), organisers will integrate proven formats from other street course global competitions but use an existing structure at KIC Plaza and enhance the course with new elements and features.</p>
 		</div>		
 	</div>	
-	<div class="row" id="wall" style="background: #272727 url(wp-content/themes/wegsite/images/action/wall/bg.png) no-repeat; height:862px;padding:127px 0 0 0;">
+	<div class="row" id="wall" style="background: #272727 url(<?php echo esc_url($ImageUrl3);?>) no-repeat; height:862px;padding:127px 0 0 0;">
 	<?php get_template_part('action','wall'); ?>
 			<div class="actiondes" style="padding:0 20px 0 20px">
 			<h4>CLIMBING WALL</h4>
 			<p>The new climbing wall is designed to up the level of competition; whilst providing an engaging viewing experience for the audience.  The new wall design also presents enhanced event and sponsor branding opportunities.</p>
 		</div>		
 	</div>
-	<div class="row" id="mini" style="background: #272727 url(wp-content/themes/wegsite/images/action/mini/bg.png) no-repeat; height:862px;padding:127px 0 0 0;">
+	<div class="row" id="mini" style="background: #272727 url(<?php echo esc_url($ImageUrl4);?>) no-repeat; height:862px;padding:127px 0 0 0;">
 	<?php get_template_part('action','mini'); ?>
 			<div class="actiondes" style="padding:0 20px 0 20px">
 			<h4>MINI MEGA</h4>
 			<p>The three-storey high Mini Mega will play host to the BMX and Skateboard competitions at Jiangwan Stadium come 1 to 3 May 2015.  The only one of its kind in Asia, fans are in for a real treat this year with stars such as Trey Wood, Vince Bryon, Dennis McCoy and for the very first time, 13 year old Alana Smith competing on her skateboard amongst the boys!</p>
 		</div>		
 	</div>
-	<div class="row" id="moto" style="background: #272727 url(wp-content/themes/wegsite/images/action/moto/bg.png) no-repeat; height:862px;padding:127px 0 0 0;">
+	<div class="row" id="moto" style="background: #272727 url(<?php echo esc_url($ImageUrl5);?>) no-repeat; height:862px;padding:127px 0 0 0;">
 	<?php get_template_part('action','moto'); ?>
 			<div class="actiondes" style="padding:0 20px 0 20px">
 			<h4>MOTO CROSS</h4>

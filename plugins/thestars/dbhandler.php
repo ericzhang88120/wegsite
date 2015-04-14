@@ -28,4 +28,5 @@
         'txt'=>$txt
 	);
 	$wpdb->insert($wpdb->prefix.$table,$data_array);
+	echo 'OK';
 ?>

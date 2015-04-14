@@ -17,8 +17,8 @@ function table_new_star () {
 
       $sql = "CREATE TABLE " . $table_name . " (
 	  id mediumint(9) NOT NULL AUTO_INCREMENT,
-	  url VARCHAR(80) NOT NULL,
-	  thumbnail_url VARCHAR(80) NOT NULL,
+	  url VARCHAR(100) NOT NULL,
+	  thumbnail_url VARCHAR(100) NOT NULL,
 	  categroy VARCHAR(20) NOT NULL,
 	  name VARCHAR(20) NOT NULL unique,
 	  txt TEXT,
@@ -65,7 +65,13 @@ function wp_the_starts_options(){
 			data : jQuery("#starinfo").serialize(),
 			success : function(data)
 			{ 
-				alert("Success");
+				if(data!='OK'){
+					alert("Upload fail");
+				}
+				else{
+					alert("Success");
+				}
+				
 			}			
 		});
 	}
